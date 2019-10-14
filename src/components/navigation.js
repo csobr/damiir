@@ -1,18 +1,26 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom';
-import Home from './home'
+import {Link } from "react-router-dom";
 
-export default class Navigation extends Component {
+export default class Navbar extends Component {
     render() {
         return (
-            <div className="navbar">
-            <NavLink to="/" className="navbar-logo">dA</NavLink>
-            <div className="navbar-list">
-              <NavLink to="/search" activeClassName="chosen">Collection</NavLink>
-              <NavLink to="/map" activeClassName="chosen">Map</NavLink>
-              <NavLink to="/login" activeClassName="chosen">Log In</NavLink>
-            </div>
-          </div>
+           <nav>
+            <h1>Impact</h1>
+              <ul>
+                  <li>
+                      <Link to = "/">Home</Link>
+
+                  </li>
+                  <li>
+                      <Link to = "/companies">Companies</Link>
+
+                  </li>
+                  <li>
+                      <Link to = "/field">Impact field</Link>
+
+                  </li>
+              </ul>
+            </nav>
         )
     }
 }
