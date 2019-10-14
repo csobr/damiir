@@ -1,7 +1,7 @@
 {
-  "name": "skillnad",
+  "name": "Impact",
   "version": "1.0.0",
-  "description": "skilland app",
+  "description": "Impact",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
