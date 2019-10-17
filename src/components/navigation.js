@@ -5,18 +5,24 @@ export default class Navbar extends Component {
     render() {
         return (
            <nav>
-            <h1>Impact</h1>
+      
               <ul>
                   <li>
-                      <Link to = "/">Home</Link>
+                      <Link to = "/">About</Link>
 
                   </li>
                   <li>
                       <Link to = "/companies">Companies</Link>
 
-                  </li>
+                  </li>    
+                  <li className = "logo">
+                  <Link to = "/">Impact.</Link> </li>
                   <li>
-                      <Link to = "/field">Impact field</Link>
+                      <Link to = "/field">Change</Link>
+
+                  </li>
+                    <li>
+                      <Link to = "/field">Contact</Link>
 
                   </li>
               </ul>

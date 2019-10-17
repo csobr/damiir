@@ -36,6 +36,17 @@ module.exports = {
                 loader: 'sass-loader'
               }
             ]},
+            {
+            test: /\.(jpf|png|svg|jpg|gif)$/,
+            use: [
+                'file-loader'
+            ]
+        },
+        {
+          test: /\.mp4$/,
+          use: 'file-loader?name=videos/[name].[ext]',
+   },
+              
         ]},
       
     plugins: [

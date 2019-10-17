@@ -189,7 +189,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 // Imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap);", ""]);
 // Module
-exports.push([module.i, "\n", ""]);
+exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: \"Roboto\", sans-serif; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75em) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25em) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5em) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\nh1 {\n  font-size: 4.2em;\n  line-height: 0;\n  padding: .6em; }\n\nnav {\n  margin: 2.5%;\n  display: flex;\n  justify-content: space-between;\n  align-content: center;\n  height: 5rem;\n  vertical-align: middle !important;\n  line-height: 0 !important; }\n  nav a {\n    color: #141615;\n    font-size: 1.4em;\n    text-decoration: none !important;\n    width: 100% !important;\n    height: 100% !important;\n    line-height: 3;\n    padding: 1em; }\n  nav li {\n    list-style: none;\n    display: inline;\n    justify-content: flex-end;\n    margin: auto;\n    padding-left: 3rem; }\n\n.hero {\n  display: flex;\n  justify-content: center; }\n  .hero img {\n    width: 800px; }\n", ""]);
 
 
 /***/ }),
@@ -36828,9 +36828,7 @@ function (_Component) {
   _createClass(Companies, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-        type: "text/css"
-      }, " ", " body {\n                       background-color: red;\n                   }"));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
     }
   }]);
 
@@ -36887,9 +36885,7 @@ function (_Component) {
   _createClass(Field, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
-        type: "text/css"
-      }, " ", " body {\n                       background-color: green;\n                   }"));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
     }
   }]);
 
@@ -36912,6 +36908,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_hero_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/hero.jpg */ "./src/img/hero.jpg");
+/* harmony import */ var _img_hero_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_hero_jpg__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36932,6 +36930,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Home =
 /*#__PURE__*/
 function (_Component) {
@@ -36946,7 +36945,11 @@ function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hero"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_hero_jpg__WEBPACK_IMPORTED_MODULE_1___default.a
+      }));
     }
   }]);
 
@@ -37005,7 +37008,7 @@ function (_Component) {
   _createClass(Navbar, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Impact."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/"
       }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/companies"
@@ -37019,6 +37022,17 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
+
+/***/ }),
+
+/***/ "./src/img/hero.jpg":
+/*!**************************!*\
+  !*** ./src/img/hero.jpg ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0ce0df0add482e429225498c079274e4.jpg";
 
 /***/ }),
 
