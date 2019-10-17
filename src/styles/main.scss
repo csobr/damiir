@@ -12,7 +12,7 @@ $fourth_color: #fff;
   box-sizing: border-box;
   border: 0;
   font-family: 'Poppins', sans-serif;
-  background: $primary_color;
+  background: $third_color;
   overflow-x: hidden;
 }
 html {
@@ -38,7 +38,7 @@ html {
 
 }
 .logo  a{
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   font-variant-ligatures: none;
@@ -83,7 +83,7 @@ nav {
   }
 }
 li {
-  font-size:2rem;
+  font-size:2.2rem;
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   font-variant-ligatures: none;
@@ -95,13 +95,38 @@ li {
   padding: 0;
   background: transparent;
 }
-
-.hero {
-width: 100vw;
-height: 100vh;
-  display: flex;
+.first--view{
 position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transition: 0.3s ease-in; 
+}
+.hero{
+display: flex;
+  width: 100vw;
+height: 100vh;
+}
+#canvas {
+float:right;
+  width: 900px;
+  position: relative;
+  z-index: 4;
+  background:transparent;
+
+}
+.second--view{
+  color: $fourth_color;
+display: flex;
+flex-direction: column;
+position: relative;
+z-index: 3;
+margin: 0 auto;
+padding: 8rem;
+h2{
+  font-size: 4em;
+}
+p{
+font-size: 1em;
+}
 }
