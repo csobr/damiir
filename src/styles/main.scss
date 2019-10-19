@@ -12,8 +12,12 @@ $fourth_color: #fff;
   box-sizing: border-box;
   border: 0;
   font-family: 'Poppins', sans-serif;
-  background: $third_color;
   overflow-x: hidden;
+}
+body{
+  background: $third_color;
+  margin:0;
+  padding:0;
 }
 html {
   font-size: 62.5%;
@@ -107,26 +111,50 @@ display: flex;
   width: 100vw;
 height: 100vh;
 }
-#canvas {
-float:right;
-  width: 900px;
-  position: relative;
-  z-index: 4;
-  background:transparent;
-
-}
-.second--view{
+.second--view--one{
   color: $fourth_color;
 display: flex;
 flex-direction: column;
-position: relative;
 z-index: 3;
-margin: 0 auto;
-padding: 8rem;
+margin: 4%;
+position: absolute;
 h2{
   font-size: 4em;
 }
-p{
+.qoute{
 font-size: 1em;
 }
+}
+.second--view--two {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-around;
+}
+.mission{
+  flex-direction: column;
+}
+h3 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: $fourth_color;
+  padding: 2.5rem;
+  text-transform: lowercase;
+}
+.mission--text{
+  width: 677px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 36px;
+  text-align: center;
+  color: $fourth_color;
+}
+.circle{
+background: grey;
+width: 500px;
+height: 495px;
+
+border-radius: 60%;
+margin: 0;
+padding:0;
 }
