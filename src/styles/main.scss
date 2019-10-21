@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600,700&display=swap');
+@mixin flex{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
 $primary_color: #141615;
 $secondary_color:#50E0BF;
 $third_color: #000;
@@ -22,17 +27,17 @@ body{
 html {
   font-size: 62.5%;
 }
-@media (max-width: 75em) {
+@media (max-width: 75rem) {
   html {
     font-size: 56.25%;
   }
 }
-@media (max-width: 56.25em) {
+@media (max-width: 56.25rem) {
   html {
     font-size: 50%;
   }
 }
-@media (min-width: 112.5em) {
+@media (min-width: 112.5rem) {
   html {
     font-size: 75%;
   }
@@ -68,6 +73,7 @@ nav {
   position: relative;
   z-index: 2;
   background: transparent;
+  position: absolute;
   ul {
     display: flex;
     line-height: 1.45;
@@ -99,12 +105,15 @@ li {
   padding: 0;
   background: transparent;
 }
+.home {
+  min-height: 100vh;
+}
 .first--view{
-position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.3s ease-in; 
+  display: flex;
 }
 .hero{
 display: flex;
@@ -112,23 +121,23 @@ display: flex;
 height: 100vh;
 }
 .second--view--one{
-  color: $fourth_color;
+color: $fourth_color;
 display: flex;
 flex-direction: column;
 z-index: 3;
-margin: 4%;
-position: absolute;
+margin: 3%;
 h2{
-  font-size: 4em;
+  font-size: 4rem;
+  padding-left: 2rem;
 }
 .qoute{
-font-size: 1em;
+font-size: 1rem;
+padding-left: 2rem;
 }
 }
 .second--view--two {
-  margin-top: 20rem;
-  display: flex;
-  justify-content: space-around;
+  @include flex();
+  min-height: 80vh;
 }
 .mission{
   flex-direction: column;
@@ -141,20 +150,65 @@ h3 {
   text-transform: lowercase;
 }
 .mission--text{
-  width: 677px;
+  width: 67rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.8em;
-  line-height: 36px;
+  font-size: 1.8rem;
+  line-height:1.6;
   text-align: center;
   color: $fourth_color;
 }
-.circle{
-background: grey;
-width: 500px;
-height: 495px;
-
-border-radius: 60%;
+.second--view--two img{
 margin: 0;
-padding:0;
+width:60rem;
+padding:4rem;
+border-radius: 50% !important;
 }
+.third--view {
+@include flex();
+margin: 5%;
+}
+h4{
+  font-size: 5rem;
+  color: $fourth_color;
+  margin: 0;
+  padding:0;
+  text-transform: lowercase;
+}
+.story--month{
+  flex-direction: column;
+  margin: 2%;
+}
+.of--month{
+ color:$fourth_color;
+ font-size: 2rem;  
+ font-weight: 700;
+ padding-bottom: 2.8rem;
+ 
+}
+.story__company__name{
+font-size: 2rem;
+font-weight: 600;
+color: $fourth_color;
+padding-bottom: 2rem;
+}
+.story--company {
+font-weight: 300;
+width: 680px;
+color: $fourth_color;
+font-size: 2rem;
+line-height: 1.6;
+}
+.story--images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+
+}
+.fourth--view--four{
+@include flex()
+
+}
+ .fourth--view  img {
+  width: 65rem;
+ }

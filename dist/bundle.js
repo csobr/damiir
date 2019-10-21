@@ -189,7 +189,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 // Imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  background: #000;\n  overflow-x: hidden; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75em) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25em) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5em) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent; }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.first--view {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n#canvas {\n  display: flex;\n  float: right;\n  width: 900px;\n  position: relative;\n  z-index: 4;\n  background: transparent; }\n\n.second--view {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  position: relative;\n  z-index: 3;\n  margin: 0 auto;\n  padding: 8rem; }\n  .second--view h2 {\n    font-size: 4em; }\n  .second--view p {\n    font-size: 1em; }\n", ""]);
+exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  overflow-x: hidden; }\n\nbody {\n  background: #000;\n  margin: 0;\n  padding: 0; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75rem) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25rem) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5rem) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  position: absolute; }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view--one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view--one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view--one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view--two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh; }\n\n.mission {\n  flex-direction: column; }\n\nh3 {\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  padding: 2.5rem;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 67rem;\n  font-style: normal;\n  font-weight: 600;\n  font-size: 1.8rem;\n  line-height: 1.6;\n  text-align: center;\n  color: #fff; }\n\n.second--view--two img {\n  margin: 0;\n  width: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%; }\n\nh4 {\n  font-size: 5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\n.story--month {\n  flex-direction: column;\n  margin: 2%; }\n\n.of--month {\n  color: #fff;\n  font-size: 2rem;\n  font-weight: 700;\n  padding-bottom: 2.8rem; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company {\n  font-weight: 300;\n  width: 680px;\n  color: #fff;\n  font-size: 2rem;\n  line-height: 1.6; }\n\n.story--images {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 10px; }\n\n.fourth--view--four {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.fourth--view img {\n  width: 65rem; }\n", ""]);
 
 
 /***/ }),
@@ -36896,179 +36896,6 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/globe.js":
-/*!*********************************!*\
-  !*** ./src/components/globe.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Globe; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var Globe =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Globe, _Component);
-
-  function Globe() {
-    _classCallCheck(this, Globe);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Globe).apply(this, arguments));
-  }
-
-  _createClass(Globe, [{
-    key: "render",
-    value: function render() {
-      var canvas = document.createElement('canvas');
-      document.body.appendChild(canvas);
-      canvas.id = "canvas";
-      var ctx = canvas.getContext("2d");
-      var spheres = [];
-      var imgdata = [];
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      var imgWidth = 100;
-      var imgHeight = 50;
-      var screenX = canvas.width / 2;
-      var screenY = canvas.height / 2;
-      var screenScale = 1000;
-      var rotation = 0;
-      var isReadyAnimation = false;
-
-      var Vector = function Vector(x, y, z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-      };
-
-      var Particle = function Particle(x, y, z, colorsArrIndex) {
-        this.pos = new Vector(x, y, z);
-        this.posModel = new Vector(x, y, z);
-        this.GenerateColorFromImgIndex(colorsArrIndex);
-      };
-
-      Particle.prototype.GenerateColorFromImgIndex = function (i) {
-        this.r = 256 - imgdata[i * 4 + 0];
-        this.g = 256 - imgdata[i * 4 + 1];
-        this.b = imgdata[i * 4 + 2];
-        this.a = 0;
-      };
-
-      var Sphere = function Sphere(x, y, radius, numPointsX, numPointsY) {
-        this.pos = new Vector(x, y, 1);
-        this.particles = [];
-        this.GeneratePoints(x, y, radius, numPointsX, numPointsY);
-      };
-
-      function CreateColorsArr() {
-        var canvasimg = document.createElement('canvas');
-        var ctximg = canvasimg.getContext("2d");
-        var img = new Image();
-        img.crossOrigin = "";
-        img.src = "https://ucarecdn.com/684548ca-0157-4455-9fe5-9782af655cf0/worldmapsmall_bw9sas.png";
-        var ctximg = canvasimg.getContext("2d");
-
-        img.onload = function () {
-          ctximg.translate(imgWidth, imgHeight);
-          ctximg.scale(-1, -1);
-          ctximg.drawImage(img, 0, 0);
-          imgdata = ctximg.getImageData(0, 0, imgWidth, imgHeight).data;
-          ctximg.clearRect(0, 0, imgWidth, imgHeight);
-          spheres.push(new Sphere(0, 0, canvas.height / 4, imgWidth, imgHeight));
-          isReadyAnimation = true;
-        };
-      }
-
-      Sphere.prototype.GeneratePoints = function (x, y, radius, num, num2) {
-        x = x / 2;
-        y = y / 2;
-        num = Math.floor(num);
-        var angle = 2 * Math.PI / num;
-        var angle2 = Math.PI / num2;
-
-        for (var j = 0; j <= num2; j++) {
-          for (var i = 0; i < num; i++) {
-            var rx = radius * Math.cos(angle * i) * Math.sin(angle2 * j);
-            var rz = radius * Math.sin(angle * i) * Math.sin(angle2 * j);
-            var ry = radius * Math.cos(angle2 * j);
-            this.particles.push(new Particle(x + rx, y + ry, rz, j * imgWidth + i));
-          }
-        }
-      };
-
-      Sphere.prototype.RotateAxisY = function (angle) {
-        for (var i = 0; i < this.particles.length; i++) {
-          this.particles[i].posModel.x = this.particles[i].pos.x * Math.cos(angle) + this.particles[i].pos.z * -1 * Math.sin(angle);
-          this.particles[i].posModel.y = this.particles[i].pos.y;
-          this.particles[i].posModel.z = this.particles[i].pos.x * Math.sin(angle) + this.particles[i].pos.z * Math.cos(angle);
-        }
-      };
-
-      Sphere.prototype.Draw = function (ctx) {
-        ctx.beginPath();
-
-        for (var i = 0; i < this.particles.length; i++) {
-          var z = this.particles[i].posModel.z;
-          var x = this.particles[i].posModel.x * screenScale / (z * -1 + screenScale) + screenX;
-          var y = this.particles[i].posModel.y * screenScale / (z * -1 + screenScale) + screenY;
-          ;
-          var a = (this.particles[i].posModel.z + imgWidth / 2) / imgWidth;
-
-          if (a > 0.2) {
-            ctx.fillStyle = "rgba(" + this.particles[i].r + "," + this.particles[i].g + "," + this.particles[i].b + "," + a + ")";
-            ctx.fillRect(this.pos.x + x, this.pos.y + y, 2, 2);
-          }
-        }
-      };
-
-      function loop() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        if (isReadyAnimation) {
-          spheres[0].Draw(ctx);
-          spheres[0].RotateAxisY(rotation);
-          rotation += 0.01;
-        }
-
-        requestAnimationFrame(loop);
-      }
-
-      CreateColorsArr();
-      loop();
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
-    }
-  }]);
-
-  return Globe;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-
-
-/***/ }),
-
 /***/ "./src/components/home.js":
 /*!********************************!*\
   !*** ./src/components/home.js ***!
@@ -37081,9 +36908,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_impact_hero_mp4__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/impact-hero.mp4 */ "./src/img/impact-hero.mp4");
-/* harmony import */ var _img_impact_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_impact_hero_mp4__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _globe__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./globe */ "./src/components/globe.js");
+/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/hero.mp4 */ "./src/img/hero.mp4");
+/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_hero_mp4__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/earth.gif */ "./src/img/earth.gif");
+/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_earth_gif__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/cells2.gif */ "./src/img/cells2.gif");
+/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_cells2_gif__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/sunand.png */ "./src/img/sunand.png");
+/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_sunand_png__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37101,6 +36933,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -37121,20 +36955,65 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home--wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "first--view"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "hero"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         className: "videoTag",
         autoPlay: true,
         loop: true,
         muted: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-        src: _img_impact_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default.a,
+        src: _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default.a,
         type: "video/mp4"
-      })), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_globe__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "second--view"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "\u201CLook for systems, not heroes.\u201D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u2015 Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World\u2014and Why Things Are Better Than You Think")));
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "second--view  second--view--one"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "\u201CLook for systems, not heroes.\u201D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "qoute"
+      }, "\u2015 Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World\u2014and Why Things Are Better Than You Think")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "second--view second--view--two "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_earth_gif__WEBPACK_IMPORTED_MODULE_2___default.a,
+        alt: "earth"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "mission"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Mission"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "mission--text"
+      }, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "third--view third--view--three "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "story--month"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Company of the month "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "of--month"
+      }, "CELLINK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "story__company__name"
+      }, "The first bioink company in the world"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "story--company"
+      }, "CELLINK designs and develops bioprinting technologies that enable researchers to 3D print organs and tissue for applications that span industries, from pharmaceutical to cosmetic. Our patent-pending bioink is a biomaterial innovation that allows human cells to grow and thrive as they would in their natural environment. Researchers leverage our technologies to print liver, cartilage, skin tissues and more. Join us on our journey to change the future of medicine.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "story--images"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        alt: "cell"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        alt: "cell"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        alt: "cell"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        alt: "cell"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fourth--view fourth--view--four"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "company--selection"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _img_sunand_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+        alt: "sky",
+        className: "sky"
+      }))));
     }
   }]);
 
@@ -37216,14 +37095,47 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/img/impact-hero.mp4":
-/*!*********************************!*\
-  !*** ./src/img/impact-hero.mp4 ***!
-  \*********************************/
+/***/ "./src/img/cells2.gif":
+/*!****************************!*\
+  !*** ./src/img/cells2.gif ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "videos/impact-hero.mp4";
+module.exports = __webpack_require__.p + "1a6576a2835499371a46737d69269c25.gif";
+
+/***/ }),
+
+/***/ "./src/img/earth.gif":
+/*!***************************!*\
+  !*** ./src/img/earth.gif ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "add8d24c7a9067ecf85d953c8ecdc660.gif";
+
+/***/ }),
+
+/***/ "./src/img/hero.mp4":
+/*!**************************!*\
+  !*** ./src/img/hero.mp4 ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "videos/hero.mp4";
+
+/***/ }),
+
+/***/ "./src/img/sunand.png":
+/*!****************************!*\
+  !*** ./src/img/sunand.png ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "56f9259f0bf1a88b979492e1aea7e98b.png";
 
 /***/ }),
 
