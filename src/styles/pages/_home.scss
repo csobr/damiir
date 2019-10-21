@@ -1,0 +1,110 @@
+
+@import '../theme/color';
+@import '../abstracts/mixins';
+  .home {
+    min-height: 100vh;
+  }
+  .first--view{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.3s ease-in; 
+    display: flex;
+  }
+  .hero{
+  display: flex;
+    width: 100vw;
+  height: 100vh;
+  }
+  .second--view--one{
+  color: $fourth_color;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  margin: 3%;
+  h2{
+    font-size: 4rem;
+    padding-left: 2rem;
+  }
+  .qoute{
+  font-size: 1rem;
+  padding-left: 2rem;
+  }
+  }
+  .second--view--two {
+    @include flex();
+    min-height: 80vh;
+  }
+  .mission{
+    flex-direction: column;
+  }
+  h3 {
+    font-size: 4.5rem;
+    text-align: center;
+    color: $fourth_color;
+    padding: 2.5rem;
+    text-transform: lowercase;
+  }
+  .mission--text{
+    width: 67rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height:1.6;
+    text-align: center;
+    color: $fourth_color;
+  }
+  .second--view--two img{
+  margin: 0;
+  width:60rem;
+  padding:4rem;
+  border-radius: 50% !important;
+  }
+  .third--view {
+  @include flex();
+  margin: 5%;
+  }
+  h4{
+    font-size: 5rem;
+    color: $fourth_color;
+    margin: 0;
+    padding:0;
+    text-transform: lowercase;
+  }
+  .story--month{
+    flex-direction: column;
+    margin: 2%;
+  }
+  .of--month{
+   color:$fourth_color;
+   font-size: 2rem;  
+   font-weight: 700;
+   padding-bottom: 2.8rem;
+   
+  }
+  .story__company__name{
+  font-size: 2rem;
+  font-weight: 600;
+  color: $fourth_color;
+  padding-bottom: 2rem;
+  }
+  .story--company {
+  font-weight: 300;
+  width: 680px;
+  color: $fourth_color;
+  font-size: 2rem;
+  line-height: 1.6;
+  }
+  .story--images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  
+  }
+  .fourth--view--four{
+  @include flex()
+  
+  }
+   .fourth--view  img {
+    width: 65rem;
+   }

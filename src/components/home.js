@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import '../styles/pages/_home.scss'
 import sample from "../img/hero.mp4"
 import earth from "../img/earth.gif"
 import storyImg from "../img/cells2.gif"

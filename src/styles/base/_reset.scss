@@ -1,0 +1,38 @@
+@import '../theme/color';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+body{
+  background: $third_color;
+  margin:0;
+  padding:0;
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5rem) {
+  html {
+    font-size: 75%;
+  }
+}
+.site--wrapper {
+  min-height: 100%;
+
+}

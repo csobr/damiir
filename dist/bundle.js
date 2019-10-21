@@ -194,6 +194,20 @@ exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view--one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view--one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view--one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view--two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh; }\n\n.mission {\n  flex-direction: column; }\n\nh3 {\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  padding: 2.5rem;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 67rem;\n  font-style: normal;\n  font-weight: 600;\n  font-size: 1.8rem;\n  line-height: 1.6;\n  text-align: center;\n  color: #fff; }\n\n.second--view--two img {\n  margin: 0;\n  width: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%; }\n\nh4 {\n  font-size: 5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\n.story--month {\n  flex-direction: column;\n  margin: 2%; }\n\n.of--month {\n  color: #fff;\n  font-size: 2rem;\n  font-weight: 700;\n  padding-bottom: 2.8rem; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company {\n  font-weight: 300;\n  width: 680px;\n  color: #fff;\n  font-size: 2rem;\n  line-height: 1.6; }\n\n.story--images {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 10px; }\n\n.fourth--view--four {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.fourth--view img {\n  width: 65rem; }\n", ""]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -36908,14 +36922,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/hero.mp4 */ "./src/img/hero.mp4");
-/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_hero_mp4__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/earth.gif */ "./src/img/earth.gif");
-/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_earth_gif__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/cells2.gif */ "./src/img/cells2.gif");
-/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_cells2_gif__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/sunand.png */ "./src/img/sunand.png");
-/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_sunand_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/pages/_home.scss */ "./src/styles/pages/_home.scss");
+/* harmony import */ var _styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/hero.mp4 */ "./src/img/hero.mp4");
+/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_hero_mp4__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/earth.gif */ "./src/img/earth.gif");
+/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_earth_gif__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/cells2.gif */ "./src/img/cells2.gif");
+/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_cells2_gif__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/sunand.png */ "./src/img/sunand.png");
+/* harmony import */ var _img_sunand_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_sunand_png__WEBPACK_IMPORTED_MODULE_5__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -36933,6 +36949,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -36966,7 +36983,7 @@ function (_Component) {
         loop: true,
         muted: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-        src: _img_hero_mp4__WEBPACK_IMPORTED_MODULE_1___default.a,
+        src: _img_hero_mp4__WEBPACK_IMPORTED_MODULE_2___default.a,
         type: "video/mp4"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "second--view  second--view--one"
@@ -36975,7 +36992,7 @@ function (_Component) {
       }, "\u2015 Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World\u2014and Why Things Are Better Than You Think")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "second--view second--view--two "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_earth_gif__WEBPACK_IMPORTED_MODULE_2___default.a,
+        src: _img_earth_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
         alt: "earth"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mission"
@@ -36994,23 +37011,23 @@ function (_Component) {
       }, "CELLINK designs and develops bioprinting technologies that enable researchers to 3D print organs and tissue for applications that span industries, from pharmaceutical to cosmetic. Our patent-pending bioink is a biomaterial innovation that allows human cells to grow and thrive as they would in their natural environment. Researchers leverage our technologies to print liver, cartilage, skin tissues and more. Join us on our journey to change the future of medicine.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "story--images"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "cell"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "cell"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "cell"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_3___default.a,
+        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "cell"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fourth--view fourth--view--four"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "company--selection"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_sunand_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+        src: _img_sunand_png__WEBPACK_IMPORTED_MODULE_5___default.a,
         alt: "sky",
         className: "sky"
       }))));
@@ -37182,6 +37199,33 @@ options.insert = "head";
 options.singleton = false;
 
 var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/styles/pages/_home.scss":
+/*!*************************************!*\
+  !*** ./src/styles/pages/_home.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./_home.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
 if (content.locals) {
   module.exports = content.locals;
