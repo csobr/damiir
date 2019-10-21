@@ -34,9 +34,11 @@
   .second--view--two {
     @include flex();
     min-height: 80vh;
+    margin: 3%;
+   
   }
   .mission{
-    flex-direction: column;
+ flex-direction: column ;
   }
   h3 {
     font-size: 4.5rem;
@@ -46,17 +48,17 @@
     text-transform: lowercase;
   }
   .mission--text{
-    width: 67rem;
-    font-style: normal;
-    font-weight: 600;
+    width:60rem;
+    font-weight: 300;
     font-size: 1.8rem;
-    line-height:1.6;
-    text-align: center;
+    line-height:2.2;
+  
     color: $fourth_color;
   }
   .second--view--two img{
   margin: 0;
   width:60rem;
+  height: 60rem;
   padding:4rem;
   border-radius: 50% !important;
   }
@@ -64,12 +66,16 @@
   @include flex();
   margin: 5%;
   }
-  h4{
+  h4,h5{
     font-size: 5rem;
     color: $fourth_color;
     margin: 0;
     padding:0;
     text-transform: lowercase;
+  }
+  h5{
+  color: $fifth_color;
+  margin-left: 10rem;
   }
   .story--month{
     flex-direction: column;
@@ -93,7 +99,7 @@
   width: 680px;
   color: $fourth_color;
   font-size: 2rem;
-  line-height: 1.6;
+  line-height: 1.8;
   }
   .story--images{
     display: grid;
@@ -102,9 +108,29 @@
   
   }
   .fourth--view--four{
-  @include flex()
-  
+    min-height: 100vh;
   }
-   .fourth--view  img {
-    width: 65rem;
+  .company--selection{
+    float: right;
+  }
+   .sky{
+    width: 60rem;
+  
+    
    }
+#fly{
+  width:15rem;
+  position: absolute;
+  transform: translateX(-10px);
+  animation: move linear 10s infinite alternate;
+  animation-direction: reverse;
+  animation-timing-function: ease-in-out
+}
+@keyframes move {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(calc(30vw - (-10px)));
+  }
+}

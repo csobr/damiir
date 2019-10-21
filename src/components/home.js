@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import '../styles/pages/_home.scss'
-import sample from "../img/hero.mp4"
-import earth from "../img/earth.gif"
-import storyImg from "../img/cells2.gif"
-import sky from '../img/sunand.png'
-
+import React, { Component } from "react";
+import "../styles/pages/_home.scss";
+import sample from "../img/hero.mp4";
+import earth from "../img/earth.gif";
+import storyImg from "../img/cells2.gif";
+import sky from "../img/sunand.png";
+import fly from "../img/ katemangostar.png";
 
 export default class Home extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class Home extends Component {
           </p>
         </div>
         <div className="second--view second--view--two ">
-          <img src= {earth} alt = "earth"/>
+          <img src={earth} alt="earth" />
           <div className="mission">
             <h3>Mission</h3>
 
@@ -60,15 +60,18 @@ export default class Home extends Component {
             </p>
           </div>
           <div className="story--images">
-          <img src={storyImg}alt = "cell"/>
-            <img src={storyImg} alt = "cell"/>
-            <img src={storyImg}alt = "cell"/>
-            <img src={storyImg}alt = "cell"/>
+            <img src={storyImg} alt="cell" />
+            <img src={storyImg} alt="cell" />
+            <img src={storyImg} alt="cell" />
+            <img src={storyImg} alt="cell" />
           </div>
         </div>
         <div className="fourth--view fourth--view--four">
-          <div className = "company--selection">
-            <img src={sky} alt = "sky" className="sky"  />
+         
+          <h5>Select filed</h5>
+          <div className="company--selection">
+            <img src={fly} alt="fly" id="fly" />
+            <img src={sky} alt="sky" className="sky" />
           </div>
         </div>
       </div>
