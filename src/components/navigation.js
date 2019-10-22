@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
 export default class Navbar extends Component {
     render() {
@@ -8,21 +8,21 @@ export default class Navbar extends Component {
       
               <ul>
                   <li>
-                      <Link to = "/">About</Link>
+                      <Link to = "/about" activeClassName='active'>About</Link>
 
                   </li>
                   <li>
-                      <Link to = "/companies">Companies</Link>
+                      <Link to = "/companies" activeClassName='active'>Companies</Link>
 
                   </li>    
                   <li className = "logo">
-                  <Link to = "/">Impact.</Link> </li>
+                  <Link to = "/" activeClassName='active'>Impact.</Link> </li>
                   <li>
                       <Link to = "/field">Change</Link>
 
                   </li>
                     <li>
-                      <Link to = "/field">Contact</Link>
+                      <Link to = "/r" activeClassName="active">Contact</Link>
 
                   </li>
               </ul>

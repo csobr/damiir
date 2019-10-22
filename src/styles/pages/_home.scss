@@ -66,6 +66,7 @@ h3 {
 .third--view {
   @include flex();
   margin: 5%;
+  background: $primary_color;
 }
 h4,
 h5 {
@@ -85,8 +86,13 @@ h5 {
   @include flexCenter();
   flex-direction: column;
   margin: 2%;
+  width: 60rem;
 }
-.of--month {
+.story--month-feature{
+  color: $fourth_color;
+  text-transform: lowercase;
+}
+.story--of__month {
   color: $fourth_color;
   font-size: 2rem;
   font-weight: 700;
@@ -100,14 +106,16 @@ h5 {
 }
 .story--company {
   font-weight: 300;
-  width: 680px;
+
   color: $fourth_color;
   font-size: 2rem;
   line-height: 1.8;
 }
 .story--images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include flexCenter ();
+  flex-direction: row;
+  flex-flow:  row wrap;
+    width: 60rem;
 }
 .story--images img {
 width: 25rem;
@@ -142,16 +150,15 @@ height: 25rem;
   }
 }
 .select--field {
- @include flexCenter ();
   flex-direction: row;
   flex-flow:  row wrap;
     height: 55rem;
-    width: 60rem;
+    width: 50rem;
 }
 .select--item {
   margin: 1rem;
-  height: 15rem;
-  width: 15rem;
+  height: 14rem;
+  width: 14rem;
   font-weight: 700;
   font-size: 1.4rem;
   color: $fourth_color;
@@ -162,14 +169,18 @@ height: 25rem;
   transition: all .2s ease-in-out;
   text-transform: lowercase;
   &:hover{
-    transform: scale(1.1)
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+      }
   }
-}
 
 .select--item-green{
-  border: 5px solid $sixth_color; 
+  border: 3px solid $sixth_color; 
+  // box-shadow: 0px 2px 6px 2px $sixth_color ;
+
 }
 .select--item-pink{
-border: 5px solid $fifth_color;
+border: 3px solid $fifth_color;
+// box-shadow: 0px 2px 6px 2px $fifth_color;
 
 }

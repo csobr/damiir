@@ -3,8 +3,7 @@ import "../styles/pages/_home.scss";
 import sample from "../img/hero.mp4";
 import earth from "../img/earth.gif";
 import storyImg from "../img/cells2.gif";
-import sky from "../img/sunand.png";
-import fly from "../img/ katemangostar.png";
+import storyImg1 from "../img/cells1.gif";
 
 export default class Home extends Component {
   render() {
@@ -43,8 +42,9 @@ export default class Home extends Component {
         </div>
         <div className="third--view third--view-three ">
           <div className="story--month">
-            <h4>Company of the month </h4>
-            <p className="of--month">CELLINK</p>
+            <p className = "story--month-feature">Company of the month</p>
+            <h4>This month </h4>
+            <p className="story--of__month">CELLINK</p>
             <p className="story__company__name">
               The first bioink company in the world
             </p>
@@ -61,26 +61,24 @@ export default class Home extends Component {
           </div>
           <div className="story--images">
             <img src={storyImg} alt="cell" />
+            <img src={storyImg1} alt="cell" />
             <img src={storyImg} alt="cell" />
-            <img src={storyImg} alt="cell" />
-            <img src={storyImg} alt="cell" />
+            <img src={storyImg1} alt="cell" />
           </div>
-        </div> <h5>Select filed</h5> 
+        </div> <h5>Select field</h5> 
         <div className="fourth--view fourth--view-four">
-          <div className="company--selection"> 
+          <div className="company--selection" aos = "fade"> 
             <div className="select--field" >
-            <button type ="button"  className = "select--item select--item-green">Privacy</button>
-            <button type ="button" className = "select--item select--item-pink">Privacy</button>
-            <button type ="button"  className = "select--item select--item-green">Privacy</button>
-            <button type ="button" className = "select--item select--item-pink">Privacy</button>
-            <button type ="button" className = "select--item select--item-green">Privacy</button>
-            <button type ="button" className = "select--item select--item-pink">Privacy</button>
-            <button type ="button" className = "select--item select--item-green">Privacy</button>
-            <button type ="button" className = "select--item select--item-pink">Privacy</button>
-            <button type ="button" className = "select--item select--item-green">Privacy</button>
+            <button type ="button"  className = "select--item select--item-green">Healthcare</button>
+            <button type ="button" className = "select--item select--item-pink">Security</button>
+            <button type ="button"  className = "select--item select--item-green">Enviroment</button>
+            <button type ="button" className = "select--item select--item-pink">	Education</button>
+            <button type ="button" className = "select--item select--item-green">Economics</button>
+            <button type ="button" className = "select--item select--item-pink">Law</button>
+            <button type ="button" className = "select--item select--item-green">Politics</button>
+            <button type ="button" className = "select--item select--item-pink">Social impact</button>
+            <button type ="button" className = "select--item select--item-green">Communications</button>
             </div>
-            <img src={fly} alt="fly" id="fly" />
-            <img src={sky} alt="sky" className="sky" />
  
           </div>
         </div>

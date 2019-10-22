@@ -43,6 +43,11 @@
       color:$fourth_color;
       text-decoration: none;
       background: transparent;
+      &:hover{
+      color: $sixth_color;
+        transform: scale(1.1);
+        transition: 2s ease-out;
+      }
     }
   }
   li {
@@ -58,3 +63,7 @@
     padding: 0;
     background: transparent;
   }
+
+.active{
+color: $sixth_color;
+}
