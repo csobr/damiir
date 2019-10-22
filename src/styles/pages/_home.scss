@@ -15,7 +15,7 @@
   width: 100vw;
   height: 100vh;
 }
-.second--view--one {
+.second--view-one {
   color: $fourth_color;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
     padding-left: 2rem;
   }
 }
-.second--view--two {
+.second--view-two {
   @include flex();
   min-height: 80vh;
   margin: 7%;
@@ -56,7 +56,7 @@ h3 {
   line-height: 2.2;
   color: $fourth_color;
 }
-.second--view--two img {
+.second--view-two img {
   margin: 0;
   width: 60rem;
   height: 60rem;
@@ -69,7 +69,7 @@ h3 {
 }
 h4,
 h5 {
-  font-size: 5rem;
+  font-size: 5.5rem;
   color: $fourth_color;
   margin: 0;
   padding: 0;
@@ -77,7 +77,9 @@ h5 {
 }
 h5 {
   color: $fifth_color;
-  margin-left: 10rem;
+  margin:2rem;
+  padding-left:8rem;
+
 }
 .story--month {
   @include flexCenter();
@@ -111,42 +113,63 @@ h5 {
 width: 25rem;
 height: 25rem;
 }
-.fourth--view--four {
+.fourth--view-four {
+  @include flexCenter();
   min-height: 100vh;
+  width: 100%;
 }
 .company--selection {
-  float: right;
+@include flex();
 }
 .sky {
   width: 60rem;
+  height: 55rem;
 }
 #fly {
   width: 15rem;
   position: absolute;
-  transform: translateX(-10px);
+  transform: translateX(-300px);
   animation: move linear 10s infinite alternate;
   animation-direction: reverse;
   animation-timing-function: ease-in-out;
 }
 @keyframes move {
   0% {
-    transform: translateX(10px);
+    transform: translateX(300px);
   }
   100% {
-    transform: translateX(calc(30vw - (-10px)));
+    transform: translateX(calc(15vw - (-300px)));
   }
 }
 .select--field {
-@include flexCenter();
+ @include flexCenter ();
+  flex-direction: row;
+  flex-flow:  row wrap;
+    height: 55rem;
+    width: 60rem;
 }
-#select--item {
+.select--item {
+  margin: 1rem;
   height: 15rem;
   width: 15rem;
   font-weight: 700;
   font-size: 1.4rem;
   color: $fourth_color;
   background: transparent;
-  border: 3px solid #ff9ae3;
   box-sizing: border-box;
   border-radius: 50%;
+  outline: none;
+  transition: all .2s ease-in-out;
+  text-transform: lowercase;
+  &:hover{
+    transform: scale(1.1)
+  }
+}
+
+.select--item-green{
+  border: 5px solid $sixth_color; 
+}
+.select--item-pink{
+border: 5px solid $fifth_color;
+
 }

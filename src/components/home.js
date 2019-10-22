@@ -19,14 +19,14 @@ export default class Home extends Component {
           </div>
         </div>
 
-        <div className="second--view  second--view--one">
+        <div className="second--view  second--view-one">
           <h2>“Look for systems, not heroes.”</h2>
           <p className="qoute">
             ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
             World—and Why Things Are Better Than You Think
           </p>
         </div>
-        <div className="second--view second--view--two ">
+        <div className="second--view second--view-two ">
           <img src={earth} alt="earth" />
           <div className="mission">
             <h3>Mission</h3>
@@ -41,7 +41,7 @@ export default class Home extends Component {
             </p>
           </div>
         </div>
-        <div className="third--view third--view--three ">
+        <div className="third--view third--view-three ">
           <div className="story--month">
             <h4>Company of the month </h4>
             <p className="of--month">CELLINK</p>
@@ -65,16 +65,23 @@ export default class Home extends Component {
             <img src={storyImg} alt="cell" />
             <img src={storyImg} alt="cell" />
           </div>
-        </div>
-        <div className="fourth--view fourth--view--four">
-         
-          <h5>Select filed</h5>
-          <div className="company--selection">
-            <div className="select--field">
-            <button type ="button" id = "select--item">Privacy</button>
+        </div> <h5>Select filed</h5> 
+        <div className="fourth--view fourth--view-four">
+          <div className="company--selection"> 
+            <div className="select--field" >
+            <button type ="button"  className = "select--item select--item-green">Privacy</button>
+            <button type ="button" className = "select--item select--item-pink">Privacy</button>
+            <button type ="button"  className = "select--item select--item-green">Privacy</button>
+            <button type ="button" className = "select--item select--item-pink">Privacy</button>
+            <button type ="button" className = "select--item select--item-green">Privacy</button>
+            <button type ="button" className = "select--item select--item-pink">Privacy</button>
+            <button type ="button" className = "select--item select--item-green">Privacy</button>
+            <button type ="button" className = "select--item select--item-pink">Privacy</button>
+            <button type ="button" className = "select--item select--item-green">Privacy</button>
+            </div>
             <img src={fly} alt="fly" id="fly" />
             <img src={sky} alt="sky" className="sky" />
-             </div>
+ 
           </div>
         </div>
       </div>
