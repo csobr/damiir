@@ -1,130 +1,132 @@
-
-@import '../theme/color';
-@import '../abstracts/mixins';
-  .home {
-    min-height: 100vh;
-  }
-  .first--view{
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: 0.3s ease-in; 
-    display: flex;
-  }
-  .hero{
+@import "../theme/color";
+@import "../abstracts/mixins";
+.home {
+  min-height: 100vh;
+}
+.first--view {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
   display: flex;
-    width: 100vw;
+}
+.hero {
+  display: flex;
+  width: 100vw;
   height: 100vh;
-  }
-  .second--view--one{
+}
+.second--view--one {
   color: $fourth_color;
   display: flex;
   flex-direction: column;
   z-index: 3;
   margin: 3%;
-  h2{
+  h2 {
     font-size: 4rem;
     padding-left: 2rem;
   }
-  .qoute{
-  font-size: 1rem;
-  padding-left: 2rem;
+  .qoute {
+    font-size: 1rem;
+    padding-left: 2rem;
   }
-  }
-  .second--view--two {
-    @include flex();
-    min-height: 80vh;
-    margin: 3%;
-   
-  }
-  .mission{
- flex-direction: column ;
-  }
-  h3 {
-    font-size: 4.5rem;
-    text-align: center;
-    color: $fourth_color;
-    padding: 2.5rem;
-    text-transform: lowercase;
-  }
-  .mission--text{
-    width:60rem;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height:2.2;
-  
-    color: $fourth_color;
-  }
-  .second--view--two img{
+}
+.second--view--two {
+  @include flex();
+  min-height: 80vh;
+  margin: 7%;
+}
+.mission {
+  flex-direction: column;
+  height: 50rem;
+  @include flexCenter();
+}
+h3 {
+  padding: 1.8rem;
+  font-size: 4.5rem;
+  text-align: center;
+  color: $fourth_color;
+  text-transform: lowercase;
+}
+.mission--text {
+  width: 60rem;
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.2;
+  color: $fourth_color;
+}
+.second--view--two img {
   margin: 0;
-  width:60rem;
+  width: 60rem;
   height: 60rem;
-  padding:4rem;
+  padding: 4rem;
   border-radius: 50% !important;
-  }
-  .third--view {
+}
+.third--view {
   @include flex();
   margin: 5%;
-  }
-  h4,h5{
-    font-size: 5rem;
-    color: $fourth_color;
-    margin: 0;
-    padding:0;
-    text-transform: lowercase;
-  }
-  h5{
+}
+h4,
+h5 {
+  font-size: 5rem;
+  color: $fourth_color;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+h5 {
   color: $fifth_color;
   margin-left: 10rem;
-  }
-  .story--month{
-    flex-direction: column;
-    margin: 2%;
-  }
-  .of--month{
-   color:$fourth_color;
-   font-size: 2rem;  
-   font-weight: 700;
-   padding-bottom: 2.8rem;
-   
-  }
-  .story__company__name{
+}
+.story--month {
+  @include flexCenter();
+  flex-direction: column;
+  margin: 2%;
+}
+.of--month {
+  color: $fourth_color;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 2.8rem;
+}
+.story__company__name {
   font-size: 2rem;
   font-weight: 600;
   color: $fourth_color;
   padding-bottom: 2rem;
-  }
-  .story--company {
+}
+.story--company {
   font-weight: 300;
   width: 680px;
   color: $fourth_color;
   font-size: 2rem;
   line-height: 1.8;
-  }
-  .story--images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  
-  }
-  .fourth--view--four{
-    min-height: 100vh;
-  }
-  .company--selection{
-    float: right;
-  }
-   .sky{
-    width: 60rem;
-  
-    
-   }
-#fly{
-  width:15rem;
+}
+.story--images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story--images img {
+width: 25rem;
+height: 25rem;
+}
+.fourth--view--four {
+  min-height: 100vh;
+}
+.company--selection {
+  float: right;
+}
+.sky {
+  width: 60rem;
+}
+#fly {
+  width: 15rem;
   position: absolute;
   transform: translateX(-10px);
   animation: move linear 10s infinite alternate;
   animation-direction: reverse;
-  animation-timing-function: ease-in-out
+  animation-timing-function: ease-in-out;
 }
 @keyframes move {
   0% {
@@ -133,4 +135,18 @@
   100% {
     transform: translateX(calc(30vw - (-10px)));
   }
+}
+.select--field {
+@include flexCenter();
+}
+#select--item {
+  height: 15rem;
+  width: 15rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: $fourth_color;
+  background: transparent;
+  border: 3px solid #ff9ae3;
+  box-sizing: border-box;
+  border-radius: 50%;
 }

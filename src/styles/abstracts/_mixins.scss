@@ -3,3 +3,7 @@
     justify-content: space-around;
     flex-flow: wrap;
   }
+  @mixin flexCenter{
+    display: flex;
+     justify-content: center;
+  }

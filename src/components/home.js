@@ -70,8 +70,11 @@ export default class Home extends Component {
          
           <h5>Select filed</h5>
           <div className="company--selection">
+            <div className="select--field">
+            <button type ="button" id = "select--item">Privacy</button>
             <img src={fly} alt="fly" id="fly" />
             <img src={sky} alt="sky" className="sky" />
+             </div>
           </div>
         </div>
       </div>
