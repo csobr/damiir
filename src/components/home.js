@@ -42,7 +42,7 @@ export default class Home extends Component {
         </div>
         <div className="third--view third--view-three ">
           <div className="story--month">
-            <p className = "story--month-feature">Company of the month</p>
+            <p className="story--month-feature">Company of the month</p>
             <h4>This month </h4>
             <p className="story--of__month">CELLINK</p>
             <p className="story__company__name">
@@ -65,21 +65,49 @@ export default class Home extends Component {
             <img src={storyImg} alt="cell" />
             <img src={storyImg1} alt="cell" />
           </div>
-        </div> <h5>Select field</h5> 
+        </div>
         <div className="fourth--view fourth--view-four">
-          <div className="company--selection" aos = "fade"> 
-            <div className="select--field" >
-            <button type ="button"  className = "select--item select--item-green">Healthcare</button>
-            <button type ="button" className = "select--item select--item-pink">Security</button>
-            <button type ="button"  className = "select--item select--item-green">Enviroment</button>
-            <button type ="button" className = "select--item select--item-pink">	Education</button>
-            <button type ="button" className = "select--item select--item-green">Economics</button>
-            <button type ="button" className = "select--item select--item-pink">Law</button>
-            <button type ="button" className = "select--item select--item-green">Politics</button>
-            <button type ="button" className = "select--item select--item-pink">Social impact</button>
-            <button type ="button" className = "select--item select--item-green">Communications</button>
+          <h5>Select field</h5>
+          <div className="company--selection">
+            <div className="select--field">
+              <button type="button" className="select--item select--item-green">
+                Healthcare
+              </button>
+              <button type="button" className="select--item select--item-pink">
+                Security
+              </button>
+              <button type="button" className="select--item select--item-green">
+                Enviroment
+              </button>
+              <button type="button" className="select--item select--item-pink">
+                {" "}
+                Education
+              </button>
+              <button type="button" className="select--item select--item-green">
+                Economics
+              </button>
+              <button type="button" className="select--item select--item-pink">
+                Law
+              </button>
+              <button type="button" className="select--item select--item-green">
+                Politics
+              </button>
+              <button type="button" className="select--item select--item-pink">
+                Social impact
+              </button>
+              <button type="button" className="select--item select--item-green">
+                Communications
+              </button>
             </div>
- 
+            <div className="field--info">
+              <h6>But first!</h6>
+              <p>
+                Let’s play a game called: Mission failed!{"\n"}
+                You will be presented with a couple famous mission statment your task is to guess what
+                company said what.
+              </p>
+              <button type = "sumbit" id = "start">Start</button>
+            </div>
           </div>
         </div>
       </div>
