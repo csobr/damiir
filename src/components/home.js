@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import {Helmet} from "react-helmet";
 import "../styles/pages/_home.scss"
 import sample from "../img/hero.mp4"
 import earth from "../img/earth.gif"
@@ -6,10 +7,16 @@ import storyImg from "../img/cells2.gif"
 import storyImg1 from "../img/cells1.gif"
 import Toggle from "./toggle"
 
-
 export default class Home extends Component {
   render() {
-    return (
+   
+    return ( 
+    <div>
+    <Helmet>
+    <title>Home</title>
+    <meta name="description" content="sleep good at night" />
+    <meta name="keywords" content="work for a good company" />
+  </Helmet>
       <div className="home--wrapper">
         <div className="first--view">
           <div className="hero">
@@ -72,6 +79,7 @@ export default class Home extends Component {
           <h5>Select field</h5>
           <Toggle />
         </div>
+      </div>
       </div>
     );
   }
