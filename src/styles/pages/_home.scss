@@ -84,6 +84,7 @@ h6{
   color: $fifth_color;
   text-align: center;
   font-size: 5rem;
+  text-transform: uppercase;
 
 }
 .story--month {
@@ -166,13 +167,14 @@ border: 3px solid $fifth_color;
 // box-shadow: 0px 2px 6px 2px $fifth_color;
 
 }
-.field--info{
+#field--info{
    height: 55rem;
     width: 90rem;
 background: #FFF975;
 
+
 }
-.field--info p{
+#field--info p{
   color: $fifth_color;
   font-size: 3.2rem;
 line-height: 2;
@@ -183,11 +185,12 @@ text-align: center;
 }
 #start{
  display: flex;
+ font-weight: 700;
  justify-content: center;
   width: 23rem;
   height: 7rem;
   background: #B4FF9A;
   margin: 0 auto; 
   font-size: 2rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }

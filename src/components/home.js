@@ -1,9 +1,11 @@
-import React, { Component } from "react";
-import "../styles/pages/_home.scss";
-import sample from "../img/hero.mp4";
-import earth from "../img/earth.gif";
-import storyImg from "../img/cells2.gif";
-import storyImg1 from "../img/cells1.gif";
+import React, { Component } from "react"
+import "../styles/pages/_home.scss"
+import sample from "../img/hero.mp4"
+import earth from "../img/earth.gif"
+import storyImg from "../img/cells2.gif"
+import storyImg1 from "../img/cells1.gif"
+import Toggle from "./toggle"
+
 
 export default class Home extends Component {
   render() {
@@ -68,49 +70,11 @@ export default class Home extends Component {
         </div>
         <div className="fourth--view fourth--view-four">
           <h5>Select field</h5>
-          <div className="company--selection">
-            <div className="select--field">
-              <button type="button" className="select--item select--item-green">
-                Healthcare
-              </button>
-              <button type="button" className="select--item select--item-pink">
-                Security
-              </button>
-              <button type="button" className="select--item select--item-green">
-                Enviroment
-              </button>
-              <button type="button" className="select--item select--item-pink">
-                {" "}
-                Education
-              </button>
-              <button type="button" className="select--item select--item-green">
-                Economics
-              </button>
-              <button type="button" className="select--item select--item-pink">
-                Law
-              </button>
-              <button type="button" className="select--item select--item-green">
-                Politics
-              </button>
-              <button type="button" className="select--item select--item-pink">
-                Social impact
-              </button>
-              <button type="button" className="select--item select--item-green">
-                Communications
-              </button>
-            </div>
-            <div className="field--info">
-              <h6>But first!</h6>
-              <p>
-                Let’s play a game called: Mission failed!{"\n"}
-                You will be presented with a couple famous mission statment your task is to guess what
-                company said what.
-              </p>
-              <button type = "sumbit" id = "start">Start</button>
-            </div>
-          </div>
+          <Toggle />
         </div>
       </div>
     );
   }
+  
+
 }
