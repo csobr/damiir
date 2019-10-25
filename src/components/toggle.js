@@ -65,7 +65,7 @@ export default () => {
         <input type="button" onClick={() => setShowField(!showField)} />
 
         <label for="socialimpact" className="select--item select--item-pink">
-          {" "}
+       
           Social impact
         </label>
         <input
@@ -92,10 +92,13 @@ export default () => {
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="sumbmit" id="start">
+            <button type="submit" id="start" onClick="document.getElementById('field--info').style.display = 'none' ;" >
               Start
-            </button>
-          </div>
+            </button> </div>
+            <div id="quiz"></div>
+            <button id="submit--quiz">Submit Quiz</button>
+            <div id="results"></div>
+         
         </div>
       )}
     </div>
