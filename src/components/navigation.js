@@ -16,7 +16,7 @@ export default class Navbar extends Component {
 
                   </li>    
                   <li className = "logo">
-                  <Link to = "/" activeClassName='active'>Impact.</Link> </li>
+                  <Link to = "/" activeClassName='active'>damiir</Link> </li>
                   <li>
                       <Link to = "/field">Change</Link>
 

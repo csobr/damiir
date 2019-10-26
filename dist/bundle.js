@@ -189,7 +189,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 // Imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  overflow-x: hidden;\n  font-style: normal; }\n\nbody {\n  background: #000;\n  margin: 0;\n  padding: 0;\n  font-style: normal; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75rem) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25rem) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5rem) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  position: absolute; }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n    nav a:hover {\n      color: #B4FF9A;\n      transform: scale(1.1);\n      transition: 2s ease-out; }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.active {\n  color: #B4FF9A; }\n\n.home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  flex-direction: column;\n  height: 50rem;\n  display: flex;\n  justify-content: center;\n  align-content: center; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.8rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #141615; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story--of__month {\n  color: #fff;\n  font-size: 2rem;\n  font-weight: 700;\n  padding-bottom: 2.8rem; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company {\n  font-weight: 300;\n  color: #fff;\n  font-size: 2rem;\n  line-height: 1.8; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 25rem;\n  height: 25rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  height: 55rem;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 3px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 3px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
+exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  overflow-x: hidden;\n  font-style: normal; }\n\nbody {\n  background: #050505;\n  margin: 0;\n  padding: 0;\n  font-style: normal; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75rem) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25rem) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5rem) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  position: absolute; }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n    nav a:hover {\n      color: #B4FF9A;\n      transform: scale(1.1);\n      transition: 2s ease-out; }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.active {\n  color: #FF91C9; }\n\nfooter {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  background: #000;\n  padding: 4rem;\n  bottom: 0; }\n  footer p {\n    color: #fff; }\n\n.home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-flow: column;\n  height: 50rem;\n  width: auto; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.6rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #000; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company__text {\n  font-weight: 300;\n  color: #fff;\n  font-size: 1.6rem;\n  line-height: 2;\n  white-space: pre-wrap; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 45rem;\n  padding: 1.4rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 6px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 6px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
 
 
 /***/ }),
@@ -203,7 +203,7 @@ exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  flex-direction: column;\n  height: 50rem;\n  display: flex;\n  justify-content: center;\n  align-content: center; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.8rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #141615; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story--of__month {\n  color: #fff;\n  font-size: 2rem;\n  font-weight: 700;\n  padding-bottom: 2.8rem; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company {\n  font-weight: 300;\n  color: #fff;\n  font-size: 2rem;\n  line-height: 1.8; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 25rem;\n  height: 25rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  height: 55rem;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 3px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 3px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
+exports.push([module.i, ".home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-flow: column;\n  height: 50rem;\n  width: auto; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.6rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #000; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company__text {\n  font-weight: 300;\n  color: #fff;\n  font-size: 1.6rem;\n  line-height: 2;\n  white-space: pre-wrap; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 45rem;\n  padding: 1.4rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 6px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 6px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
 
 
 /***/ }),
@@ -32187,7 +32187,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37955,12 +37955,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _components_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/navigation */ "./src/components/navigation.js");
-/* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/home */ "./src/components/home.js");
-/* harmony import */ var _components_companies__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/companies */ "./src/components/companies.js");
-/* harmony import */ var _components_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/field */ "./src/components/field.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navigation */ "./src/components/navigation.js");
+/* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home */ "./src/components/home.js");
+/* harmony import */ var _components_companies__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/companies */ "./src/components/companies.js");
+/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/footer */ "./src/components/footer.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37979,7 +37978,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-
+ // import { useLocation} from "react-router"
 
 
 
@@ -38003,17 +38002,14 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "site--wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navigation__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
         path: "/",
-        component: _components_home__WEBPACK_IMPORTED_MODULE_4__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        component: _components_home__WEBPACK_IMPORTED_MODULE_3__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/companies",
-        component: _components_companies__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-        path: "/field",
-        component: _components_field__WEBPACK_IMPORTED_MODULE_6__["default"]
-      }))));
+        component: _components_companies__WEBPACK_IMPORTED_MODULE_4__["default"]
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
     }
   }]);
 
@@ -38081,60 +38077,21 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/field.js":
-/*!*********************************!*\
-  !*** ./src/components/field.js ***!
-  \*********************************/
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Field; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-var Field =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Field, _Component);
-
-  function Field() {
-    _classCallCheck(this, Field);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Field).apply(this, arguments));
-  }
-
-  _createClass(Field, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
-    }
-  }]);
-
-  return Field;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 Copyright 2019 SRH ")));
+});
 
 /***/ }),
 
@@ -38158,10 +38115,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/earth.gif */ "./src/img/earth.gif");
 /* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_earth_gif__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/cells2.gif */ "./src/img/cells2.gif");
-/* harmony import */ var _img_cells2_gif__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_cells2_gif__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _img_cells1_gif__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/cells1.gif */ "./src/img/cells1.gif");
-/* harmony import */ var _img_cells1_gif__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_cells1_gif__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/zipline.jpg */ "./src/img/zipline.jpg");
+/* harmony import */ var _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/zipline.svg */ "./src/img/zipline.svg");
+/* harmony import */ var _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _toggle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./toggle */ "./src/components/toggle.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -38243,26 +38200,18 @@ function (_Component) {
         className: "story--month"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "story--month-feature"
-      }, "Company of the month"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "This month "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "story--of__month"
-      }, "CELLINK"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Company of the month"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, " Zipline "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "story__company__name"
-      }, "The first bioink company in the world"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "story--company"
-      }, "CELLINK designs and develops bioprinting technologies that enable researchers to 3D print organs and tissue for applications that span industries, from pharmaceutical to cosmetic. Our patent-pending bioink is a biomaterial innovation that allows human cells to grow and thrive as they would in their natural environment. Researchers leverage our technologies to print liver, cartilage, skin tissues and more. Join us on our journey to change the future of medicine.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Delivers medicine to those who need it most"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "story--company__text"
+      }, "Since then, we've built the world's fastest and most reliable delivery drone, the world's largest autonomous logistics network, and a truly amazing team. ", "\n", "We design and test our technology in Half Moon Bay, California. We assemble the drones and the technology that powers our distribution centers in South San Francisco. We perform extensive flight testing in Davis, California. We operate distribution centers around the planet with teams of local operators.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "story--images"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_5___default.a,
-        alt: "cell"
+        src: _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+        alt: "zipline"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells1_gif__WEBPACK_IMPORTED_MODULE_6___default.a,
-        alt: "cell"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells2_gif__WEBPACK_IMPORTED_MODULE_5___default.a,
-        alt: "cell"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_cells1_gif__WEBPACK_IMPORTED_MODULE_6___default.a,
-        alt: "cell"
+        src: _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+        alt: "zipline"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fourth--view fourth--view-four"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Select field"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toggle__WEBPACK_IMPORTED_MODULE_7__["default"], null))));
@@ -38335,7 +38284,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/",
         activeClassName: "active"
-      }, "Impact."), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+      }, "damiir"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/field"
       }, "Change")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
         to: "/r",
@@ -38446,7 +38395,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     "for": "socialimpact",
     className: "select--item select--item-pink"
-  }, " ", "Social impact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, "Social impact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "button",
     id: "socialimpact",
     onClick: function onClick() {
@@ -38464,32 +38413,17 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   })), showField && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "field--info"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Oh,But first!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s play a game called: Mission failed!", "\n", "You will be presented with a couple famous mission statments your task is to guess what company said what."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "sumbmit",
-    id: "start"
-  }, "Start"))));
+    type: "submit",
+    id: "start",
+    onClick: "document.getElementById('field--info').style.display = 'none' ;"
+  }, "Start"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "quiz"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "submit--quiz"
+  }, "Submit Quiz"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "results"
+  })));
 });
-
-/***/ }),
-
-/***/ "./src/img/cells1.gif":
-/*!****************************!*\
-  !*** ./src/img/cells1.gif ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "382b828bb63a9e87535f6cace62975ba.gif";
-
-/***/ }),
-
-/***/ "./src/img/cells2.gif":
-/*!****************************!*\
-  !*** ./src/img/cells2.gif ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "1a6576a2835499371a46737d69269c25.gif";
 
 /***/ }),
 
@@ -38512,6 +38446,28 @@ module.exports = __webpack_require__.p + "add8d24c7a9067ecf85d953c8ecdc660.gif";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "videos/hero.mp4";
+
+/***/ }),
+
+/***/ "./src/img/zipline.jpg":
+/*!*****************************!*\
+  !*** ./src/img/zipline.jpg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6b8fe366dbf05910439a4bdcffb7c798.jpg";
+
+/***/ }),
+
+/***/ "./src/img/zipline.svg":
+/*!*****************************!*\
+  !*** ./src/img/zipline.svg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f8d75bc23ce7e4c12de9329ce0b2e3f8.svg";
 
 /***/ }),
 

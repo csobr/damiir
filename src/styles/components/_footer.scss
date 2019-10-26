@@ -1,6 +1,8 @@
 footer {
+@include flex();
 background: $third_color;
 padding: 4rem;
+bottom: 0;
 p{
 color: $fourth_color;
 }
