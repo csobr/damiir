@@ -36,10 +36,10 @@
   margin: 7%;
 }
 .mission {  
-  @include flexCenter();
-  flex-flow: column;
-  height: 50rem;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: auto;
+
 
 }
 h3 {
@@ -51,6 +51,7 @@ h3 {
 }
 .mission--text {
   width: 60rem;
+  flex-flow: wrap;
   text-align: center;
   font-weight: 300;
   font-size: 1.6rem;

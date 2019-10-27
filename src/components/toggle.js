@@ -5,7 +5,7 @@ export default () => {
   return (
     <div className="company--selection">
       <div className="select--field">
-        <label for="healthcare" className="select--item select--item-green">
+        <label htmlFor="healthcare" className="select--item select--item-green">
           Healthcare
           <input
             type="button"
@@ -14,7 +14,7 @@ export default () => {
           />
         </label>
 
-        <label for="security" className="select--item select--item-pink">
+        <label htmlFor="security" className="select--item select--item-pink">
           Security
         </label>
         <input
@@ -23,7 +23,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="enviroment" className="select--item select--item-green">
+        <label htmlFor="enviroment" className="select--item select--item-green">
           Enviroment
         </label>
         <input
@@ -32,7 +32,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="education" className="select--item select--item-pink">
+        <label htmlFor="education" className="select--item select--item-pink">
           Education
         </label>
         <input
@@ -41,7 +41,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="economics" className="select--item select--item-green">
+        <label htmlFor="economics" className="select--item select--item-green">
           Economics
         </label>
         <input
@@ -50,7 +50,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="law" className="select--item select--item-pink">
+        <label htmlFor="law" className="select--item select--item-pink">
           Law
         </label>
         <input
@@ -59,12 +59,12 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="" className="select--item select--item-green">
+        <label htmlFor="" className="select--item select--item-green">
           Politics
         </label>
         <input type="button" onClick={() => setShowField(!showField)} />
 
-        <label for="socialimpact" className="select--item select--item-pink">
+        <label htmlFor="socialimpact" className="select--item select--item-pink">
        
           Social impact
         </label>
@@ -74,7 +74,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label for="communications" className="select--item select--item-green">
+        <label htmlFor="communications" className="select--item select--item-green">
           Communications
         </label>
         <input
