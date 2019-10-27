@@ -35,12 +35,11 @@
   min-height: 80vh;
   margin: 7%;
 }
-.mission {  
+.mission {
+  @include flexCenter();
   flex-direction: column;
   flex-wrap: wrap;
-  width: auto;
-
-
+  width: 60rem;
 }
 h3 {
   padding: 1.8rem;
@@ -50,8 +49,6 @@ h3 {
   text-transform: lowercase;
 }
 .mission--text {
-  width: 60rem;
-  flex-flow: wrap;
   text-align: center;
   font-weight: 300;
   font-size: 1.6rem;
@@ -70,7 +67,9 @@ h3 {
   margin: 5%;
   background: $third_color;
 }
-h4,h5,h6{
+h4,
+h5,
+h6 {
   font-size: 5.5rem;
   color: $fourth_color;
   margin: 0;
@@ -79,15 +78,14 @@ h4,h5,h6{
 }
 h5 {
   color: $fifth_color;
-  margin:2rem;
-  padding-left:8rem;
+  margin: 2rem;
+  padding-left: 8rem;
 }
-h6{
+h6 {
   color: $fifth_color;
   text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
-
 }
 .story--month {
   @include flexCenter();
@@ -95,7 +93,7 @@ h6{
   margin: 2%;
   width: 60rem;
 }
-.story--month-feature{
+.story--month-feature {
   color: $fourth_color;
   text-transform: lowercase;
 }
@@ -105,44 +103,43 @@ h6{
   color: $fourth_color;
   padding-bottom: 2rem;
 }
-.story--company__text{
+.story--company__text {
   font-weight: 300;
   color: $fourth_color;
   font-size: 1.6rem;
   line-height: 2;
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 .story--images {
-  @include flexCenter ();
+  @include flex();
   flex-direction: row;
-  flex-flow:  row wrap;
-    width: 60rem;
+  flex-wrap: wrap;
+  width: 60rem;
 }
 .story--images img {
-width: 45rem;
-padding: 1.4rem;
+  width: 45rem;
+  padding: 1.4rem;
 }
 .fourth--view-four {
   min-height: 100vh;
   width: 100%;
 }
 .company--selection {
-@include flex();
+  @include flex();
 }
-.select--field{
+.select--field {
   flex-direction: row;
-width: 50rem;
-@include flex();
-
+  width: 50rem;
+  @include flex();
 }
-.select--field label {  
+.select--field label {
   flex-flow: wrap;
   @include flexCenter();
-color: $fourth_color; 
-font-weight: 700;
+  color: $fourth_color;
+  font-weight: 700;
   font-size: 1.4rem;
 }
-.select--item  {
+.select--item {
   margin: 1rem;
   height: 14rem;
   width: 14rem;
@@ -150,54 +147,50 @@ font-weight: 700;
   box-sizing: border-box;
   border-radius: 50%;
   outline: none;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-transform: lowercase;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     transition: 0.5s ease-out;
-      }
   }
+}
 
-.select--item-green{
-  border: 6px solid $sixth_color; 
+.select--item-green {
+  border: 6px solid $sixth_color;
   // box-shadow: 0px 2px 6px 2px $sixth_color ;
-
 }
-.select--item-pink{
-border: 6px solid $fifth_color;
-// box-shadow: 0px 2px 6px 2px $fifth_color;
-
+.select--item-pink {
+  border: 6px solid $fifth_color;
+  // box-shadow: 0px 2px 6px 2px $fifth_color;
 }
-#field--info{
-   height: 55rem;
-    width: 90rem;
-background: #FFF975;
-
-
+#select-field--info {
+  height: 55rem;
+  width: 90rem;
+  background: #fff975;
 }
-#field--info p{
+#select-field--info p {
   color: $fifth_color;
   font-size: 3rem;
-line-height: 2;
-font-weight: 700;
-white-space: pre-wrap;
- padding:5rem;
-text-align: center;
+  line-height: 2;
+  font-weight: 700;
+  white-space: pre-wrap;
+  padding: 5rem;
+  text-align: center;
 }
-#start{
- display: flex;
- font-weight: 700;
- justify-content: center;
+#start {
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
   width: 23rem;
   height: 7rem;
-  background: #B4FF9A;
-  margin: 0 auto; 
+  background: #b4ff9a;
+  margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;
   outline: none;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
-      }
+  }
 }
 // #quiz {
 

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import "../styles/pages/_home.scss";
-import sample from "../img/hero.mp4";
-import earth from "../img/earth.gif";
-import storyImg from "../img/zipline.jpg";
-import storyImg2 from "../img/zipline.svg";
+import "../assets/styles/pages/_home.scss";
+import sample from "../assets/img/hero.mp4";
+import earth from "../assets/img/earth.gif";
+import storyImg from "../assets/img/zipline.jpg";
+import storyImg2 from "../assets/img/zipline.svg";
 import Toggle from "./toggle";
 
 
@@ -38,7 +38,6 @@ export default class Home extends Component {
             <img src={earth} alt="earth" />
             <div className="mission">
               <h3>Mission</h3>
-
               <p className="mission--text">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

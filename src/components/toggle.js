@@ -85,16 +85,18 @@ export default () => {
       </div>
       {showField && (
         <div>
-          <div id="field--info">
+          <div id="select-field--info">
+       
             <h6>Oh,But first!</h6>
             <p>
               Let’s play a game called: Mission failed!{"\n"}
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="submit" id="start" onClick="document.getElementById('field--info').style.display = 'none' ;" >
-              Start
-            </button> </div>
+            <button type="submit" id="start" onClick={document.getElementById("")} >
+             Start</button>
+              
+         </div> 
             <div id="quiz"></div>
             <button id="submit--quiz">Submit Quiz</button>
             <div id="results"></div>
