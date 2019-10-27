@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import "../assets/styles/pages/_home.scss";
-import sample from "../assets/img/hero.mp4";
+import "../assets/styles/main.scss";
+import hero from "../assets/img/hero.mp4";
 import earth from "../assets/img/earth.gif";
 import storyImg from "../assets/img/zipline.jpg";
 import storyImg2 from "../assets/img/zipline.svg";
-import Toggle from "./toggle";
-
+import Toggle from "../components/toggle.jsx";
 
 export default class Home extends Component {
   render() {
@@ -22,7 +21,7 @@ export default class Home extends Component {
             <div className="hero">
               <h1></h1>
               <video className="videoTag" autoPlay loop muted>
-                <source src={sample} type="video/mp4" />
+                <source src={hero} type="video/mp4" />
               </video>
             </div>
           </div>

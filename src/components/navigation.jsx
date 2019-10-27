@@ -6,7 +6,7 @@ export default class Navbar extends Component {
         return (
            <nav>
       
-              <ul>
+              <ul className = "nav--links">
                   <li>
                       <Link to = "/about" activeClassName='active'>About</Link>
 
