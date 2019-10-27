@@ -34,7 +34,8 @@ export default class Home extends Component {
             </p>
           </div>
           <div className="second--view second--view-two ">
-            <img src={earth} alt="earth" />
+            <div className = "circle">
+            <img src={earth} alt="earth" /></div>
             <div className="mission">
               <h3>Mission</h3>
               <p className="mission--text">

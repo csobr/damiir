@@ -1,60 +1,57 @@
-@import 'theme/color';
-.logo  a{
-    font-size: 2.2rem;
-    line-height: 1.45;
-    -webkit-font-smoothing: antialiased;
-    font-variant-ligatures: none;
-    list-style: none;
-    box-sizing: border-box;
-    text-align: center;
-    position: relative;
-    flex: 1;
-    color: $secondary_color;
-  
-  }
-  nav {
-    padding: 2.75rem 10% 0 10%;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 0;
-    font-family: "Ropa Sans", sans-serif;
-    font-weight: 700;
-    text-transform: lowercase;
-    position: relative;
-    z-index: 2;
-    background: transparent;
-    position: absolute;
-    cursor: pointer;
-    @media (max-width: 750px) {
-      padding: 0;
-    }
-    a {
-      color:$fourth_color;
-      text-decoration: none;
-      background: transparent;
-      &:hover{
-      color: $sixth_color;
-        transform: scale(1.1);
-        transition: 2s ease-out;
-      }
-      
-    }
-  }
-  li {
-    font-size:2.2rem;
-    line-height: 1.45;
-    list-style: none;
-    position: relative;
-    flex: 1;
-    text-align: center;
-  }
-
-.active{
-color: $fifth_color;
-@media (max-width: 750px) {
-  color: $sixth_color;
+@import "theme/color";
+.logo a {
+  font-size: 2.2rem;
+  line-height: 1.45;
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  color: $secondary_color;
 }
+nav {
+  padding: 2.75rem 10% 0 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: 700;
+  text-transform: lowercase;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  @media (max-width: 750px) {
+    padding: 0;
+  }
+  a {
+    color: $fourth_color;
+    text-decoration: none;
+
+    &:hover {
+      color: $sixth_color;
+      transform: scale(1.1);
+      transition: 2s ease-out;
+    }
+  }
+}
+li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 2.2rem;
+  line-height: 1.45;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.active {
+  color: $fifth_color;
+  @media (max-width: 750px) {
+    color: $sixth_color;
+  }
 }
 /* ---- Responsive menu --- */
 .hamburger {
@@ -63,32 +60,32 @@ color: $fifth_color;
 
 .hamburger span {
   background: $sixth_color;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.6rem;
   display: block;
-  margin-bottom: .5rem;
   transition: 0.3s all ease;
-  height: 1rem;
-  width: 4rem;
+  height: .5rem;
+  width: .7rem;
 }
 
 .hamburger span:nth-child(1) {
-  width:  3.5rem;
+  width: 2.5rem;
 }
 
 .hamburger span:nth-child(2) {
-  width: 3.5rem;
+  width: 2rem;
 }
 
 .hamburger:hover span:nth-child(3) {
-  width: 3.5rem;
+  width: 2.5rem;
 }
 
 .hamburger:hover span:nth-child(2) {
-  width: 2.5rem;
+  width: 2rem;
 }
 
 .hamburger:hover span:nth-child(1) {
-  width: 2.5rem;
+  width: .7rem;
 }
 
 .toggle {
@@ -124,17 +121,49 @@ color: $fifth_color;
   }
 
   li {
-
     @media (max-width: 750px) {
       padding: 1.4rem 0 0 1rem;
       margin: 1rem;
     }
   }
-
 }
 
+/* -- nav open -- */
 
-// When "open" class is added after clicking, the links will be shown using flexbox
 .nav--links.open {
   display: flex;
+}
+
+/*----Animation----*/
+a:after {
+  border-radius: 1em;
+  border-top: 0.1em solid $sixth_color;
+  content: "";
+  position: absolute;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+
+a:hover:after {
+  animation: anchor-underline 2s cubic-bezier(0, 0.5, 0, 1) infinite;
+  border-color: $sixth_color;
+}
+
+@keyframes anchor-underline {
+  0%,
+  10% {
+    left: 0;
+    right: 100%;
+  }
+  40%,
+  60% {
+    left: 0;
+    right: 0;
+  }
+  90%,
+  100% {
+    left: 100%;
+    right: 0;
+  }
 }
