@@ -178,32 +178,18 @@ module.exports = _inheritsLoose;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
-/*!***********************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
-// Imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600,700&display=swap);", ""]);
-// Module
-exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  overflow-x: hidden;\n  font-style: normal; }\n\nbody {\n  background: #050505;\n  margin: 0;\n  padding: 0;\n  font-style: normal; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75rem) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25rem) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5rem) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  position: absolute; }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n    nav a:hover {\n      color: #B4FF9A;\n      transform: scale(1.1);\n      transition: 2s ease-out; }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.active {\n  color: #FF91C9; }\n\nfooter {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  background: #000;\n  padding: 4rem;\n  bottom: 0; }\n  footer p {\n    color: #fff; }\n\n.home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-flow: column;\n  height: 50rem;\n  width: auto; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.6rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #000; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company__text {\n  font-weight: 300;\n  color: #fff;\n  font-size: 1.6rem;\n  line-height: 2;\n  white-space: pre-wrap; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 45rem;\n  padding: 1.4rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 6px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 6px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss":
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/main.scss":
 /*!******************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/main.scss ***!
   \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300i,400,500,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, ".home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-flow: column;\n  height: 50rem;\n  width: auto; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  width: 60rem;\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.6rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #000; }\n\nh4, h5, h6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company__text {\n  font-weight: 300;\n  color: #fff;\n  font-size: 1.6rem;\n  line-height: 2;\n  white-space: pre-wrap; }\n\n.story--images {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: row;\n  flex-flow: row wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 45rem;\n  padding: 1.4rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all .2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 6px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 6px solid #FF91C9; }\n\n#field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #FFF975; }\n\n#field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #B4FF9A;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
+exports.push([module.i, "*,\n*::before,\n*::after {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  border: 0;\n  font-family: 'Poppins', sans-serif;\n  overflow-x: hidden;\n  font-style: normal; }\n\nbody {\n  background: #050505;\n  margin: 0;\n  padding: 0;\n  font-style: normal; }\n\nhtml {\n  font-size: 62.5%; }\n\n@media (max-width: 75rem) {\n  html {\n    font-size: 56.25%; } }\n\n@media (max-width: 56.25rem) {\n  html {\n    font-size: 50%; } }\n\n@media (min-width: 112.5rem) {\n  html {\n    font-size: 75%; } }\n\n.site--wrapper {\n  min-height: 100%; }\n\n.logo a {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  text-align: center;\n  position: relative;\n  flex: 1;\n  color: #50E0BF; }\n\nnav {\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  padding: 2.75rem 10% 0 10%;\n  top: 0;\n  left: 0;\n  right: 0;\n  margin-top: 0;\n  font-family: \"Ropa Sans\", sans-serif;\n  font-weight: 700;\n  text-transform: lowercase;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  position: absolute; }\n  @media (max-width: 750px) {\n    nav {\n      padding: 0; } }\n  nav ul {\n    display: flex;\n    line-height: 1.45;\n    -webkit-font-smoothing: antialiased;\n    font-variant-ligatures: none;\n    font-size: 1.1rem;\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    background: transparent; }\n  nav a {\n    color: #fff;\n    text-decoration: none;\n    background: transparent; }\n    nav a:hover {\n      color: #B4FF9A;\n      transform: scale(1.1);\n      transition: 2s ease-out; }\n      @media (max-width: 750px) {\n        nav a:hover {\n          color: #B4FF9A; } }\n\nli {\n  font-size: 2.2rem;\n  line-height: 1.45;\n  -webkit-font-smoothing: antialiased;\n  font-variant-ligatures: none;\n  list-style: none;\n  box-sizing: border-box;\n  position: relative;\n  flex: 1;\n  text-align: center;\n  padding: 0;\n  background: transparent; }\n\n.active {\n  color: #FF91C9; }\n\n/* ---- Responsive menu --- */\n.hamburger {\n  margin: 0; }\n\n.hamburger span {\n  background: #B4FF9A;\n  border-radius: 4px;\n  display: block;\n  margin-bottom: 5px;\n  transition: 0.3s all ease;\n  height: 2px;\n  width: 30px; }\n\n.hamburger span:nth-child(1) {\n  width: 25px; }\n\n.hamburger span:nth-child(2) {\n  width: 25px; }\n\n.hamburger:hover span:nth-child(3) {\n  width: 25px; }\n\n.hamburger:hover span:nth-child(2) {\n  width: 30px; }\n\n.hamburger:hover span:nth-child(1) {\n  width: 20px; }\n\n.toggle {\n  margin: 0;\n  padding: 3rem; }\n  @media (min-width: 415px) {\n    .toggle {\n      display: none; } }\n\n.nav--links {\n  display: none;\n  flex-direction: column;\n  margin: 0;\n  padding: 0 0.4rem 1rem 1rem;\n  background: #FF91C9;\n  z-index: 1;\n  width: 100%;\n  font-size: 1.5em; }\n  @media (min-width: 415px) {\n    .nav--links {\n      display: flex;\n      flex-direction: row;\n      position: relative;\n      line-height: 1.45;\n      font-size: 1.1rem;\n      list-style: none;\n      padding: 0;\n      margin: 0 auto;\n      background: transparent; } }\n  .nav--links li {\n    list-style: none; }\n    @media (max-width: 750px) {\n      .nav--links li {\n        padding: 1.4rem 0 0 1rem;\n        margin: 1rem; } }\n\n.nav--links.open {\n  display: flex; }\n\nfooter {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  background: #000;\n  padding: 4rem;\n  bottom: 0; }\n  footer p {\n    color: #fff; }\n\n.home {\n  min-height: 100vh; }\n\n.first--view {\n  top: 0;\n  left: 0;\n  z-index: 1;\n  transition: 0.3s ease-in;\n  display: flex; }\n\n.hero {\n  display: flex;\n  width: 100vw;\n  height: 100vh; }\n\n.second--view-one {\n  color: #fff;\n  display: flex;\n  flex-direction: column;\n  z-index: 3;\n  margin: 3%; }\n  .second--view-one h2 {\n    font-size: 4rem;\n    padding-left: 2rem; }\n  .second--view-one .qoute {\n    font-size: 1rem;\n    padding-left: 2rem; }\n\n.second--view-two {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  min-height: 80vh;\n  margin: 7%; }\n\n.mission {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  flex-wrap: wrap;\n  width: 60rem; }\n\nh3 {\n  padding: 1.8rem;\n  font-size: 4.5rem;\n  text-align: center;\n  color: #fff;\n  text-transform: lowercase; }\n\n.mission--text {\n  text-align: center;\n  font-weight: 300;\n  font-size: 1.6rem;\n  line-height: 2.2;\n  color: #fff; }\n\n.second--view-two img {\n  margin: 0;\n  width: 60rem;\n  height: 60rem;\n  padding: 4rem;\n  border-radius: 50% !important; }\n\n.third--view {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  margin: 5%;\n  background: #000; }\n\nh4,\nh5,\nh6 {\n  font-size: 5.5rem;\n  color: #fff;\n  margin: 0;\n  padding: 0;\n  text-transform: lowercase; }\n\nh5 {\n  color: #FF91C9;\n  margin: 2rem;\n  padding-left: 8rem; }\n\nh6 {\n  color: #FF91C9;\n  text-align: center;\n  font-size: 5rem;\n  text-transform: uppercase; }\n\n.story--month {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  flex-direction: column;\n  margin: 2%;\n  width: 60rem; }\n\n.story--month-feature {\n  color: #fff;\n  text-transform: lowercase; }\n\n.story__company__name {\n  font-size: 2rem;\n  font-weight: 600;\n  color: #fff;\n  padding-bottom: 2rem; }\n\n.story--company__text {\n  font-weight: 300;\n  color: #fff;\n  font-size: 1.6rem;\n  line-height: 2;\n  white-space: pre-wrap; }\n\n.story--images {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap;\n  flex-direction: row;\n  flex-wrap: wrap;\n  width: 60rem; }\n\n.story--images img {\n  width: 45rem;\n  padding: 1.4rem; }\n\n.fourth--view-four {\n  min-height: 100vh;\n  width: 100%; }\n\n.company--selection {\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field {\n  flex-direction: row;\n  width: 50rem;\n  display: flex;\n  justify-content: space-around;\n  flex-flow: wrap; }\n\n.select--field label {\n  flex-flow: wrap;\n  display: flex;\n  justify-content: center;\n  align-content: center;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.4rem; }\n\n.select--item {\n  margin: 1rem;\n  height: 14rem;\n  width: 14rem;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 50%;\n  outline: none;\n  transition: all 0.2s ease-in-out;\n  text-transform: lowercase; }\n  .select--item:hover {\n    transform: scale(1.1);\n    transition: 0.5s ease-out; }\n\n.select--item-green {\n  border: 6px solid #B4FF9A; }\n\n.select--item-pink {\n  border: 6px solid #FF91C9; }\n\n#select-field--info {\n  height: 55rem;\n  width: 90rem;\n  background: #fff975; }\n\n#select-field--info p {\n  color: #FF91C9;\n  font-size: 3rem;\n  line-height: 2;\n  font-weight: 700;\n  white-space: pre-wrap;\n  padding: 5rem;\n  text-align: center; }\n\n#start {\n  display: flex;\n  font-weight: 700;\n  justify-content: center;\n  width: 23rem;\n  height: 7rem;\n  background: #b4ff9a;\n  margin: 0 auto;\n  font-size: 2rem;\n  text-transform: uppercase;\n  outline: none; }\n  #start:hover {\n    transform: scale(1.1); }\n", ""]);
 
 
 /***/ }),
@@ -37952,14 +37938,140 @@ module.exports = g;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _components_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navigation */ "./src/components/navigation.js");
-/* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home */ "./src/components/home.js");
-/* harmony import */ var _components_companies__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/companies */ "./src/components/companies.js");
-/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/footer */ "./src/components/footer.js");
+/* harmony import */ var _components_navigation_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navigation.jsx */ "./src/components/navigation.jsx");
+/* harmony import */ var _pages_home_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/home.jsx */ "./src/pages/home.jsx");
+/* harmony import */ var _pages_companies_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/companies.jsx */ "./src/pages/companies.jsx");
+/* harmony import */ var _components_footer_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/footer.jsx */ "./src/components/footer.jsx");
+ // import { useLocation} from "react-router"
+
+
+
+
+
+
+
+function App() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "site--wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navigation_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/",
+    component: _pages_home_jsx__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/companies",
+    component: _pages_companies_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/assets/img/earth.gif":
+/*!**********************************!*\
+  !*** ./src/assets/img/earth.gif ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "add8d24c7a9067ecf85d953c8ecdc660.gif";
+
+/***/ }),
+
+/***/ "./src/assets/img/hero.mp4":
+/*!*********************************!*\
+  !*** ./src/assets/img/hero.mp4 ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "videos/hero.mp4";
+
+/***/ }),
+
+/***/ "./src/assets/img/zipline.jpg":
+/*!************************************!*\
+  !*** ./src/assets/img/zipline.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6b8fe366dbf05910439a4bdcffb7c798.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/img/zipline.svg":
+/*!************************************!*\
+  !*** ./src/assets/img/zipline.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f8d75bc23ce7e4c12de9329ce0b2e3f8.svg";
+
+/***/ }),
+
+/***/ "./src/assets/styles/main.scss":
+/*!*************************************!*\
+  !*** ./src/assets/styles/main.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/main.scss");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/components/footer.jsx":
+/*!***********************************!*\
+  !*** ./src/components/footer.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 Copyright 2019 SRH ")));
+});
+
+/***/ }),
+
+/***/ "./src/components/navigation.jsx":
+/*!***************************************!*\
+  !*** ./src/components/navigation.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37978,52 +38090,224 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
- // import { useLocation} from "react-router"
 
 
 
-
-
-
-
-var App =
+var Navbar =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(App, _Component);
+  _inherits(Navbar, _Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function Navbar() {
+    _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Navbar).apply(this, arguments));
   }
 
-  _createClass(App, [{
+  _createClass(Navbar, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "site--wrapper"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        exact: true,
-        path: "/",
-        component: _components_home__WEBPACK_IMPORTED_MODULE_3__["default"]
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-        path: "/companies",
-        component: _components_companies__WEBPACK_IMPORTED_MODULE_4__["default"]
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "toggle",
+        onClick: this.toggle
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "hamburger"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "nav--links"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/about",
+        activeClassName: "active",
+        onClick: this.toggle
+      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/companies",
+        activeClassName: "active",
+        onClick: this.toggle
+      }, "Companies")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "logo"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/",
+        activeClassName: "active",
+        onClick: this.toggle
+      }, "damiir"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/field",
+        onClick: this.toggle
+      }, "Change")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+        to: "/r",
+        activeClassName: "active",
+        onClick: this.toggle
+      }, "Contact"))));
+    }
+  }, {
+    key: "toggle",
+    value: function toggle() {
+      if (window.innerWidth < 750) {
+        document.querySelector('.nav--links').classList.toggle('open');
+      }
     }
   }]);
 
-  return App;
+  return Navbar;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
 /***/ }),
 
-/***/ "./src/components/companies.js":
-/*!*************************************!*\
-  !*** ./src/components/companies.js ***!
-  \*************************************/
+/***/ "./src/components/toggle.jsx":
+/*!***********************************!*\
+  !*** ./src/components/toggle.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showField = _useState2[0],
+      setShowField = _useState2[1];
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "company--selection"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "select--field"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "healthcare",
+    className: "select--item select--item-green"
+  }, "Healthcare", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "healthcare",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "security",
+    className: "select--item select--item-pink"
+  }, "Security"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "security",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "enviroment",
+    className: "select--item select--item-green"
+  }, "Enviroment"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "enviroment",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "education",
+    className: "select--item select--item-pink"
+  }, "Education"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "education",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "economics",
+    className: "select--item select--item-green"
+  }, "Economics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "economics",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "law",
+    className: "select--item select--item-pink"
+  }, "Law"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "law",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "",
+    className: "select--item select--item-green"
+  }, "Politics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "socialimpact",
+    className: "select--item select--item-pink"
+  }, "Social impact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "socialimpact",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    htmlFor: "communications",
+    className: "select--item select--item-green"
+  }, "Communications"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "button",
+    id: "communications",
+    onClick: function onClick() {
+      return setShowField(!showField);
+    }
+  })), showField && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "select-field--info"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Oh,But first!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s play a game called: Mission failed!", "\n", "You will be presented with a couple famous mission statments your task is to guess what company said what."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "submit",
+    id: "start",
+    onClick: document.getElementById("")
+  }, "Start")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "quiz"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    id: "submit--quiz"
+  }, "Submit Quiz"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "results"
+  })));
+});
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ "./src/app.js");
+/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/styles/main.scss */ "./src/assets/styles/main.scss");
+/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('root'));
+
+/***/ }),
+
+/***/ "./src/pages/companies.jsx":
+/*!*********************************!*\
+  !*** ./src/pages/companies.jsx ***!
+  \*********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38077,28 +38361,10 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./src/components/footer.js":
-/*!**********************************!*\
-  !*** ./src/components/footer.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\xA9 Copyright 2019 SRH ")));
-});
-
-/***/ }),
-
-/***/ "./src/components/home.js":
-/*!********************************!*\
-  !*** ./src/components/home.js ***!
-  \********************************/
+/***/ "./src/pages/home.jsx":
+/*!****************************!*\
+  !*** ./src/pages/home.jsx ***!
+  \****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38109,17 +38375,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/lib/Helmet.js");
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/pages/_home.scss */ "./src/styles/pages/_home.scss");
-/* harmony import */ var _styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_home_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/hero.mp4 */ "./src/img/hero.mp4");
-/* harmony import */ var _img_hero_mp4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/earth.gif */ "./src/img/earth.gif");
-/* harmony import */ var _img_earth_gif__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_earth_gif__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/zipline.jpg */ "./src/img/zipline.jpg");
-/* harmony import */ var _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/zipline.svg */ "./src/img/zipline.svg");
-/* harmony import */ var _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _toggle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./toggle */ "./src/components/toggle.js");
+/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/styles/main.scss */ "./src/assets/styles/main.scss");
+/* harmony import */ var _assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_styles_main_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/img/hero.mp4 */ "./src/assets/img/hero.mp4");
+/* harmony import */ var _assets_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_img_earth_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/img/earth.gif */ "./src/assets/img/earth.gif");
+/* harmony import */ var _assets_img_earth_gif__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_img_earth_gif__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/img/zipline.jpg */ "./src/assets/img/zipline.jpg");
+/* harmony import */ var _assets_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/img/zipline.svg */ "./src/assets/img/zipline.svg");
+/* harmony import */ var _assets_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_toggle_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/toggle.jsx */ "./src/components/toggle.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38161,7 +38427,7 @@ function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__["Helmet"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "damiir"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
         name: "description",
         content: "sleep good at night"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -38179,7 +38445,7 @@ function (_Component) {
         loop: true,
         muted: true
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-        src: _img_hero_mp4__WEBPACK_IMPORTED_MODULE_3___default.a,
+        src: _assets_img_hero_mp4__WEBPACK_IMPORTED_MODULE_3___default.a,
         type: "video/mp4"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "second--view  second--view-one"
@@ -38188,7 +38454,7 @@ function (_Component) {
       }, "\u2015 Hans Rosling, Factfulness: Ten Reasons We're Wrong About the World\u2014and Why Things Are Better Than You Think")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "second--view second--view-two "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_earth_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
+        src: _assets_img_earth_gif__WEBPACK_IMPORTED_MODULE_4___default.a,
         alt: "earth"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "mission"
@@ -38207,344 +38473,20 @@ function (_Component) {
       }, "Since then, we've built the world's fastest and most reliable delivery drone, the world's largest autonomous logistics network, and a truly amazing team. ", "\n", "We design and test our technology in Half Moon Bay, California. We assemble the drones and the technology that powers our distribution centers in South San Francisco. We perform extensive flight testing in Davis, California. We operate distribution centers around the planet with teams of local operators.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "story--images"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+        src: _assets_img_zipline_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
         alt: "zipline"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+        src: _assets_img_zipline_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
         alt: "zipline"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "fourth--view fourth--view-four"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Select field"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_toggle__WEBPACK_IMPORTED_MODULE_7__["default"], null))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Select field"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_toggle_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null))));
     }
   }]);
 
   return Home;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-
-
-/***/ }),
-
-/***/ "./src/components/navigation.js":
-/*!**************************************!*\
-  !*** ./src/components/navigation.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-
-
-
-var Navbar =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Navbar, _Component);
-
-  function Navbar() {
-    _classCallCheck(this, Navbar);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Navbar).apply(this, arguments));
-  }
-
-  _createClass(Navbar, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "/about",
-        activeClassName: "active"
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "/companies",
-        activeClassName: "active"
-      }, "Companies")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        className: "logo"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "/",
-        activeClassName: "active"
-      }, "damiir"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "/field"
-      }, "Change")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "/r",
-        activeClassName: "active"
-      }, "Contact"))));
-    }
-  }]);
-
-  return Navbar;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-
-
-/***/ }),
-
-/***/ "./src/components/toggle.js":
-/*!**********************************!*\
-  !*** ./src/components/toggle.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
-
-function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      showField = _useState2[0],
-      setShowField = _useState2[1];
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "company--selection"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "select--field"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "healthcare",
-    className: "select--item select--item-green"
-  }, "Healthcare", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "healthcare",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "security",
-    className: "select--item select--item-pink"
-  }, "Security"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "security",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "enviroment",
-    className: "select--item select--item-green"
-  }, "Enviroment"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "enviroment",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "education",
-    className: "select--item select--item-pink"
-  }, "Education"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "education",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "economics",
-    className: "select--item select--item-green"
-  }, "Economics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "economics",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "law",
-    className: "select--item select--item-pink"
-  }, "Law"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "law",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "",
-    className: "select--item select--item-green"
-  }, "Politics"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "socialimpact",
-    className: "select--item select--item-pink"
-  }, "Social impact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "socialimpact",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    "for": "communications",
-    className: "select--item select--item-green"
-  }, "Communications"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "button",
-    id: "communications",
-    onClick: function onClick() {
-      return setShowField(!showField);
-    }
-  })), showField && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "field--info"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", null, "Oh,But first!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Let\u2019s play a game called: Mission failed!", "\n", "You will be presented with a couple famous mission statments your task is to guess what company said what."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "submit",
-    id: "start",
-    onClick: "document.getElementById('field--info').style.display = 'none' ;"
-  }, "Start"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "quiz"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    id: "submit--quiz"
-  }, "Submit Quiz"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "results"
-  })));
-});
-
-/***/ }),
-
-/***/ "./src/img/earth.gif":
-/*!***************************!*\
-  !*** ./src/img/earth.gif ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "add8d24c7a9067ecf85d953c8ecdc660.gif";
-
-/***/ }),
-
-/***/ "./src/img/hero.mp4":
-/*!**************************!*\
-  !*** ./src/img/hero.mp4 ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "videos/hero.mp4";
-
-/***/ }),
-
-/***/ "./src/img/zipline.jpg":
-/*!*****************************!*\
-  !*** ./src/img/zipline.jpg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "6b8fe366dbf05910439a4bdcffb7c798.jpg";
-
-/***/ }),
-
-/***/ "./src/img/zipline.svg":
-/*!*****************************!*\
-  !*** ./src/img/zipline.svg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "f8d75bc23ce7e4c12de9329ce0b2e3f8.svg";
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ "./src/app.js");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('root'));
-
-/***/ }),
-
-/***/ "./src/styles/main.scss":
-/*!******************************!*\
-  !*** ./src/styles/main.scss ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
-/***/ "./src/styles/pages/_home.scss":
-/*!*************************************!*\
-  !*** ./src/styles/pages/_home.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./_home.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/pages/_home.scss");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
 
 
 /***/ }),
