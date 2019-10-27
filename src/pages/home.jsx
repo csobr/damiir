@@ -19,15 +19,14 @@ export default class Home extends Component {
         <div className="home--wrapper">
           <div className="first--view">
             <div className="hero">
-              <h1></h1>
-              <video className="videoTag" autoPlay loop muted>
+              <video className="video--bg" autoPlay loop muted>
                 <source src={hero} type="video/mp4" />
               </video>
             </div>
           </div>
 
           <div className="second--view  second--view-one">
-            <h2>“Look for systems, not heroes.”</h2>
+            <h1>“Look for systems, not heroes.”</h1>
             <p className="qoute">
               ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
               World—and Why Things Are Better Than You Think
