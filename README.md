@@ -1,2 +1,2 @@
  # damiir
-A website to find companies were you can work at and do impact driven software development.
+A website to find companies were you can work at and help build impact driven software.
