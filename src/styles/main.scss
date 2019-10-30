@@ -1,0 +1,14 @@
+// Mixins
+@import 'abstracts/mixins';
+// Base Rules
+@import 'base/reset';
+@import 'base/typography';
+@import 'layout/navigation';
+// Theme
+@import 'theme/color';
+// Components
+@import 'components/footer';
+@import 'components/quiz';
+
+// Pages
+@import 'pages/home';

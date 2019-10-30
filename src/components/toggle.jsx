@@ -98,9 +98,6 @@ export default () => {
              Start</button>
               
          </div> 
-            <div id="quiz"></div>
-            <button id="submit--quiz">Submit Quiz</button>
-            <div id="results"></div>
          
         </div>
       )}

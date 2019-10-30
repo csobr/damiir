@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import "../assets/styles/main.scss";
-import hero from "../assets/img/hero.mp4";
+import "../styles/main.scss";
+import hero from "../assets/img/swans.mp4";
 import earth from "../assets/img/earth.gif";
 import storyImg from "../assets/img/zipline.jpg";
 import storyImg2 from "../assets/img/zipline.svg";
-import Toggle from "../components/toggle.jsx";
-
+ import Toggle from "../components/toggle.jsx";
 export default class Home extends Component {
   render() {
     return (
@@ -33,25 +32,24 @@ export default class Home extends Component {
             </p>
           </div>
           <div className="second--view second--view-two ">
-            <div className = "circle">
-            <img src={earth} alt="earth" /></div>
+            <div className="circle">
+              <img src={earth} alt="earth" />
+            </div>
             <div className="mission">
               <h3>Mission</h3>
               <p className="mission--text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                A lot us want to do impactfull work but how do we go about that.
+                We aim to help you find that company where your values and
+                worldview align. We started this because for us our jobs should
+                be an opportunity to make a a real difference in people lives.
               </p>
             </div>
           </div>
           <div className="third--view third--view-three ">
             <div className="story--month">
               <p className="story--month-feature">Company of the month</p>
-              <h4> Zipline </h4> 
-       
+              <h4> Zipline </h4>
+
               <p className="story__company__name">
                 Delivers medicine to those who need it most
               </p>
@@ -63,8 +61,8 @@ export default class Home extends Component {
                 and the technology that powers our distribution centers in South
                 San Francisco. We perform extensive flight testing in Davis,
                 California. We operate distribution centers around the planet
-                with teams of local operators.</p>
-          
+                with teams of local operators.
+              </p>
             </div>
             <div className="story--images">
               <img src={storyImg} alt="zipline" />
@@ -73,7 +71,14 @@ export default class Home extends Component {
           </div>
           <div className="fourth--view fourth--view-four">
             <h5>Select field</h5>
-            <Toggle />
+            <Toggle /> 
+            <div className="quiz--container">
+  <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
           </div>
         </div>
       </div>

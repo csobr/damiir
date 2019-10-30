@@ -1,0 +1,211 @@
+@import "../theme/color";
+@import "../abstracts/mixins";
+.home {
+  min-height: 100vh;
+}
+
+.hero {
+overflow: hidden; 
+transition: 0.3s ease-in;
+ min-height: 100vh;
+ position: relative;
+}
+.video--bg{ 
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%; 
+ 
+}
+.second--view-one {
+  color: $fourth_color;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  margin: 3%;
+  h1 {
+    font-size: 4rem;
+    padding-left: 2rem;
+  }
+  .qoute {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+}
+.second--view-two {
+  @include flex();
+  min-height: 80vh;
+  margin: 5%;
+}
+.mission {
+  @include flexCenter();
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60rem;
+  height: 50rem;
+  
+}
+h3 {
+  padding: 1.8rem;
+  font-size: 4.5rem;
+  text-align: center;
+  color: $fourth_color;
+  text-transform: lowercase;
+}
+.mission--text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  color: $fourth_color;
+}
+.circle {
+  width: 50%; 
+  height: 50rem;
+  @include flexCenter();
+}
+.circle img {
+   width: 50rem;
+  border-radius: 50%;
+  height: 50rem;
+ 
+}
+.third--view {
+  @include flex();
+  margin: 5%;
+  background: $third_color;
+}
+h4,
+h5,
+h6 {
+  font-size: 5.5rem;
+  color: $fourth_color;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+h5 {
+  color: $fifth_color;
+  margin: 2rem;
+  padding:2rem
+}
+h6 {
+  color: $fifth_color;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.story--month {
+  @include flexCenter();
+  flex-direction: column;
+  margin: 2%;
+  width: 60rem;
+}
+.story--month-feature {
+  color: $fourth_color;
+  text-transform: lowercase;
+}
+.story__company__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $fourth_color;
+  padding-bottom: 2rem;
+}
+.story--company__text {
+  font-weight: 300;
+  color: $fourth_color;
+  font-size: 1.6rem;
+  line-height: 2;
+  white-space: pre-wrap;
+}
+.story--images {
+  @include flex();
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60rem;
+}
+.story--images img {
+  width: 45rem;
+  padding: 1.4rem;
+}
+.fourth--view-four {
+  min-height: 100vh;
+  width: 100%;
+}
+.company--selection {
+  @include flexCenter();
+ 
+}
+.select--field {
+  flex-direction: row;
+  width: 50rem;
+  @include flex();
+}
+.select--field label {
+  flex-flow: wrap;
+  @include flexCenter();
+  color: $fourth_color;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.select--item {
+  margin: 1rem;
+  height: 14rem;
+  width: 14rem;
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  text-transform: lowercase;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+  }
+}
+
+.select--item-green {
+  border: 6px solid $sixth_color;
+  // box-shadow: 0px 2px 6px 2px $sixth_color ;
+}
+.select--item-pink {
+  border: 6px solid $fifth_color;
+  // box-shadow: 0px 2px 6px 2px $fifth_color;
+}
+#select-field--info {
+  height: 55rem;
+  width: 90rem;
+  background: #fff975;
+}
+#select-field--info p {
+  color: $fifth_color;
+  font-size: 3rem;
+  line-height: 2;
+  font-weight: 700;
+  white-space: pre-wrap;
+  padding: 5rem;
+  text-align: center;
+}
+#start {
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  width: 23rem;
+  height: 7rem;
+  background: #b4ff9a;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  outline: none;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+// #quiz {
+
+// }
