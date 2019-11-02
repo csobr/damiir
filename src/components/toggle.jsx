@@ -59,12 +59,16 @@ export default () => {
           id="law"
           onClick={() => setShowField(!showField)}
         />
-
-        <label htmlFor="" className="select--item select--item-green">
-          Politics
+        <label htmlFor="politics" className="select--item select--item-green">
+         Politics
         </label>
-        <input type="button" onClick={() => setShowField(!showField)} />
+        <input
+          type="button"
+          id="politics"
+          onClick={() => setShowField(!showField)}
+        />
 
+      
         <label htmlFor="socialimpact" className="select--item select--item-pink">
        
           Social impact
@@ -94,7 +98,7 @@ export default () => {
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="submit" id="start" onClick={document.getElementById("")} >
+            <button type="submit" id="start"  >
              Start</button>
               
          </div> 

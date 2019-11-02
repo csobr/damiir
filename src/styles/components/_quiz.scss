@@ -1,51 +1,265 @@
-
 @import "../theme/color";
 @import "../abstracts/mixins";
-.question{
-    font-size: 30px;
-    margin-bottom: 10px;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-  }
-  .answers {
-    margin-bottom: 20px;
-    text-align: left;
-    display: inline-block;
-  }
-  .answers label{
-    display: block;
-    margin-bottom: 10px;
-  }
-  button{
-      font-size: 22px;
-      background-color: $sixth_color ;
-      color: $primary_color;
-      border: 0px;
-      border-radius: 3px;
-      padding: 20px;
-      cursor: pointer;
-      margin-bottom: 20px;
-  }
-  button:hover{
-      background-color: #38a;
-  }
-  .slide{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
+$green: #36ad3b;
+$red: #ff1100;
+$yellow: #f3c000;
+$blue: #1dcca6;
+
+#quiz--wrapper {
+  width: 50rem;
+@include flexCenter()
+}
+@keyframes roll-in {
+  0% {
+    top: 10px;
     opacity: 0;
-    transition: opacity 0.5s;
   }
-  .active-slide{
+  100% {
+    top: 0;
     opacity: 1;
-    z-index: 2;
   }
-  .quiz--container{
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+.fade-in {
+  animation: fade 0.75s ease;
+}
+
+.quiz {
+  margin: 2em auto;
+  min-height: 40vh;
+  font-size: 16px;
+
+  .progress {
     position: relative;
-    margin-top: 40px;
-    height: 55rem;
-    width: 90rem;
+    transition: width 0.4s ease;
+    margin-bottom: 1em;
     background: $fifth_color;
+    border-radius: 0;
+    width: 100%;
+    height: 2em;
+
+    .progress-bar {
+      background-color: $sixth_color;
+    }
+
+    .counter {
+      position: absolute;
+      right: 5px;
+      top: 0;
+      font-weight: normal;
+      color: $fourth_color;
+      height: 100%;
+      font-size: 1.25em;
+      margin: auto 0.5em;
+      letter-spacing: 0.025em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
-  
+
+  form {
+    width: 90%;
+    margin: 1.5em auto;
+  }
+
+  .img-fluid {
+    margin: 2em auto;
+    max-width: 360px;
+    display: block;
+  }
+
+  .question {
+    font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 0.75em;
+    color: $fourth_color;
+  }
+
+  .option {
+    margin-bottom: 0.25em;
+    transition: all 0.25s ease;
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 0.75em;
+    background-color: $sixth_color;
+    border: 0;
+    color: $fifth_color;
+    font-size: 1em;
+    transition: 0.25s all;
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+
+    i {
+      margin-left: 15em;
+    }
+
+    &:disabled {
+      opacity: 5;
+    }
+  }
+
+  //custom radio controls
+  input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+
+    & + label {
+      position: relative;
+      font-weight: normal;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+      color: $fifth_color;
+
+      &::before {
+        text-align: center;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $fifth_color;
+        border-radius: 100%;
+        background: #fff;
+      }
+
+      &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: $sixth_color;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+
+  .dim,
+  .correct {
+    input[type="radio"] + label::before {
+      border: 0;
+      font-size: 1.2em;
+      animation: 0.25s roll-in ease;
+    }
+
+    input[type="radio"] + label::after {
+      display: none;
+    }
+  }
+
+  .correct input[type="radio"] + label:before {
+    content: "\f00C";
+    font-family: "FontAwesome" !important;
+    color: $green;
+  }
+
+  .dim input[type="radio"]:checked + label:before {
+    content: "\f00d";
+    font-family: "FontAwesome" !important;
+    color: $red;
+  }
+
+  input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  input[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  //end custom radio controls
+
+  .dim {
+    opacity: 0.5;
+  }
+
+  .bottom {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    div {
+      flex: 1 1 70%;
+      font-size: 9em;
+    }
+
+    .next {
+      flex: 0 1 10%;
+      margin-left: 3em;
+    }
+
+    @media (max-width: 600px) {
+      div,
+      .next {
+        flex-basis: 100%;
+      }
+
+      .next {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .get-results {
+    display: block;
+    margin: 2em auto;
+  }
+  h1 {
+    color: $fourth_color;
+  }
+
+  .results {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+
+    button {
+      margin-top: 1em;
+    }
+  }
+}

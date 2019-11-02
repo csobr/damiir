@@ -31,6 +31,7 @@ transition: 0.3s ease-in;
   h1 {
     font-size: 4rem;
     padding-left: 2rem;
+    font-weight: 700;
   }
   .qoute {
     font-size: 1rem;
@@ -40,7 +41,7 @@ transition: 0.3s ease-in;
 .second--view-two {
   @include flex();
   min-height: 80vh;
-  margin: 5%;
+  margin: 3%;
 }
 .mission {
   @include flexCenter();
@@ -56,6 +57,7 @@ h3 {
   text-align: center;
   color: $fourth_color;
   text-transform: lowercase;
+  font-weight: 700;
 }
 .mission--text {
   text-align: center;
@@ -65,9 +67,12 @@ h3 {
   color: $fourth_color;
 }
 .circle {
+  display: flex;
   width: 50%; 
-  height: 50rem;
   @include flexCenter();
+  @media (max-width: 750px){
+    width: 100%;
+  }
 }
 .circle img {
    width: 50rem;
@@ -88,6 +93,7 @@ h6 {
   margin: 0;
   padding: 0;
   text-transform: lowercase;
+  font-weight: 700;
 }
 h5 {
   color: $fifth_color;
@@ -127,10 +133,10 @@ h6 {
   @include flex();
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60rem;
+  width: 40rem;
 }
 .story--images img {
-  width: 45rem;
+  width: 40rem;
   padding: 1.4rem;
 }
 .fourth--view-four {
@@ -162,10 +168,11 @@ h6 {
   border-radius: 50%;
   outline: none;
   transition: all 0.2s ease-in-out;
-  text-transform: lowercase;
+  text-transform: lowercase; 
+  transition: 0.5s all ease;
   &:hover {
     transform: scale(1.1);
-    transition: 0.5s ease-out;
+   
   }
 }
 
@@ -180,7 +187,7 @@ h6 {
 #select-field--info {
   height: 55rem;
   width: 90rem;
-  background: #fff975;
+  background:$sixth_color;
 }
 #select-field--info p {
   color: $fifth_color;
@@ -197,15 +204,13 @@ h6 {
   justify-content: center;
   width: 23rem;
   height: 7rem;
-  background: #b4ff9a;
+  background: $fifth_color;
   margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;
-  outline: none;
+  outline: none;    transition: 2s all ease;
   &:hover {
     transform: scale(1.1);
+
   }
 }
-// #quiz {
-
-// }

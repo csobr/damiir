@@ -1,252 +1,266 @@
+import React from "react";
+import ReactDOM from 'react-dom'
+//render raw HTML from question data 
+const RawHTML = (props) => <span dangerouslySetInnerHTML={{__html: props.html}}></span>;
 
-(function() {
-  const quizContainer2 = document.querySelector("#quiz-container")
-  const myQuestions = [
-    {
-      question: "Our vision is to be earth's most customer-centric company; to build a place where people can come to find and discover anything they might want to buy.",
-      answers: {
-        a: "Amazon",
-        b: "Walmart",
-        c: "Target, obviously"
-      },
-      correctAnswer: "a"
-    },
-    {
-      question: "_______  mission is to give people the power to build community and bring the world closer together.?",
-      answers: {
-        a: "Twitter",
-        b: "Amazon",
-        c: "Facebook"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "To refresh the world in mind, body and spirit. To inspire moments of optimism and happiness through our brands and actions.?",
-      answers: {
-        a: "Pepsico",
-        b: "Coca Cola ",
-        c: "Unilever"
-      },
-      correctAnswer: "C"
+class QuestionImage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.imgRef = React.createRef();
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.imgRef.current && prevProps.img.src !== this.props.img.src) {
+      this.imgRef.current.classList.add('fade-in');
+
+      let timer = setTimeout(() => {
+        this.imgRef.current.classList.remove('fade-in');
+        clearTimeout(timer);
+      }, 1000)
     }
-  ];
+  }
 
-  function buildQuiz() {
-    // we'll need a place to store the HTML output
-    const output = [];
+  render() {
+    return (
+      <img ref={this.imgRef} className="img-fluid" src={this.props.img.src} alt={this.props.img.alt} />
+    );
+  }
+}
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // we'll want to store the list of answer choices
-      const answers = [];
+const QuizProgress = (props) => {
+  return (
+    <div className="progress">
+      <p className="counter">
+        <span>Question {props.currentQuestion+1} of {props.questionLength}</span>
+      </p>
+      <div className="progress-bar" style={{'width': ((props.currentQuestion+1) / props.questionLength) * 100 + '%'}}></div>
+    </div>
+  );
+}
 
-      // and for each available answer...
-      for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
-             <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-           </label>`
-        );
+const Results = (props) => {
+  return (
+    <div className="results fade-in">
+      <h1>Your score: {((props.correct/props.questionLength) * 100).toFixed()}%</h1>
+      <button type="button" onClick={props.startOver}>Try again <i className="fas fa-redo"></i></button>
+    </div>
+  );
+}
+
+class Quiz extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.updateAnswer = this.updateAnswer.bind(this);
+    this.checkAnswer = this.checkAnswer.bind(this);
+    this.nextQuestion = this.nextQuestion.bind(this);
+    this.getResults = this.getResults.bind(this);
+    this.startOver = this.startOver.bind(this);
+
+    this.state = {
+      currentQuestion: 0,
+      correct: 0,
+      inProgress: true,
+      questions: [{
+        question: "<em>Our vision is to be earth's most customer-centric company; to build a place where people can come to find and discover anything they might want to buy.",
+        options: [{
+          option: "Amazon",
+          correct: true
+        }, {
+          option: "Walmart",
+          correct: false
+        }, {
+          option: "Target, obviously",
+          correct: false
+        }],
+        img: {
+          src: '',
+          alt: ''
+        },
+        feedback: "",
+        moreUrl: ''
+      }, {
+        question: "_______  mission is to give people the power to build community and bring the world closer together.?",
+        options: [{
+          option: "Twitter",
+          correct: false
+        }, {
+          option: "Facebook",
+          correct: true
+        }, {
+          option: "Apple",
+          correct: false
+        }],
+        img: {
+          src: '',
+          alt: ''
+        },
+        feedback: "",
+        moreUrl: ''
+      }, {
+        question: "To refresh the world in mind, body and spirit. To inspire moments of optimism and happiness through our brands and actions.?",
+        options: [{
+          option: "Pepsico",
+          correct: false
+        }, {
+          option: "Coca Cola",
+          correct: true
+        }, {
+          option: "Unilever",
+          correct: false
+        }],
+        img: {
+          src: '',
+          alt: ''
+        },
+        feedback: "",
+        moreUrl: ''
+      }]
+    }
+  }
+
+
+  updateAnswer(e) {
+    //record whether the question was answered correctly
+    let answerValue = e.target.value;
+
+    this.setState((prevState, props) => {
+      let stateToUpdate = prevState.questions;
+      //convert boolean string to boolean with JSON.parse()
+      stateToUpdate[prevState.currentQuestion].answerCorrect = JSON.parse(answerValue);
+
+      return {questions: stateToUpdate};
+    });
+  }
+
+  checkAnswer(e) {
+    //display to the user whether their answer is correct
+    this.setState((prevState, props) => {
+      let stateToUpdate = prevState.questions;
+      stateToUpdate[prevState.currentQuestion].checked = true;
+
+      return {questions: stateToUpdate};
+    });
+  }
+
+  nextQuestion(e) {
+    //advance to the next question
+    this.setState((prevState, props) => {
+      let stateToUpdate = prevState.currentQuestion;
+
+      return {currentQuestion: stateToUpdate+1};
+    }, () => {
+      this.radioRef.current.reset();
+    });
+  }
+
+  getResults() {
+    //loop through questions and calculate the number right
+    let correct = this.state.correct;
+
+    this.state.questions.forEach((item, index) => {
+      if (item.answerCorrect) {
+        ++correct;
       }
 
-      // add this question and its answers to the output
-      output.push(
-        `<div class="slide">
-           <div class="question"> ${currentQuestion.question} </div>
-           <div class="answers"> ${answers.join("")} </div>
-         </div>`
+      if (index === (this.state.questions.length-1)) {
+        this.setState({
+          correct: correct,
+          inProgress: false
+        });
+      }
+    });
+  }
+
+  startOver() {
+    //reset form and state back to its original value
+    this.setState((prevState, props) => {
+      let questionsToUpdate = prevState.questions;
+
+      questionsToUpdate.forEach(item => {
+        //clear answers from previous state
+        delete item.answerCorrect;
+        delete item.checked;
+      });
+
+      return {
+        inProgress: true,
+        correct: 0,
+        currentQuestion: 0,
+        questions: questionsToUpdate
+      }
+    });
+  }
+
+  componentDidMount() {
+    //since we're re-using the same form across questions,
+    //create a ref to it so we can clear its state after a question is answered
+    this.radioRef = React.createRef();
+  }
+
+  render() {
+    if (!this.state.inProgress) {
+      return (
+        <section className="quiz">
+          <Results correct={this.state.correct} questionLength={this.state.questions.length} startOver={this.startOver} />
+        </section>
       );
-    });
-
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer2.innerHTML = output.join("");
-  }
-
-  function showResults() {
-    // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll(".answers");
-
-    // keep track of user's answers
-    let numCorrect = 0;
-
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-      // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
-        numCorrect++;
-
-        // color the answers green
-        answerContainers[questionNumber].style.color = "lightgreen";
-      } else {
-        // if answer is wrong or blank
-        // color the answers red
-        answerContainers[questionNumber].style.color = "red";
-      }
-    });
-
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
-
-  function showSlide(n) {
-    slides[currentSlide].classList.remove("active-slide");
-    slides[n].classList.add("active-slide");
-    currentSlide = n;
-    
-    if (currentSlide === 0) {
-      previousButton.style.display = "none";
-    } else {
-      previousButton.style.display = "inline-block";
     }
-    
-    if (currentSlide === slides.length - 1) {
-      nextButton.style.display = "none";
-      submitButton.style.display = "inline-block";
-    } else {
-      nextButton.style.display = "inline-block";
-      submitButton.style.display = "none";
-    }
+
+    return (
+      <section className="quiz fade-in" aria-live="polite">
+        <QuizProgress currentQuestion={this.state.currentQuestion} questionLength={this.state.questions.length} />
+        <div className="question-container">
+          {this.state.questions[this.state.currentQuestion].img.src &&
+            <QuestionImage img={this.state.questions[this.state.currentQuestion].img} />
+          }
+          <p className="question"><RawHTML html={this.state.questions[this.state.currentQuestion].question} /></p>
+
+          <form ref={this.radioRef}>
+            {this.state.questions[this.state.currentQuestion].options.map((item, index) => {
+              return <div key={index}
+                      className={"option" + (this.state.questions[this.state.currentQuestion].checked && !item.correct ? ' dim' : '') + (this.state.questions[this.state.currentQuestion].checked && item.correct ? ' correct' : '')}>
+                      <input id={"radio-"+index} onClick={this.updateAnswer} type="radio" name="option" value={item.correct}
+                          disabled={this.state.questions[this.state.currentQuestion].checked} />
+                        <label htmlFor={"radio-"+index}><RawHTML html={item.option}/></label>
+                    </div>
+              })}
+          </form>
+
+          <div className="bottom">
+            {this.state.questions[this.state.currentQuestion].feedback && this.state.questions[this.state.currentQuestion].checked
+              && <div className="fade-in">
+                <p>
+                  <RawHTML html={this.state.questions[this.state.currentQuestion].feedback} />
+                  {this.state.questions[this.state.currentQuestion].moreUrl &&
+                    <React.Fragment>
+                       &nbsp;<a target="_blank" href={this.state.questions[this.state.currentQuestion].moreUrl}>Learn more</a>.
+                    </React.Fragment>
+                  }
+                </p>
+              </div>
+            }
+
+            {!this.state.questions[this.state.currentQuestion].checked &&
+               <button type="button" onClick={this.checkAnswer}
+               disabled={!('answerCorrect' in this.state.questions[this.state.currentQuestion])}>Check answer</button>
+             }
+
+            {(this.state.currentQuestion+1) < this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
+              <button className="fade-in next" type="button" onClick={this.nextQuestion}>Next <i className="fa fa-arrow-right"></i></button>
+            }
+          </div>
+
+          {(this.state.currentQuestion+1) === this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
+            <button type="button" className="get-results pulse" onClick={this.getResults}>Get Results</button>
+          }
+        </div>
+      </section>
+    )
   }
+}
 
-  function showNextSlide() {
-    showSlide(currentSlide + 1);
-  }
-
-  function showPreviousSlide() {
-    showSlide(currentSlide - 1);
-  }
-
-  const quizContainer = document.getElementById("quiz");
-  const resultsContainer = document.getElementById("results");
-  const submitButton = document.getElementById("submit");
-
-  // display quiz right away
-  buildQuiz();
-
-  const previousButton = document.getElementById("previous");
-  const nextButton = document.getElementById("next");
-  const slides = document.querySelectorAll(".slide");
-  let currentSlide = 0;
-
-  showSlide(0);
-
-  // on submit, show results
-  submitButton.addEventListener("click", showResults);
-  previousButton.addEventListener("click", showPreviousSlide);
-  nextButton.addEventListener("click", showNextSlide);
-})();
-
-
-
-
-
-// const quizContainer = documnet.getElementById('quiz')
-// const resultsContainer = document.getElementById('results')
-// const submitButton = document.getElementById('submit--quiz')
-
-// function buildQuiz(){}
-
-// function showResults(){}
-
-// // display quiz right away
-// buildQuiz();
-
-// // on submit, show results 
-
-// submitButton.addEventListener('click', showResults)
-
-// const myQuestions = [
-//     {
-//         questions: "",
-//         answers: {
-//             a: "",
-//             b:"",
-//             c:""
-
-//         },
-//         correctAnswer: ""
-//     },
-
-// ]
-
-// function buildQuiz(){
-//     const output =[];
-//     myQuestions.forEach(
-//         (currentQuestions,questionsNumber) => {
-//             // we'll want to store the list answers choices
-//             const answers = [];
-//              //and for each avalible answer
-//              for(letter in currentQuestions.answers){
-//                  //..and an html radio button
-
-//                  answers.push(
-//                      `<label>
-//                      <input type = "radio" name "questions${questionsNumber}"
-//                      ${letter} :
-//                      ${currentQuestion.answers[letter]}</label>`
-
-//                  );
-//                 }
-//                  // add this question and its answers to output
-//         output.push(
-//             `<div class= "questions">${currentQuestion.question}</div>
-//             <divclass = "answers"> ${answers.join('')}</div>`
-//         );
-
-
-//         }
-       
-//     )
-//     //finallt combine our output list into one stringof html and put it on the page 
-//     quizContainer,innerHtml = output.join('');
-
-// }
-//  myQuestions.forEach((currentQuestion,questionNumber)=>{
-//     //here goes the code we want to run for each question
-//  });
-
-//  function showResults(){
-//      //gather answer containers from our quiz
-
-//      const answerContainers = quizContainer.querySelectorAll('.answers');
-
-//      //keep track of user's answers
-//      let numCorrect = 0;
-
-//      // for each question
-//      myQuestions.forEach((currentQuestion,questionNumber)=> {
-//          // find selected answer 
-//          const answerContainer = answerContainers[questionNumber];
-//          const selector = 'input[name = question'+ questionNumber+']:checked';
-//          userAnswer = (answerContainer.querySelector(selector)) || {}.value;
-//          // if answer is correct 
-//           if(userAnswer===currentQuestion.correctAnswer){
-//               //add to the nu,ber of correct answers
-//               numCorrect++;
-
-//               //color the answer green
-//               answerContainer[questionNumber].style.color = 'lightgreen';
-
-//           }
-//           //if the answer is wrong or blank
-//           else {
-//               //colot the answer red
-//               answerContainer[questionNumber].style.color = 'red';
-
-//           }
-
-//      });
-
-//      //show number of correct answers out of total
-//      resultsContainer.innerHTML = numCorrect + 'out of' + myQuestions.length;
-//  }
-//  //
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(<Quiz />, document.getElementById('quiz--mission'));
+})

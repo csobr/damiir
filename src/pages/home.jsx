@@ -3,9 +3,10 @@ import { Helmet } from "react-helmet";
 import "../styles/main.scss";
 import hero from "../assets/img/swans.mp4";
 import earth from "../assets/img/earth.gif";
-import storyImg from "../assets/img/zipline.jpg";
-import storyImg2 from "../assets/img/zipline.svg";
- import Toggle from "../components/toggle.jsx";
+import storyImg1 from "../assets/img/zipline.svg";
+import storyImg2 from "../assets/img/zipline.jpg";
+import Toggle from "../components/toggle.jsx";
+import "../components/quiz.jsx";
 export default class Home extends Component {
   render() {
     return (
@@ -16,22 +17,22 @@ export default class Home extends Component {
           <meta name="keywords" content="work for a good company" />
         </Helmet>
         <div className="home--wrapper">
-          <div className="first--view">
+          <section className="first--view">
             <div className="hero">
               <video className="video--bg" autoPlay loop muted>
                 <source src={hero} type="video/mp4" />
               </video>
             </div>
-          </div>
+          </section>
 
-          <div className="second--view  second--view-one">
+          <section className="second--view  second--view-one">
             <h1>“Look for systems, not heroes.”</h1>
             <p className="qoute">
               ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
               World—and Why Things Are Better Than You Think
             </p>
-          </div>
-          <div className="second--view second--view-two ">
+          </section>
+          <section className="second--view second--view-two ">
             <div className="circle">
               <img src={earth} alt="earth" />
             </div>
@@ -41,11 +42,11 @@ export default class Home extends Component {
                 A lot us want to do impactfull work but how do we go about that.
                 We aim to help you find that company where your values and
                 worldview align. We started this because for us our jobs should
-                be an opportunity to make a a real difference in people lives.
+                be an opportunity to make a good change.
               </p>
             </div>
-          </div>
-          <div className="third--view third--view-three ">
+          </section>
+          <section className="third--view third--view-three ">
             <div className="story--month">
               <p className="story--month-feature">Company of the month</p>
               <h4> Zipline </h4>
@@ -65,21 +66,17 @@ export default class Home extends Component {
               </p>
             </div>
             <div className="story--images">
-              <img src={storyImg} alt="zipline" />
+              <img src={storyImg1} alt="zipline" />
               <img src={storyImg2} alt="zipline" />
             </div>
-          </div>
-          <div className="fourth--view fourth--view-four">
+          </section>
+          <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
-            <Toggle /> 
-            <div className="quiz--container">
-  <div id="quiz"></div>
-</div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div>
-          </div>
+            <Toggle />
+            <div id="quiz--wrapper">
+              <section id="quiz--mission"></section>
+            </div>
+          </section>
         </div>
       </div>
     );
