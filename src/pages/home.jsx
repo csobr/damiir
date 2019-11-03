@@ -37,6 +37,7 @@ export default class Home extends Component {
           <section className="second--view ">
             <div className="circle">
               <img src={city} alt="city" />
+              <p> By Shurly</p>
             </div>
             <div className="mission">
               <h3>Why?</h3>
@@ -75,9 +76,9 @@ export default class Home extends Component {
           <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
             <Toggle />
-            {/* <div id="quiz--wrapper">
+            <div id="quiz--wrapper">
               <section id="quiz--mission"></section>
-            </div> */}
+            </div>
           </section>
         </div>
       </div>
