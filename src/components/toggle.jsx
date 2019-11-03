@@ -25,7 +25,7 @@ export default () => {
         />
 
         <label htmlFor="enviroment" className="select--item select--item-green">
-          Enviroment
+        Environment
         </label>
         <input
           type="button"

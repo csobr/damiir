@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import "../styles/main.scss";
-import hero from "../assets/img/swans.mp4";
-import earth from "../assets/img/earth.gif";
+import hero from "../assets/img/darkwater.gif";
+import city from "../assets/img/city.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
@@ -19,30 +19,32 @@ export default class Home extends Component {
         <div className="home--wrapper">
           <section className="first--view">
             <div className="hero">
-              <video className="video--bg" autoPlay loop muted>
+              {/* <video className="video--bg" autoPlay loop muted>
                 <source src={hero} type="video/mp4" />
-              </video>
+              </video> */}
+              <img src={hero} className="hero--bg"></img>
+              <div className="hero--text">
+              <h1>“Look for systems, not heroes.”</h1>
+              <p className="qoute">
+                ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
+                World—and Why Things Are Better Than You Think
+              </p>
+              </div>
             </div>
           </section>
 
-          <section className="second--view  second--view-one">
-            <h1>“Look for systems, not heroes.”</h1>
-            <p className="qoute">
-              ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
-              World—and Why Things Are Better Than You Think
-            </p>
-          </section>
-          <section className="second--view second--view-two ">
+         
+          <section className="second--view ">
             <div className="circle">
-              <img src={earth} alt="earth" />
+              <img src={city} alt="city" />
             </div>
             <div className="mission">
-              <h3>Mission</h3>
+              <h3>Why?</h3>
               <p className="mission--text">
                 A lot us want to do impactfull work but how do we go about that.
-                We aim to help you find that company where your values and
+                We aim to help you find the company where your values and
                 worldview align. We started this because for us our jobs should
-                be an opportunity to make a good change.
+                be an opportunity to reduce suffering in the world where we can.
               </p>
             </div>
           </section>
@@ -73,9 +75,9 @@ export default class Home extends Component {
           <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
             <Toggle />
-            <div id="quiz--wrapper">
+            {/* <div id="quiz--wrapper">
               <section id="quiz--mission"></section>
-            </div>
+            </div> */}
           </section>
         </div>
       </div>
