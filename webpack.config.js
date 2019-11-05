@@ -9,7 +9,7 @@ var BrotliPlugin = require('brotli-webpack-plugin');
 module.exports = {
     devtool: "source-map",
 
-    mode: 'development',
+    mode: 'production',
     entry: ['./src/index.js'],
     output: {
         path: __dirname + '/dist',

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "../styles/main.scss";
 import hero from "../assets/img/darkwater.gif";
 import sphere from "../assets/img/sphere.gif";
@@ -12,11 +12,13 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Helmet>
+       <HelmetProvider>
+      <Helmet>
           <meta name="description" content="Work on impact driven software." />
           <meta name="keywords" content=" I want to work for a good company" />        
           <title>damiir</title>
         </Helmet>
+      </HelmetProvider>
         <div className="home--wrapper">
           <section className="first--view">
             <div className="hero">
