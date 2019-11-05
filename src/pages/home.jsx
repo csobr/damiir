@@ -7,14 +7,15 @@ import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
 import "../components/quiz.jsx";
+import Newsletter from "../components/newsletter.jsx";
 export default class Home extends Component {
   render() {
     return (
       <div>
         <Helmet>
+          <meta name="description" content="Work on impact driven software." />
+          <meta name="keywords" content=" I want to work for a good company" />        
           <title>damiir</title>
-          <meta name="description" content="sleep good at night" />
-          <meta name="keywords" content="work for a good company" />
         </Helmet>
         <div className="home--wrapper">
           <section className="first--view">
@@ -80,8 +81,10 @@ export default class Home extends Component {
              <div className="quiz--wrapper">
               <section id="quiz--mission"></section>
             </div> 
+            
           </section>
         </div>
+        <Newsletter />
       </div>
     );
   }

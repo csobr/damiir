@@ -48,26 +48,26 @@ export default class Newsletter extends Component {
         <section id="newsletter">
           <form onSubmit={this.handleSubmit}>
             <h1>Join our newsletter</h1>
-            <label className="name"></label>
-            <input
+            <label htmlFor="name"><input
               type="text"
               name="name"
               id="name"
               placeholder="Name"
               onChange={this.handleChange}
-            />
+            /></label>
+            
             <div style={{ fontSize: 10, color: "red" }}>
               {this.state.nameError}
-            </div>
-            <label className="email"></label>
+            </div>  
+            <label htmlFor="email">
             <input
               autoComplete="off"
               type="email"
               name="email"
               id="email"
               placeholder="Email"
-              onChange={this.handleChange}
-            />
+              onChange={this.handleChange} />
+           </label>
             <button onSubmit={this.handleSubmit}>Join</button>
           </form>
         </section>

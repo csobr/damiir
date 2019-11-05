@@ -1,12 +1,9 @@
 @import "../theme/color";
 @import "../abstracts/mixins";
-@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-$green: #36ad3b;
-$red: #ff1100;
-$yellow: #f3c000;
-$blue: #1dcca6;
+$green: #51ff5a;
+$red: #ff3729;
 
 .quiz--wrapper {
 @include flexCenter();

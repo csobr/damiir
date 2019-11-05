@@ -1,6 +1,8 @@
 
 const HtmlWebPackPlugin = require ("html-webpack-plugin");
 const MiniCssExtractPlugin = require ("mini-css-extract-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
+var BrotliPlugin = require('brotli-webpack-plugin');
 
 
 
@@ -58,9 +60,23 @@ module.exports = {
          new MiniCssExtractPlugin ({
              filename: "[name].css",
              chunkFilename: "[id].css"
-         })
+         }),
+         new CompressionPlugin({
+          filename: '[path].br[query]',
+          algorithm: 'brotliCompress',
+          test: /\.(js|css|html|svg)$/,
+          compressionOptions: { level: 11 },
+          threshold: 10240,
+          minRatio: 0.8,
+          deleteOriginalAssets: false,
+        }),
     
-  
+          new BrotliPlugin({
+              asset: '[path].br[query]',
+              test: /\.(js|css|html|svg)$/,
+              threshold: 10240,
+              minRatio: 0.8
+          })
     ]
 
 };

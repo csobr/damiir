@@ -1,0 +1,16 @@
+{
+    "short_name": "damiir",
+    "name": "damiir",
+    "icons": [
+
+      {
+        "src": "/src/assets/img/favic´on.png",
+        "type": "image/x-icon",
+        "sizes": "64x64 32x32 24x24 16x16"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#050505",
+    "background_color": "#050505"
+  }
