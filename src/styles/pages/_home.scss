@@ -70,13 +70,15 @@ h3 {
   color: $fourth_color;
 }
 .circle {
-  flex-direction: column;
   @include flexCenter();
-  height: 50rem;
-  p{
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  width: 50rem;
+
+}  .credit{
     color: $fourth_color;
   }
-}
 .circle img {
    width: 50rem;
   border-radius: 50%;
@@ -156,12 +158,13 @@ h6 {
 }
 .select--field {
   flex-direction: row;
+  flex-wrap: wrap;
   width: 50rem;
   @include flex();
   overflow: hidden;
 }
 .select--field label {
-  flex-flow: wrap;
+  flex-wrap: wrap;
   @include flexCenter();
   color: $fourth_color;
   font-weight: 700;
@@ -178,6 +181,7 @@ h6 {
   transition: all 0.2s ease-in-out;
   text-transform: lowercase; 
   transition: 0.5s all ease;
+  cursor: pointer;
   &:hover {
     transform: scale(1.1);
    
@@ -193,32 +197,37 @@ h6 {
   // box-shadow: 0px 2px 6px 2px $fifth_color;
 }
 #select-field--info {
-  height: 55rem;
-  width: 90rem;
-  background:$sixth_color;
+  @include flex();
+  flex-direction: column;
+  height: 50rem;
+  border: 6px solid $sixth_color; 
+  flex-wrap: wrap;
 }
 #select-field--info p {
+  min-width: 100vh;
   color: $fifth_color;
-  font-size: 3rem;
+  width: 60rem;
+  font-size: 2.6rem;
   line-height: 2;
-  font-weight: 700;
+  font-weight: 600;
   white-space: pre-wrap;
-  padding: 5rem;
   text-align: center;
+  
 }
 #start {
   display: flex;
   font-weight: 700;
   justify-content: center;
-  width: 23rem;
-  height: 7rem;
+  padding: 1rem 3rem;
   background: $fifth_color;
   margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;
-  outline: none;    transition: 2s all ease;
+  outline: none;    
+  transition: 2s all ease;
   &:hover {
     transform: scale(1.1);
+    color: $sixth_color;
 
   }
 }

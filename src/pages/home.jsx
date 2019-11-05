@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import "../styles/main.scss";
 import hero from "../assets/img/darkwater.gif";
-import city from "../assets/img/city.gif";
+import sphere from "../assets/img/sphere.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
@@ -22,7 +22,7 @@ export default class Home extends Component {
               {/* <video className="video--bg" autoPlay loop muted>
                 <source src={hero} type="video/mp4" />
               </video> */}
-              <img src={hero} className="hero--bg"></img>
+              <img src={hero} className="hero--bg" alt ="hero"></img>
               <div className="hero--text">
               <h1>“Look for systems, not heroes.”</h1>
               <p className="qoute">
@@ -36,9 +36,10 @@ export default class Home extends Component {
          
           <section className="second--view ">
             <div className="circle">
-              <img src={city} alt="city" />
-              <p> By Shurly</p>
-            </div>
+              <img src={sphere} alt="sphere" />
+           <p className = "credit"> By Shurly</p>
+            </div>   
+            
             <div className="mission">
               <h3>Why?</h3>
               <p className="mission--text">
@@ -76,9 +77,9 @@ export default class Home extends Component {
           <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
             <Toggle />
-            <div id="quiz--wrapper">
+             <div className="quiz--wrapper">
               <section id="quiz--mission"></section>
-            </div>
+            </div> 
           </section>
         </div>
       </div>

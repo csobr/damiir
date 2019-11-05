@@ -90,8 +90,8 @@ export default () => {
       </div>
       {showField && (
         <div>
+          
           <div id="select-field--info">
-       
             <h6>Oh,But first!</h6>
             <p>
               Let’s play a game called: Mission failed!{"\n"}

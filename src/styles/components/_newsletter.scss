@@ -1,0 +1,44 @@
+@import "../theme/color";
+@import "../abstracts/mixins";
+#newsletter h1{
+  font-size: 1.8rem;
+  padding:0;
+}
+#newsletter {
+@include flexCenter();
+width: 30rem;
+margin: 0 auto;
+
+}
+#newsletter input {
+margin: 3rem 0 0 0;
+box-sizing: border-box;
+width: 100%;
+display: inline-block;
+font-size: 1.2em;
+border: 0;
+border-bottom: 1px solid $fourth_color;
+text-align: left;
+outline: none;
+background: transparent;
+color: #fff;
+}
+#newsletter input:focus {
+background: transparent;
+padding: 1rem;
+border: none;
+border-bottom: 1px solid $secondary_color;
+color: $fourth_color;
+outline: none;
+}
+
+#newsletter button {
+background: transparent;
+color: #fff;
+font-family: sans-serif;
+letter-spacing: 0.2em;
+margin-top: 3rem;
+padding: 9px 20px;
+border: 1px solid $fourth_color;
+outline: none;
+}

@@ -1,6 +1,6 @@
 @import "theme/color";
 .logo a {
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.45;
   list-style: none;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   color: $secondary_color;
 }
 nav {
-  padding: 2.75rem 10% 0 10%;
+  padding: 2.75rem 10% 0 0;
   top: 0;
   left: 0;
   right: 0;
@@ -94,7 +94,6 @@ nav {
     flex-direction: row;
     position: relative;
     line-height: 1.45;
-    font-size: 1.1rem;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -120,7 +119,6 @@ ul {
   padding: 0;
   list-style: none;
   display: table;
-  width: 600px;
   text-align: center;
 }
 li {

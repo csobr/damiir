@@ -9,7 +9,7 @@ export default class Navbar extends Component {
         
               <ul className = "nav--links">
                   <li>
-                      <Link to = "/about" activeClassName='active'onClick={this.toggle}>About</Link>
+                      <Link to = "/knowledge" activeClassName='active'onClick={this.toggle}>Knowledge</Link>
 
                   </li>
                   <li>
@@ -19,11 +19,11 @@ export default class Navbar extends Component {
                   <li className = "logo">
                   <Link to = "/" activeClassName='active'onClick={this.toggle}>damiir</Link> </li>
                   <li>
-                      <Link to = "/field"onClick={this.toggle}>Change</Link>
+                      <Link to = "/blog"onClick={this.toggle}>Blog</Link>
 
                   </li>
                     <li>
-                      <Link to = "/r" activeClassName="active"onClick={this.toggle}>Contact</Link>
+                      <Link to = "/about" activeClassName="active"onClick={this.toggle}>about</Link>
 
                   </li>
               </ul>
