@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/main.scss";
 import hero from "../assets/img/darkwater.gif";
 import sphere from "../assets/img/sphere.gif";
@@ -12,37 +12,42 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-       <HelmetProvider>
-      <Helmet>
-          <meta name="description" content="Work on impact driven software." />
-          <meta name="keywords" content=" I want to work for a good company" />        
-          <title>damiir</title>
-        </Helmet>
-      </HelmetProvider>
+        <HelmetProvider>
+          <Helmet>
+            <meta
+              name="description"
+              content="Work on impact driven software."
+            />
+            <meta
+              name="keywords"
+              content=" I want to work for a good company"
+            />
+            <title>damiir</title>
+          </Helmet>
+        </HelmetProvider>
         <div className="home--wrapper">
           <section className="first--view">
             <div className="hero">
               {/* <video className="video--bg" autoPlay loop muted>
                 <source src={hero} type="video/mp4" />
               </video> */}
-              <img src={hero} className="hero--bg" alt ="hero"></img>
+              <img src={hero} className="hero--bg" alt="hero"></img>
               <div className="hero--text">
-              <h1>“Look for systems, not heroes.”</h1>
-              <p className="qoute">
-                ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
-                World—and Why Things Are Better Than You Think
-              </p>
+                <h1>“Look for systems, not heroes.”</h1>
+                <p className="qoute">
+                  ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
+                  World—and Why Things Are Better Than You Think
+                </p>
               </div>
             </div>
           </section>
 
-         
           <section className="second--view ">
             <div className="circle">
               <img src={sphere} alt="sphere" />
-           <p className = "credit"> By Shurly</p>
-            </div>   
-            
+              <p className="credit"> By Shurly</p>
+            </div>
+
             <div className="mission">
               <h3>Why?</h3>
               <p className="mission--text">
@@ -80,10 +85,9 @@ export default class Home extends Component {
           <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
             <Toggle />
-             <div className="quiz--wrapper">
+            <div className="quiz--wrapper">
               <section id="quiz--mission"></section>
-            </div> 
-            
+            </div>
           </section>
         </div>
         <Newsletter />

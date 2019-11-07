@@ -1,5 +1,4 @@
 import React from "react";
-import Newsletter from "./newsletter.jsx";
 export default () => {
     return (
         <div > 

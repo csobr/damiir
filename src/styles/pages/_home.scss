@@ -7,23 +7,23 @@
 .hero {
   display: flex;
   flex-direction: column;
-overflow: hidden; 
- min-height: 100vh;
- position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  position: relative;
 }
-.hero--bg{ 
+.hero--bg {
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 100%;  
+  min-height: 100%;
 }
-.hero--text{
-position: absolute;
-bottom: 0;
-left: 0;
-padding:1.5rem;
+.hero--text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
 }
 h1 {
   font-size: 4rem;
@@ -31,20 +31,16 @@ h1 {
   font-weight: 700;
   overflow: hidden;
   color: $fourth_color;
-  
-  
 }
 .qoute {
   font-size: 1rem;
   padding-left: 2rem;
   color: $fourth_color;
-  
 }
 .second--view {
   @include flex();
   min-height: 80vh;
   margin: 5%;
-
 }
 .mission {
   @include flexCenter();
@@ -52,7 +48,6 @@ h1 {
   flex-wrap: wrap;
   width: 60rem;
   height: 50rem;
-  
 }
 h3 {
   padding: 1.8rem;
@@ -70,19 +65,17 @@ h3 {
   color: $fourth_color;
 }
 .circle {
-  @include flexCenter();
+  @include flex();
   flex-wrap: wrap;
   flex-direction: column;
-  height: auto;
-  width: 50rem;
-
-}  .credit{
-    color: $fourth_color;
-  }
+}
+.credit {
+  width: 5rem;
+  color: $fourth_color;
+}
 .circle img {
-   width: 50rem;
+  width: 50rem;
   border-radius: 50%;
-
 }
 .third--view {
   @include flex();
@@ -100,13 +93,13 @@ h6 {
   font-weight: 700;
   overflow: hidden;
 }
-h4{
-color:$primary_color;
+h4 {
+  color: $primary_color;
 }
 h5 {
   color: $fifth_color;
   margin: 2rem;
-  padding:2rem;
+  padding: 2rem;
   text-align: center;
 }
 h6 {
@@ -154,7 +147,6 @@ h6 {
 }
 .company--selection {
   @include flexCenter();
- 
 }
 .select--field {
   flex-direction: row;
@@ -179,12 +171,11 @@ h6 {
   border-radius: 50%;
   outline: none;
   transition: all 0.2s ease-in-out;
-  text-transform: lowercase; 
+  text-transform: lowercase;
   transition: 0.5s all ease;
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
-   
   }
 }
 
@@ -200,7 +191,7 @@ h6 {
   @include flex();
   flex-direction: column;
   height: 50rem;
-  border: 6px solid $sixth_color; 
+  border: 6px solid $sixth_color;
   flex-wrap: wrap;
 }
 #select-field--info p {
@@ -212,7 +203,6 @@ h6 {
   font-weight: 600;
   white-space: pre-wrap;
   text-align: center;
-  
 }
 #start {
   display: flex;
@@ -223,11 +213,10 @@ h6 {
   margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;
-  outline: none;    
+  outline: none;
   transition: 2s all ease;
   &:hover {
     transform: scale(1.1);
     color: $sixth_color;
-
   }
 }
