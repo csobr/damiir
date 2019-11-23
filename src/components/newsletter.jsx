@@ -47,7 +47,7 @@ export default class Newsletter extends Component {
       <div>
         <section id="newsletter">
           <form onSubmit={this.handleSubmit}>
-            <h1>Join our newsletter</h1>
+            <p>Join our newsletter</p>
             <label htmlFor="name"></label>
             <input
               type="text"

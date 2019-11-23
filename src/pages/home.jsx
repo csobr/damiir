@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/main.scss";
-import hero from "../assets/img/darkwater.gif";
 import sphere from "../assets/img/sphere.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
@@ -28,17 +27,7 @@ export default class Home extends Component {
         <div className="home--wrapper">
           <section className="first--view">
             <div className="hero">
-              {/* <video className="video--bg" autoPlay loop muted>
-                <source src={hero} type="video/mp4" />
-              </video> */}
-              <img src={hero} className="hero--bg" alt="hero"></img>
-              <div className="hero--text">
-                <h1>“Look for systems, not heroes.”</h1>
-                <p className="qoute">
-                  ― Hans Rosling, Factfulness: Ten Reasons We're Wrong About the
-                  World—and Why Things Are Better Than You Think
-                </p>
-              </div>
+              <h1>Don't cause harm with your line of work.</h1>
             </div>
           </section>
 
@@ -49,12 +38,13 @@ export default class Home extends Component {
             </div>
 
             <div className="mission">
-              <h3>Why?</h3>
+              <h3>...</h3>
               <p className="mission--text">
-                A lot us want to do impactfull work but how do we go about that.
-                We aim to help you find the company where your values and
-                worldview align. We started this because for us our jobs should
-                be an opportunity to reduce suffering in the world where we can.
+                A lot us aim to do impactfull work but how do we go about
+                finding that workplace. We want to help you find the company
+                where your values and worldview align. We started this because
+                for us our jobs should be an opportunity to reduce suffering in
+                the world where we can.
               </p>
             </div>
           </section>

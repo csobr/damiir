@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom'
 //render raw HTML from question data 
-const RawHTML = (props) => <span dangerouslySetInnerHTML={{__html: props.html}}></span>;
+const RawHTML = (props) => <span dangerouslySetInnerHTML={{ __html: props.html }}></span>;
 
 class QuestionImage extends React.Component {
   constructor(props) {
@@ -32,9 +32,9 @@ const QuizProgress = (props) => {
   return (
     <div className="progress">
       <p className="counter">
-        <span>Question {props.currentQuestion+1} of {props.questionLength}</span>
+        <span>Question {props.currentQuestion + 1} of {props.questionLength}</span>
       </p>
-      <div className="progress-bar" style={{'width': ((props.currentQuestion+1) / props.questionLength) * 100 + '%'}}></div>
+      <div className="progress-bar" style={{ 'width': ((props.currentQuestion + 1) / props.questionLength) * 100 + '%' }}></div>
     </div>
   );
 }
@@ -42,7 +42,7 @@ const QuizProgress = (props) => {
 const Results = (props) => {
   return (
     <div className="results fade-in">
-      <h1>Your score: {((props.correct/props.questionLength) * 100).toFixed()}%</h1>
+      <h1>Your score: {((props.correct / props.questionLength) * 100).toFixed()}%</h1>
       <button type="button" onClick={props.startOver}>Try again <i className="fas fa-redo"></i></button>
     </div>
   );
@@ -130,7 +130,7 @@ class Quiz extends React.Component {
       //convert boolean string to boolean with JSON.parse()
       stateToUpdate[prevState.currentQuestion].answerCorrect = JSON.parse(answerValue);
 
-      return {questions: stateToUpdate};
+      return { questions: stateToUpdate };
     });
   }
 
@@ -140,7 +140,7 @@ class Quiz extends React.Component {
       let stateToUpdate = prevState.questions;
       stateToUpdate[prevState.currentQuestion].checked = true;
 
-      return {questions: stateToUpdate};
+      return { questions: stateToUpdate };
     });
   }
 
@@ -149,7 +149,7 @@ class Quiz extends React.Component {
     this.setState((prevState, props) => {
       let stateToUpdate = prevState.currentQuestion;
 
-      return {currentQuestion: stateToUpdate+1};
+      return { currentQuestion: stateToUpdate + 1 };
     }, () => {
       this.radioRef.current.reset();
     });
@@ -164,7 +164,7 @@ class Quiz extends React.Component {
         ++correct;
       }
 
-      if (index === (this.state.questions.length-1)) {
+      if (index === (this.state.questions.length - 1)) {
         this.setState({
           correct: correct,
           inProgress: false
@@ -220,12 +220,12 @@ class Quiz extends React.Component {
           <form ref={this.radioRef}>
             {this.state.questions[this.state.currentQuestion].options.map((item, index) => {
               return <div key={index}
-                      className={"option" + (this.state.questions[this.state.currentQuestion].checked && !item.correct ? ' dim' : '') + (this.state.questions[this.state.currentQuestion].checked && item.correct ? ' correct' : '')}>
-                      <input id={"radio-"+index} onClick={this.updateAnswer} type="radio" name="option" value={item.correct}
-                          disabled={this.state.questions[this.state.currentQuestion].checked} />
-                        <label htmlFor={"radio-"+index}><RawHTML html={item.option}/></label>
-                    </div>
-              })}
+                className={"option" + (this.state.questions[this.state.currentQuestion].checked && !item.correct ? ' dim' : '') + (this.state.questions[this.state.currentQuestion].checked && item.correct ? ' correct' : '')}>
+                <input id={"radio-" + index} onClick={this.updateAnswer} type="radio" name="option" value={item.correct}
+                  disabled={this.state.questions[this.state.currentQuestion].checked} />
+                <label htmlFor={"radio-" + index}><RawHTML html={item.option} /></label>
+              </div>
+            })}
           </form>
 
           <div className="bottom">
@@ -235,7 +235,7 @@ class Quiz extends React.Component {
                   <RawHTML html={this.state.questions[this.state.currentQuestion].feedback} />
                   {this.state.questions[this.state.currentQuestion].moreUrl &&
                     <React.Fragment>
-                       &nbsp;<a target="_blank" href={this.state.questions[this.state.currentQuestion].moreUrl}>Learn more</a>.
+                      &nbsp;<a target="_blank" href={this.state.questions[this.state.currentQuestion].moreUrl}>Learn more</a>.
                     </React.Fragment>
                   }
                 </p>
@@ -243,16 +243,16 @@ class Quiz extends React.Component {
             }
 
             {!this.state.questions[this.state.currentQuestion].checked &&
-               <button type="button" onClick={this.checkAnswer}
-               disabled={!('answerCorrect' in this.state.questions[this.state.currentQuestion])}>Check answer</button>
-             }
+              <button type="button" onClick={this.checkAnswer}
+                disabled={!('answerCorrect' in this.state.questions[this.state.currentQuestion])}>Check answer</button>
+            }
 
-            {(this.state.currentQuestion+1) < this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
+            {(this.state.currentQuestion + 1) < this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
               <button className="fade-in next" type="button" onClick={this.nextQuestion}>Next <i className="fa fa-arrow-right"></i></button>
             }
           </div>
 
-          {(this.state.currentQuestion+1) === this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
+          {(this.state.currentQuestion + 1) === this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
             <button type="button" className="get-results pulse" onClick={this.getResults}>Get Results</button>
           }
         </div>

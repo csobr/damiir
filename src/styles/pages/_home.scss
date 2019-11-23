@@ -1,41 +1,57 @@
 @import "../theme/color";
 @import "../abstracts/mixins";
-.home {
+.home--wrapper {
+  min-width: 100%;
   min-height: 100vh;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+.first--view {
   min-height: 100vh;
-  position: relative;
-}
-.hero--bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
   min-width: 100%;
-  min-height: 100%;
 }
-.hero--text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1.5rem;
-}
-h1 {
+.hero {
+  @include center();
   font-size: 4rem;
-  padding-left: 2rem;
-  font-weight: 700;
-  overflow: hidden;
   color: $fourth_color;
+  letter-spacing: 0.22rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  @include fade();
 }
-.qoute {
-  font-size: 1rem;
-  padding-left: 2rem;
-  color: $fourth_color;
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .second--view {
   @include flex();
