@@ -7,7 +7,7 @@ export default () => {
     <div className="company--selection">
       <div className="select--field">
         <label htmlFor="healthcare" className="select--item select--item-green">
-          Healthcare
+          Health
           <input
             type="button"
             id="healthcare"
@@ -16,7 +16,7 @@ export default () => {
         </label>
 
         <label htmlFor="security" className="select--item select--item-pink">
-          Security
+          Cyber security
         </label>
         <input
           type="button"
