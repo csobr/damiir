@@ -1,2 +1,2 @@
  # damiir
-A website to find companies were you can work at and help build impact driven software.
+ Our jobs should be an opportunity to reduce suffering in the world where we can.
