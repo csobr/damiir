@@ -7,7 +7,7 @@ $green: #51ff5a;
 $red: #ff3729;
 
 .quiz--wrapper {
-@include flexCenter();
+  @include flexCenter();
 }
 @keyframes roll-in {
   0% {
@@ -58,7 +58,7 @@ $red: #ff3729;
     position: relative;
     transition: width 0.4s ease;
     margin-bottom: 1em;
-    background: $fifth_color;
+    background-color: $fifth_color;
     border-radius: 0;
     width: 100%;
     height: 2em;
@@ -69,7 +69,7 @@ $red: #ff3729;
 
     .counter {
       position: absolute;
-      right: .5rem;
+      right: 0.5rem;
       top: 0;
       font-weight: normal;
       color: $primary_color;
@@ -127,12 +127,12 @@ $red: #ff3729;
     }
   }
 
-   //custom radio controls
-   input[type="radio"] {
+  //custom radio controls
+  input[type="radio"] {
     position: absolute;
     left: -9999px;
-    
-      & + label {
+
+    & + label {
       position: relative;
       font-weight: normal;
       padding-left: 28px;
@@ -140,10 +140,10 @@ $red: #ff3729;
       line-height: 20px;
       display: inline-block;
       color: $fifth_color;
-        
+
       &::before {
         text-align: center;
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
@@ -151,11 +151,11 @@ $red: #ff3729;
         height: 20px;
         border: 1px solid $fifth_color;
         border-radius: 100%;
-        background: transparent;
+        background-color: transparent;
       }
-        
+
       &::after {
-        content: '';
+        content: "";
         width: 12px;
         height: 12px;
         background-color: $sixth_color;
@@ -167,7 +167,7 @@ $red: #ff3729;
       }
     }
   }
-  
+
   .dim,
   .correct {
     input[type="radio"] + label::before {

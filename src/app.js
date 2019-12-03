@@ -1,6 +1,6 @@
 import React from 'react'
 // import { useLocation} from "react-router"
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './components/navigation.jsx'
 import Home from './pages/home.jsx'
 import Companies from './pages/companies.jsx'

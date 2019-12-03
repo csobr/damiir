@@ -96,7 +96,8 @@ h3 {
 .third--view {
   @include flex();
   margin: 5%;
-  background: $third_color;
+  background-color: #000000;
+  color: $fourth_color;
 }
 h4,
 h5,
@@ -108,9 +109,6 @@ h6 {
   text-transform: lowercase;
   font-weight: 700;
   overflow: hidden;
-}
-h4 {
-  color: $primary_color;
 }
 h5 {
   color: $fifth_color;
@@ -131,18 +129,15 @@ h6 {
   width: 60rem;
 }
 .story--month-feature {
-  color: $primary_color;
   text-transform: lowercase;
 }
 .story__company__name {
   font-size: 2rem;
   font-weight: 600;
-  color: $primary_color;
   padding-bottom: 2rem;
 }
 .story--company__text {
   font-weight: 300;
-  color: $primary_color;
   font-size: 1.6rem;
   line-height: 2;
   white-space: pre-wrap;
@@ -182,7 +177,7 @@ h6 {
   margin: 1rem;
   height: 14rem;
   width: 14rem;
-  background: transparent;
+  background-color: transparent;
   box-sizing: border-box;
   border-radius: 50%;
   outline: none;
@@ -225,7 +220,7 @@ h6 {
   font-weight: 700;
   justify-content: center;
   padding: 1rem 3rem;
-  background: $fifth_color;
+  background-color: $fifth_color;
   margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;

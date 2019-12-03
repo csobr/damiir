@@ -25,7 +25,7 @@ export default () => {
         />
 
         <label htmlFor="enviroment" className="select--item select--item-green">
-        Environment
+         Poverty
         </label>
         <input
           type="button"
@@ -52,7 +52,7 @@ export default () => {
         />
 
         <label htmlFor="law" className="select--item select--item-pink">
-          Law
+          law
         </label>
         <input
           type="button"

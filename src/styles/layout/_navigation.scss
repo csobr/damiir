@@ -38,7 +38,7 @@ nav {
 }
 
 .hamburger span {
-  background: $sixth_color;
+  background-color: $sixth_color;
   border-radius: 0.4rem;
   margin-bottom: 0.6rem;
   display: block;
@@ -82,11 +82,10 @@ nav {
   flex-direction: column;
   margin: 0;
   padding: 0 0.4rem 1rem 1rem;
-  background: $fifth_color;
+  background-color: $fifth_color;
   z-index: 1;
   width: 100%;
   font-size: 1.5em;
-  
 
   @media (min-width: 750px) {
     display: flex;
@@ -96,7 +95,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    background: transparent;
+    background-color: transparent;
   }
 
   li {
@@ -123,7 +122,6 @@ ul {
 li {
   display: table-cell;
   position: relative;
-
 }
 a {
   color: $fourth_color;
@@ -134,14 +132,14 @@ a {
   position: relative;
 }
 a:after {
-  background: none repeat scroll 0 0 transparent;
+  background-color: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   display: block;
   height: 1px;
   left: 50%;
   position: absolute;
-  background: $fourth_color;
+  background-color: $fourth_color;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -149,7 +147,7 @@ a:hover:after {
   width: 100%;
   left: 0;
 }
-a:hover{
-  color:$fifth_color;
+a:hover {
+  color: $fifth_color;
   text-decoration: none;
 }
