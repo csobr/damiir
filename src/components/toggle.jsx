@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import "../components/quiz.jsx";
 
 export default () => {
   const [showField, setShowField] = useState(false);
   return (
-    
     <div className="company--selection">
       <div className="select--field">
         <label htmlFor="healthcare" className="select--item select--item-green">
@@ -25,7 +25,7 @@ export default () => {
         />
 
         <label htmlFor="enviroment" className="select--item select--item-green">
-         Poverty
+          Poverty
         </label>
         <input
           type="button"
@@ -60,7 +60,7 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
         <label htmlFor="politics" className="select--item select--item-green">
-         Politics
+          Politics
         </label>
         <input
           type="button"
@@ -68,9 +68,10 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-      
-        <label htmlFor="socialimpact" className="select--item select--item-pink">
-       
+        <label
+          htmlFor="socialimpact"
+          className="select--item select--item-pink"
+        >
           Social impact
         </label>
         <input
@@ -79,7 +80,10 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label htmlFor="communications" className="select--item select--item-green">
+        <label
+          htmlFor="communications"
+          className="select--item select--item-green"
+        >
           Communications
         </label>
         <input
@@ -90,7 +94,6 @@ export default () => {
       </div>
       {showField && (
         <div>
-          
           <div id="select-field--info">
             <h6>Oh,But first!</h6>
             <p>
@@ -98,11 +101,13 @@ export default () => {
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="submit" id="start"  >
-             Start</button>
-              
-         </div> 
-         
+            <button type="submit" id="start">
+              Start
+            </button>
+          </div>
+          <div className="quiz--wrapper">
+            <section id="quiz--mission"></section>
+          </div>
         </div>
       )}
     </div>

@@ -75,9 +75,6 @@ export default class Home extends Component {
           <section className="fourth--view fourth--view-four">
             <h5>Select field</h5>
             <Toggle />
-            {/* <div className="quiz--wrapper">
-              <section id="quiz--mission"></section>
-            </div> */}
           </section>
         </div>
         <Newsletter />
