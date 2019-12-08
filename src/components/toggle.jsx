@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../components/quiz.jsx";
 
+
+
 export default () => {
   const [showField, setShowField] = useState(false);
   return (
@@ -101,7 +103,7 @@ export default () => {
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="submit" id="start">
+            <button type="submit" id="start" onClick={}>
               Start
             </button>
           </div>

@@ -5,7 +5,6 @@ import sphere from "../assets/img/sphere.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
-import "../components/quiz.jsx";
 import Newsletter from "../components/newsletter.jsx";
 export default class Home extends Component {
   render() {
