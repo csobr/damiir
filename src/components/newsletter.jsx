@@ -56,10 +56,10 @@ export default class Newsletter extends Component {
               placeholder="Name"
               onChange={this.handleChange}
             />
-            
+
             <div style={{ fontSize: 10, color: "red" }}>
               {this.state.nameError}
-            </div>  
+            </div>
             <label htmlFor="email"></label>
             <input
               autoComplete="off"
@@ -67,8 +67,9 @@ export default class Newsletter extends Component {
               name="email"
               id="email"
               placeholder="Email"
-              onChange={this.handleChange} />
-      
+              onChange={this.handleChange}
+            />
+
             <button onSubmit={this.handleSubmit}>Join</button>
           </form>
         </section>

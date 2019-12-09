@@ -1,8 +1,9 @@
 @import "../theme/color";
 @import "../abstracts/mixins";
-#newsletter h1 {
-  font-size: 1.8rem;
+#newsletter p {
+  font-size: 2rem;
   padding: 0;
+  color: $fourth_color;
 }
 #newsletter {
   @include flexCenter();
