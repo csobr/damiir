@@ -27,9 +27,9 @@ nav {
 }
 
 .active {
-  color: $fifth_color;
+  color: $third_color;
   @media (max-width: 750px) {
-    color: $sixth_color;
+    color: $secondary_color;
   }
 }
 /* ---- Responsive menu --- */
@@ -38,7 +38,7 @@ nav {
 }
 
 .hamburger span {
-  background-color: $sixth_color;
+  background-color: $secondary_color;
   border-radius: 0.4rem;
   margin-bottom: 0.6rem;
   display: block;
@@ -82,7 +82,7 @@ nav {
   flex-direction: column;
   margin: 0;
   padding: 0 0.4rem 1rem 1rem;
-  background-color: $fifth_color;
+  background-color: $third_color;
   z-index: 1;
   width: 100%;
   font-size: 1.5em;
@@ -124,7 +124,7 @@ li {
   position: relative;
 }
 a {
-  color: $fourth_color;
+  color: $secondary_color;
   font-size: 1.6rem;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -139,7 +139,7 @@ a:after {
   height: 1px;
   left: 50%;
   position: absolute;
-  background-color: $fourth_color;
+  background-color: $secondary_color;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -148,6 +148,6 @@ a:hover:after {
   left: 0;
 }
 a:hover {
-  color: $fifth_color;
+  color: $third_color;
   text-decoration: none;
 }

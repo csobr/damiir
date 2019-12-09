@@ -12,7 +12,7 @@
 .hero {
   @include center();
   font-size: 4rem;
-  color: $fourth_color;
+  color: $secondary_color;
   letter-spacing: 0.22rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -67,7 +67,7 @@ h3 {
   padding: 1.8rem;
   font-size: 4.5rem;
   text-align: center;
-  color: $fourth_color;
+  color: $secondary_color;
   text-transform: lowercase;
   font-weight: 700;
 }
@@ -76,7 +76,7 @@ h3 {
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.2;
-  color: $fourth_color;
+  color: $secondary_color;
 }
 .circle {
   @include flex();
@@ -85,7 +85,7 @@ h3 {
 }
 .credit {
   width: auto;
-  color: $fourth_color;
+  color: $secondary_color;
 }
 .circle img {
   width: 50rem;
@@ -94,13 +94,13 @@ h3 {
   @include flex();
   margin: 5%;
   background-color: #000000;
-  color: $fourth_color;
+  color: $secondary_color;
 }
 h4,
 h5,
 h6 {
   font-size: 5.5rem;
-  color: $fourth_color;
+  color: $secondary_color;
   margin: 0;
   padding: 0;
   text-transform: lowercase;
@@ -108,13 +108,13 @@ h6 {
   overflow: hidden;
 }
 h5 {
-  color: $fifth_color;
+  color: $third_color;
   margin: 2rem;
   padding: 2rem;
   text-align: center;
 }
 h6 {
-  color: $fifth_color;
+  color: $third_color;
   text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ h6 {
 .select--field label {
   flex-wrap: wrap;
   @include flexCenter();
-  color: $fourth_color;
+  color: $secondary_color;
   font-weight: 700;
   font-size: 1.4rem;
 }
@@ -188,24 +188,24 @@ h6 {
 }
 
 .select--item-green {
-  border: 6px solid $sixth_color;
-  // box-shadow: 0px 2px 6px 2px $sixth_color ;
+  border: 6px solid $fourth_color;
+  // box-shadow: 0px 2px 6px 2px $secondary_color ;
 }
 .select--item-pink {
-  border: 6px solid $fifth_color;
-  // box-shadow: 0px 2px 6px 2px $fifth_color;
+  border: 6px solid $third_color;
+  // box-shadow: 0px 2px 6px 2px $third_color;
 }
 #select-field--wrapper {
   @include flex();
   flex-direction: column;
   height: 50rem;
   width: 50vw;
-  border: 6px solid $sixth_color;
+  border: 6px solid $fourth_color;
   flex-wrap: wrap;
 }
 #select-field--info p {
   min-width: 100vh;
-  color: $fifth_color;
+  color: $third_color;
   width: 40vw;
   font-size: 2.6rem;
   line-height: 2;
@@ -218,7 +218,7 @@ h6 {
   font-weight: 700;
   justify-content: center;
   padding: 1rem 3rem;
-  background-color: $fifth_color;
+  background-color: $third_color;
   margin: 0 auto;
   font-size: 2rem;
   text-transform: uppercase;
@@ -226,6 +226,6 @@ h6 {
   transition: 1s all ease;
   &:hover {
     transform: scale(1.1);
-    color: $sixth_color;
+    color: $secondary_color;
   }
 }

@@ -1,9 +1,9 @@
 footer {
-@include flex();
-padding: 4rem;
-bottom: 0;
-margin-top: auto;
-p{
-color: $fourth_color;
-}
+  @include flex();
+  padding: 4rem;
+  bottom: 0;
+  margin-top: auto;
+  p {
+    color: $secondary_color;
+  }
 }
