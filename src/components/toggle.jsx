@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "../components/quiz.jsx";
-
-
-
+import Quiz from "../components/quiz.jsx";
 export default () => {
   const [showField, setShowField] = useState(false);
+  const [HiddenField, setHiddenField] = useState(false);
+
+  const [showQuiz, setShowQuiz] = useState(false);
   return (
     <div className="company--selection">
       <div className="select--field">
@@ -95,7 +95,7 @@ export default () => {
         />
       </div>
       {showField && (
-        <div>
+        <div id="select-field--wrapper">
           <div id="select-field--info">
             <h6>Oh,But first!</h6>
             <p>
@@ -103,13 +103,23 @@ export default () => {
               You will be presented with a couple famous mission statments your
               task is to guess what company said what.
             </p>
-            <button type="submit" id="start" onClick={}>
+
+            <button
+              type="submit"
+              id="start"
+              onClick={() => setShowQuiz(!showQuiz)}
+            >
               Start
             </button>
           </div>
-          <div className="quiz--wrapper">
-            <section id="quiz--mission"></section>
-          </div>
+
+          {showQuiz && (
+            <div className="quiz--wrapper">
+              <section id="quiz--mission">
+                <Quiz />
+              </section>
+            </div>
+          )}
         </div>
       )}
     </div>

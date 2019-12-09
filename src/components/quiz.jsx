@@ -1,7 +1,9 @@
 import React from "react";
-import ReactDOM from 'react-dom'
-//render raw HTML from question data 
-const RawHTML = (props) => <span dangerouslySetInnerHTML={{ __html: props.html }}></span>;
+import ReactDOM from "react-dom";
+//render raw HTML from question data
+const RawHTML = props => (
+  <span dangerouslySetInnerHTML={{ __html: props.html }}></span>
+);
 
 class QuestionImage extends React.Component {
   constructor(props) {
@@ -12,43 +14,60 @@ class QuestionImage extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.imgRef.current && prevProps.img.src !== this.props.img.src) {
-      this.imgRef.current.classList.add('fade-in');
+      this.imgRef.current.classList.add("fade-in");
 
       let timer = setTimeout(() => {
-        this.imgRef.current.classList.remove('fade-in');
+        this.imgRef.current.classList.remove("fade-in");
         clearTimeout(timer);
-      }, 1000)
+      }, 1000);
     }
   }
 
   render() {
     return (
-      <img ref={this.imgRef} className="img-fluid" src={this.props.img.src} alt={this.props.img.alt} />
+      <img
+        ref={this.imgRef}
+        className="img-fluid"
+        src={this.props.img.src}
+        alt={this.props.img.alt}
+      />
     );
   }
 }
 
-const QuizProgress = (props) => {
+const QuizProgress = props => {
   return (
     <div className="progress">
       <p className="counter">
-        <span>Question {props.currentQuestion + 1} of {props.questionLength}</span>
+        <span>
+          Question {props.currentQuestion + 1} of {props.questionLength}
+        </span>
       </p>
-      <div className="progress-bar" style={{ 'width': ((props.currentQuestion + 1) / props.questionLength) * 100 + '%' }}></div>
+      <div
+        className="progress-bar"
+        style={{
+          width:
+            ((props.currentQuestion + 1) / props.questionLength) * 100 + "%"
+        }}
+      ></div>
     </div>
   );
-}
+};
 
-const Results = (props) => {
+const Results = props => {
   return (
     <div className="results fade-in">
-      <h1>Your score: {((props.correct / props.questionLength) * 100).toFixed()}%</h1>
-      <button type="button" onClick={props.startOver}>Try again <i className="fas fa-redo"></i></button>
+      <h1>
+        Your score: {((props.correct / props.questionLength) * 100).toFixed()}%
+      </h1>
+      <button type="button" onClick={props.startOver}>
+        Try again <i className="fas fa-redo"></i>
+      </button>
     </div>
   );
-}
+};
 
-class Quiz extends React.Component {
+export default class Quiz extends React.Component {
   constructor(props) {
     super(props);
 
@@ -62,64 +81,82 @@ class Quiz extends React.Component {
       currentQuestion: 0,
       correct: 0,
       inProgress: true,
-      questions: [{
-        question: "<em>Our vision is to be earth's most customer-centric company; to build a place where people can come to find and discover anything they might want to buy.",
-        options: [{
-          option: "Amazon",
-          correct: true
-        }, {
-          option: "Walmart",
-          correct: false
-        }, {
-          option: "Target, obviously",
-          correct: false
-        }],
-        img: {
-          src: '',
-          alt: ''
+      questions: [
+        {
+          question:
+            "<em>Our vision is to be earth's most customer-centric company; to build a place where people can come to find and discover anything they might want to buy.",
+          options: [
+            {
+              option: "Amazon",
+              correct: true
+            },
+            {
+              option: "Walmart",
+              correct: false
+            },
+            {
+              option: "Target, obviously",
+              correct: false
+            }
+          ],
+          img: {
+            src: "",
+            alt: ""
+          },
+          feedback: "",
+          moreUrl: ""
         },
-        feedback: "",
-        moreUrl: ''
-      }, {
-        question: "_______  mission is to give people the power to build community and bring the world closer together.?",
-        options: [{
-          option: "Twitter",
-          correct: false
-        }, {
-          option: "Facebook",
-          correct: true
-        }, {
-          option: "Apple",
-          correct: false
-        }],
-        img: {
-          src: '',
-          alt: ''
+        {
+          question:
+            "_______  mission is to give people the power to build community and bring the world closer together.?",
+          options: [
+            {
+              option: "Twitter",
+              correct: false
+            },
+            {
+              option: "Facebook",
+              correct: true
+            },
+            {
+              option: "Apple",
+              correct: false
+            }
+          ],
+          img: {
+            src: "",
+            alt: ""
+          },
+          feedback: "",
+          moreUrl: ""
         },
-        feedback: "",
-        moreUrl: ''
-      }, {
-        question: "To refresh the world in mind, body and spirit. To inspire moments of optimism and happiness through our brands and actions.?",
-        options: [{
-          option: "Pepsico",
-          correct: false
-        }, {
-          option: "Coca Cola",
-          correct: true
-        }, {
-          option: "Unilever",
-          correct: false
-        }],
-        img: {
-          src: '',
-          alt: ''
-        },
-        feedback: "",
-        moreUrl: ''
-      }]
-    }
+        {
+          question:
+            "To refresh the world in mind, body and spirit. To inspire moments of optimism and happiness through our brands and actions.?",
+          options: [
+            {
+              option: "Pepsico",
+              correct: false
+            },
+            {
+              option: "Coca Cola",
+              correct: true
+            },
+            {
+              option: "Unilever",
+              correct: false
+            }
+          ],
+          img: {
+            src: "",
+            alt: ""
+          },
+          feedback: "",
+          moreUrl: ""
+        }
+      ]
+    };
   }
-
 
   updateAnswer(e) {
     //record whether the question was answered correctly
@@ -128,7 +165,9 @@ class Quiz extends React.Component {
     this.setState((prevState, props) => {
       let stateToUpdate = prevState.questions;
       //convert boolean string to boolean with JSON.parse()
-      stateToUpdate[prevState.currentQuestion].answerCorrect = JSON.parse(answerValue);
+      stateToUpdate[prevState.currentQuestion].answerCorrect = JSON.parse(
+        answerValue
+      );
 
       return { questions: stateToUpdate };
     });
@@ -146,13 +185,16 @@ class Quiz extends React.Component {
 
   nextQuestion(e) {
     //advance to the next question
-    this.setState((prevState, props) => {
-      let stateToUpdate = prevState.currentQuestion;
+    this.setState(
+      (prevState, props) => {
+        let stateToUpdate = prevState.currentQuestion;
 
-      return { currentQuestion: stateToUpdate + 1 };
-    }, () => {
-      this.radioRef.current.reset();
-    });
+        return { currentQuestion: stateToUpdate + 1 };
+      },
+      () => {
+        this.radioRef.current.reset();
+      }
+    );
   }
 
   getResults() {
@@ -164,7 +206,7 @@ class Quiz extends React.Component {
         ++correct;
       }
 
-      if (index === (this.state.questions.length - 1)) {
+      if (index === this.state.questions.length - 1) {
         this.setState({
           correct: correct,
           inProgress: false
@@ -189,7 +231,7 @@ class Quiz extends React.Component {
         correct: 0,
         currentQuestion: 0,
         questions: questionsToUpdate
-      }
+      };
     });
   }
 
@@ -203,64 +245,140 @@ class Quiz extends React.Component {
     if (!this.state.inProgress) {
       return (
         <section className="quiz">
-          <Results correct={this.state.correct} questionLength={this.state.questions.length} startOver={this.startOver} />
+          <Results
+            correct={this.state.correct}
+            questionLength={this.state.questions.length}
+            startOver={this.startOver}
+          />
         </section>
       );
     }
 
     return (
       <section className="quiz fade-in" aria-live="polite">
-        <QuizProgress currentQuestion={this.state.currentQuestion} questionLength={this.state.questions.length} />
+        <QuizProgress
+          currentQuestion={this.state.currentQuestion}
+          questionLength={this.state.questions.length}
+        />
         <div className="question-container">
-          {this.state.questions[this.state.currentQuestion].img.src &&
-            <QuestionImage img={this.state.questions[this.state.currentQuestion].img} />
-          }
-          <p className="question"><RawHTML html={this.state.questions[this.state.currentQuestion].question} /></p>
+          {this.state.questions[this.state.currentQuestion].img.src && (
+            <QuestionImage
+              img={this.state.questions[this.state.currentQuestion].img}
+            />
+          )}
+          <p className="question">
+            <RawHTML
+              html={this.state.questions[this.state.currentQuestion].question}
+            />
+          </p>
 
           <form ref={this.radioRef}>
-            {this.state.questions[this.state.currentQuestion].options.map((item, index) => {
-              return <div key={index}
-                className={"option" + (this.state.questions[this.state.currentQuestion].checked && !item.correct ? ' dim' : '') + (this.state.questions[this.state.currentQuestion].checked && item.correct ? ' correct' : '')}>
-                <input id={"radio-" + index} onClick={this.updateAnswer} type="radio" name="option" value={item.correct}
-                  disabled={this.state.questions[this.state.currentQuestion].checked} />
-                <label htmlFor={"radio-" + index}><RawHTML html={item.option} /></label>
-              </div>
-            })}
+            {this.state.questions[this.state.currentQuestion].options.map(
+              (item, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={
+                      "option" +
+                      (this.state.questions[this.state.currentQuestion]
+                        .checked && !item.correct
+                        ? " dim"
+                        : "") +
+                      (this.state.questions[this.state.currentQuestion]
+                        .checked && item.correct
+                        ? " correct"
+                        : "")
+                    }
+                  >
+                    <input
+                      id={"radio-" + index}
+                      onClick={this.updateAnswer}
+                      type="radio"
+                      name="option"
+                      value={item.correct}
+                      disabled={
+                        this.state.questions[this.state.currentQuestion].checked
+                      }
+                    />
+                    <label htmlFor={"radio-" + index}>
+                      <RawHTML html={item.option} />
+                    </label>
+                  </div>
+                );
+              }
+            )}
           </form>
 
           <div className="bottom">
-            {this.state.questions[this.state.currentQuestion].feedback && this.state.questions[this.state.currentQuestion].checked
-              && <div className="fade-in">
-                <p>
-                  <RawHTML html={this.state.questions[this.state.currentQuestion].feedback} />
-                  {this.state.questions[this.state.currentQuestion].moreUrl &&
-                    <React.Fragment>
-                      &nbsp;<a target="_blank" href={this.state.questions[this.state.currentQuestion].moreUrl}>Learn more</a>.
-                    </React.Fragment>
-                  }
-                </p>
-              </div>
-            }
+            {this.state.questions[this.state.currentQuestion].feedback &&
+              this.state.questions[this.state.currentQuestion].checked && (
+                <div className="fade-in">
+                  <p>
+                    <RawHTML
+                      html={
+                        this.state.questions[this.state.currentQuestion]
+                          .feedback
+                      }
+                    />
+                    {this.state.questions[this.state.currentQuestion]
+                      .moreUrl && (
+                      <React.Fragment>
+                        &nbsp;
+                        <a
+                          target="_blank"
+                          href={
+                            this.state.questions[this.state.currentQuestion]
+                              .moreUrl
+                          }
+                        >
+                          Learn more
+                        </a>
+                        .
+                      </React.Fragment>
+                    )}
+                  </p>
+                </div>
+              )}
 
-            {!this.state.questions[this.state.currentQuestion].checked &&
-              <button type="button" onClick={this.checkAnswer}
-                disabled={!('answerCorrect' in this.state.questions[this.state.currentQuestion])}>Check answer</button>
-            }
+            {!this.state.questions[this.state.currentQuestion].checked && (
+              <button
+                type="button"
+                onClick={this.checkAnswer}
+                disabled={
+                  !(
+                    "answerCorrect" in
+                    this.state.questions[this.state.currentQuestion]
+                  )
+                }
+              >
+                Check answer
+              </button>
+            )}
 
-            {(this.state.currentQuestion + 1) < this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
-              <button className="fade-in next" type="button" onClick={this.nextQuestion}>Next <i className="fa fa-arrow-right"></i></button>
-            }
+            {this.state.currentQuestion + 1 < this.state.questions.length &&
+              this.state.questions[this.state.currentQuestion].checked && (
+                <button
+                  className="fade-in next"
+                  type="button"
+                  onClick={this.nextQuestion}
+                >
+                  Next <i className="fa fa-arrow-right"></i>
+                </button>
+              )}
           </div>
 
-          {(this.state.currentQuestion + 1) === this.state.questions.length && this.state.questions[this.state.currentQuestion].checked &&
-            <button type="button" className="get-results pulse" onClick={this.getResults}>Get Results</button>
-          }
+          {this.state.currentQuestion + 1 === this.state.questions.length &&
+            this.state.questions[this.state.currentQuestion].checked && (
+              <button
+                type="button"
+                className="get-results pulse"
+                onClick={this.getResults}
+              >
+                Get Results
+              </button>
+            )}
         </div>
       </section>
-    )
+    );
   }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Quiz />, document.getElementById('quiz--mission'));
-})

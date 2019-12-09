@@ -8,6 +8,9 @@ $red: #ff3729;
 
 .quiz--wrapper {
   @include flexCenter();
+  background: $primary_color;
+  position: absolute;
+  width: 49vw;
 }
 @keyframes roll-in {
   0% {
@@ -95,6 +98,7 @@ $red: #ff3729;
   }
 
   .question {
+    font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.35;
     margin-bottom: 0.75em;
@@ -216,7 +220,6 @@ $red: #ff3729;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-
     div {
       flex: 1 1 70%;
       font-size: 9rem;
