@@ -6,7 +6,7 @@
 }
 
 .first--view {
-  min-height: 100vh;
+  min-height: 95vh;
   min-width: 100%;
 }
 .hero {
@@ -55,8 +55,6 @@
 }
 .second--view {
   @include flex();
-  min-height: 80vh;
-  margin: 5%;
 }
 .mission {
   @include flexCenter();
@@ -86,12 +84,11 @@ h3 {
   flex-direction: column;
 }
 .credit {
-  width: 5rem;
+  width: auto;
   color: $fourth_color;
 }
 .circle img {
   width: 50rem;
-  border-radius: 50%;
 }
 .third--view {
   @include flex();
