@@ -17,8 +17,8 @@
   border-radius: 50%;
   span {
     @include flexCenter;
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border: 1px solid $third_color;
     background: $third_color;
     border-radius: 50%;
@@ -26,13 +26,11 @@
 }
 
 .cards {
-  position: absolute;
   min-width: 100%;
   min-height: 100vh;
   margin-top: 5%;
 }
 .card {
-  position: absolute;
   @include flex();
   width: 22rem;
   height: 25rem;
@@ -44,6 +42,10 @@
   box-sizing: border-box;
   border-radius: 10px;
   padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .circle {
   @include flexCenter();
