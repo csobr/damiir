@@ -70,7 +70,6 @@ export default () => {
           <Toggle />
         </section>
       </div>
-      <Newsletter />
     </div>
   );
 };

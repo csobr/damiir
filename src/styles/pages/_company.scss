@@ -1,0 +1,73 @@
+@import "../theme/color";
+@import "../abstracts/mixins";
+
+.companies-wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+}
+#company--popup {
+  position: absolute;
+  left: 1rem;
+  margin: 0.1rem 0.1rem 0 0;
+  @include flexCenter();
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid $third_color;
+  background: transparent;
+  border-radius: 50%;
+  span {
+    @include flexCenter;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 1px solid $third_color;
+    background: $third_color;
+    border-radius: 50%;
+  }
+}
+
+.cards {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  margin-top: 5%;
+}
+.card {
+  position: absolute;
+  @include flex();
+  width: 22rem;
+  height: 25rem;
+  left: 5rem;
+  top: 2rem;
+  background-color: $primary_color;
+  color: $secondary_color;
+  border: 1px solid $fifth_color;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.circle {
+  @include flexCenter();
+  margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 1px solid $fifth_color;
+}
+.circle img {
+  @include flexCenter();
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+.company--text {
+  position: relative;
+  @include flexCenter;
+  width: 20rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
