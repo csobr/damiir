@@ -33,7 +33,7 @@
 .card {
   @include flex();
   width: 22rem;
-  height: 25rem;
+  height: 24rem;
   left: 5rem;
   top: 2rem;
   background-color: $primary_color;
@@ -47,27 +47,26 @@
     transform: scale(1.1);
   }
 }
-.circle {
+.circle--companay {
   @include flexCenter();
   margin: 0 auto;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-  border: 1px solid $fifth_color;
+  border: .1rem solid $fifth_color;
 }
-.circle img {
+.circle--companay img {
   @include flexCenter();
-  width: 6.5rem;
-  height: 6.5rem;
+ width: 6.5rem;
+  border-radius: 50%;
 }
 
 .company--text {
   position: relative;
   @include flexCenter;
-  width: 20rem;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;

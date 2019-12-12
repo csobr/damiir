@@ -1,25 +1,32 @@
-import React from "react";
-import Karma from "../assets/companies/karma/karma.png";
-
-export default () => {
+import React, { Component } from "react";
+import data from "../pages/data/companiesList.json";
+export default class Companies extends Component {
+  render() {
   return (
     <div className="companies--wrapper">
-      <div className="cards">
-        <div className="card">
-          <button id="company--popup">
-            <span></span>
-          </button>
-          <div className="circle">
-            <img src={Karma} className="company--logo" alt="company logo"></img>
+      {data.map((company, index) => {
+        return (
+          <div key={index}> 
+        <div className="cards">
+          <div className="card">
+            <button id="company--popup">
+              <span></span>
+            </button>
+
+            <div className="circle--companay">
+              <img
+                src={company.logo}
+                className="company--logo"
+                alt="company logo"
+              ></img>
+            </div>
+            <div className="company--text company--text__preview">{company.description}
+            </div>
           </div>
-          <div className="company--text company--text__preview">
-            Karma is the award-winning food app for buying delicious surplus
-            food, at half the usual price. Simple and convenient, Karma
-            highlights surplus food in your local area to buy, collect and
-            enjoy.
-          </div>
-        </div>
-      </div>
+            </div>
+            </div>
+      )})};
     </div>
   );
-};
+  }
+  }

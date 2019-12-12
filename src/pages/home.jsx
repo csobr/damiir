@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/main.scss";
-import sphere from "../assets/img/town.gif";
+import fun from "../assets/img/town.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
@@ -24,8 +24,8 @@ export default () => {
         </section>
 
         <section className="second--view ">
-          <div className="circle">
-            <img src={sphere} alt="sphere" />
+          <div className="mission--image">
+            <img src={fun} alt="Amir B Jahanbin work" />
             <p className="credit"> By Amir B Jahanbin</p>
           </div>
 
