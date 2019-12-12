@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/main.scss";
 import sphere from "../assets/img/town.gif";
 import storyImg1 from "../assets/img/zipline.svg";
 import storyImg2 from "../assets/img/zipline.jpg";
 import Toggle from "../components/toggle.jsx";
-import Newsletter from "../components/newsletter.jsx";
 
 export default () => {
   return (

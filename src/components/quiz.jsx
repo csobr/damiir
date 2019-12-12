@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 //render raw HTML from question data
 const RawHTML = props => (
   <span dangerouslySetInnerHTML={{ __html: props.html }}></span>

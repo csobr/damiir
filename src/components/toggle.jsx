@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Quiz from "../components/quiz.jsx";
 export default () => {
   const [showField, setShowField] = useState(false);
-  const [HiddenField, setHiddenField] = useState(false);
 
   const [showQuiz, setShowQuiz] = useState(false);
   return (
