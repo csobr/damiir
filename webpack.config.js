@@ -1,5 +1,5 @@
 
-const HtmlWebPackPlugin = require ("html-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require ("mini-css-extract-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
 var BrotliPlugin = require('brotli-webpack-plugin');
@@ -7,9 +7,7 @@ var BrotliPlugin = require('brotli-webpack-plugin');
 
 
 module.exports = {
-  devtool: "source-map",
-
-  mode: 'development',
+ mode: "development",
   entry: ["./src/index.js"],
   output: {
     path: __dirname + "/dist",
@@ -20,22 +18,22 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: "babel-loader",
       },
+{
+    test: /\.scss$/,
+    use: [
+      MiniCssExtractPlugin.loader,
       {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "sass-loader"
-          }
-        ]
+        loader: "css-loader",
+        options: {
+          modules: true,
+          sourceMap: true,
+        }
       },
+      "sass-loader"
+    ],
+},
       {
         test: /\.(jpf|png|svg|jpg|gif)$/,
         use: ["file-loader"]
