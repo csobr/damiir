@@ -2,8 +2,7 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "../styles/main.scss";
 import fun from "../assets/img/town.gif";
-import storyImg1 from "../assets/img/zipline.svg";
-import storyImg2 from "../assets/img/zipline.jpg";
+import storyImg from "../assets/img/quote-Jennifer.png";
 import Toggle from "../components/toggle.jsx";
 
 export default () => {
@@ -33,7 +32,6 @@ export default () => {
             <img src={fun} alt="Amir B Jahanbin work" />
             <p> By Amir B Jahanbin</p>
           </div>
-
           <div className="mission">
             <h2>...</h2>
             <p className="mission--text">
@@ -48,25 +46,26 @@ export default () => {
         <section className="third--view third--view-three ">
           <div className="story--month">
             <p className="story--month-feature">Company of the month</p>
-            <h4> Zipline </h4>
-
+            <h3> Be My Eyes</h3>
             <p className="story__company__name">
-              Delivers medicine to those who need it most
+              Is a free mobile app with one main goal: to make the world more
+              accessible for blind and low-vision people.
             </p>
             <p className="story--company__text">
-              Since then, we've built the world's fastest and most reliable
-              delivery drone, the world's largest autonomous logistics network,
-              and a truly amazing team. {"\n"}We design and test our technology
-              in Half Moon Bay, California. We assemble the drones and the
-              technology that powers our distribution centers in South San
-              Francisco. We perform extensive flight testing in Davis,
-              California. We operate distribution centers around the planet with
-              teams of local operators.
+              The app connects blind and low-vision individuals with sighted
+              volunteers and companies from all over the world through a live
+              video call. Since we launched in January 2015, more than 2,000,000
+              volunteers have signed up to assist blind and low-vision users. Be
+              My Eyes users can request assistance in over 180 languages making
+              the app the biggest online community for blind and low-vision
+              people as well as one of the largest micro-volunteering platforms
+              in the world! Every day, volunteers sign onto Be My Eyes to lend
+              their sight to blind and low-vision individuals to tackle
+              challenges and solve problems together.
             </p>
           </div>
           <div className="story--images">
-            <img src={storyImg1} alt="zipline" />
-            <img src={storyImg2} alt="zipline" />
+            <img src={storyImg} alt="company of the month" />
           </div>
         </section>
         <section className="fourth--view fourth--view-four">

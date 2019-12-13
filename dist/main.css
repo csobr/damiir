@@ -519,10 +519,9 @@ h2 {
   justify-content: space-around;
   flex-flow: wrap;
   margin: 5%;
-  background-color: #000000;
+  border: 1px solid #ff91c9;
   color: #ffffff; }
 
-h4,
 h5,
 h6 {
   font-size: 5.5rem;
@@ -550,14 +549,13 @@ h6 {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  margin: 2%;
   width: 60rem; }
 
 .TfbaG14wt36wfvhLH-zW5 {
   text-transform: lowercase; }
 
 ._2M02s2lPHEUblDFemWMVpr {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding-bottom: 2rem; }
 
@@ -740,12 +738,14 @@ h6 {
   min-width: 100%;
   min-height: 100%; }
 
-._2pB3v3AObiY9KiXXXGEZ4J p {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: wrap;
+._2pB3v3AObiY9KiXXXGEZ4J {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
   color: #ffffff;
-  line-height: 1rem;
   letter-spacing: 0.22rem;
   font-weight: 900;
   text-transform: uppercase; }

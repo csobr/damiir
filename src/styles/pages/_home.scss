@@ -17,12 +17,11 @@
   font-weight: 900;
   text-transform: uppercase;
   @include fade();
-  
 }
-h1{
-    font-size: 2.2rem;
+h1 {
+  font-size: 2.2rem;
 }
-.hero p{
+.hero p {
   font-size: 1rem;
 }
 @keyframes fadein {
@@ -100,13 +99,12 @@ h2 {
 .third--view {
   @include flex();
   margin: 5%;
-  background-color: #000000;
+  border: 1px solid $third_color;
   color: $secondary_color;
 }
-h4,
+h3,
 h5,
 h6 {
-  font-size: 5.5rem;
   color: $secondary_color;
   margin: 0;
   padding: 0;
@@ -114,7 +112,11 @@ h6 {
   font-weight: 700;
   overflow: hidden;
 }
+h3 {
+  font-size: 3rem;
+}
 h5 {
+  font-size: 5.5rem;
   color: $third_color;
   margin: 2rem;
   padding: 2rem;
@@ -127,16 +129,16 @@ h6 {
   text-transform: uppercase;
 }
 .story--month {
-  @include flexCenter();
+  padding: 1rem;
+  @include flex();
   flex-direction: column;
-  margin: 2%;
   width: 60rem;
 }
 .story--month-feature {
   text-transform: lowercase;
 }
 .story__company__name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding-bottom: 2rem;
 }
