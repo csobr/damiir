@@ -19,18 +19,23 @@ export default () => {
       <div className="home--wrapper">
         <section className="first--view">
           <div className="hero">
-            <h1>Don't cause harm with your line of work.</h1>
+            <h1>
+              “Be kind, for whenever kindness becomes part of something, it
+              beautifies it. Whenever it is taken from something, it leaves it
+              tarnished.”
+            </h1>
+            <p className="credit"> Prophet Muhammad (peace be upon him)</p>
           </div>
         </section>
 
         <section className="second--view ">
           <div className="mission--image">
             <img src={fun} alt="Amir B Jahanbin work" />
-            <p className="credit"> By Amir B Jahanbin</p>
+            <p> By Amir B Jahanbin</p>
           </div>
 
           <div className="mission">
-            <h3>...</h3>
+            <h2>...</h2>
             <p className="mission--text">
               A lot us aim to do impactfull work but how do we go about finding
               that workplace. We want to help you find the company where your

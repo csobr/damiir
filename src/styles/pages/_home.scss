@@ -6,17 +6,23 @@
 }
 
 .first--view {
-  min-height: 95vh;
+  min-height: 100vh;
   min-width: 100%;
 }
 .hero {
   @include center();
-  font-size: 6rem;
   color: $secondary_color;
+  line-height: 1rem;
   letter-spacing: 0.22rem;
   font-weight: 900;
   text-transform: uppercase;
   @include fade();
+}
+h1{
+    font-size: 2.2rem;
+}
+.hero p{
+  font-size: 1rem;
 }
 @keyframes fadein {
   from {
@@ -63,7 +69,7 @@
   width: 60rem;
   height: 50rem;
 }
-h3 {
+h2 {
   padding: 1.8rem;
   font-size: 4.5rem;
   text-align: center;
