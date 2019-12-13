@@ -16,21 +16,21 @@ export default () => {
           />
         </label>
 
-        <label htmlFor="security" className="select--item select--item-pink">
-          Cyber security
-        </label>
-        <input
-          type="button"
-          id="security"
-          onClick={() => setShowField(!showField)}
-        />
-
-        <label htmlFor="enviroment" className="select--item select--item-green">
-          Poverty
+        <label htmlFor="enviroment" className="select--item select--item-pink">
+          Enviroment
         </label>
         <input
           type="button"
           id="enviroment"
+          onClick={() => setShowField(!showField)}
+        />
+
+        <label htmlFor="poverty" className="select--item select--item-green">
+          Poverty
+        </label>
+        <input
+          type="button"
+          id="poverty"
           onClick={() => setShowField(!showField)}
         />
 
@@ -52,12 +52,15 @@ export default () => {
           onClick={() => setShowField(!showField)}
         />
 
-        <label htmlFor="law" className="select--item select--item-pink">
-          law
+        <label
+          htmlFor="human rights"
+          className="select--item select--item-pink"
+        >
+          Human rights
         </label>
         <input
           type="button"
-          id="law"
+          id="human rights"
           onClick={() => setShowField(!showField)}
         />
         <label htmlFor="politics" className="select--item select--item-green">

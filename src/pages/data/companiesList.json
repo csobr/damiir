@@ -1,30 +1,42 @@
 [
- {
-   "id": 1,
-   "name": "Be my eyes",
-   "url": "http://bemyeyes.com ",
-   "logo": "./dist/companies/bemyeyes/bemyeyes.png",
-   "description": "Be My Eyes is a free mobile app that connects people who are blind or have low vision with sighted volunteers and company representatives around the world."
- },
- {
-   "id": 2,
-   "name": "Karma",
-   "url": "http://karma.life",
-   "logo": "./dist/companies/karma/karma.png",
-   "description": "karma is a food app for buying surplus food, at half the usual price. karma highlights surplus food in your local area to buy, collect and enjoy"
- },
   {
-   "id": 3,
-   "name": "Transfer Galaxy",
-   "url": "http://transfergalaxy.com",
-   "logo": "./dist/companies/transfergalaxy/transfergalaxy.jpg",
-   "description": "Transfer Galaxy are trying to make the world a little bit fairer. One step at a time. We are democratizing international payments by making remittances cheaper, safer and smarter. "
- },
-   {
-     "id": 4,
-     "name": "Work ahead",
-     "url": "http://workahead.co",
-     "logo": "./dist/companies/workahead/workahead.png",
-     "description": "We build software that organizations use for advancing human rights, decent work, and sustainable development especially in their international supply chains."
-   }
-  ]
+    "id": 1,
+    "field": "social impact",
+    "name": "Be my eyes",
+    "url": "http://bemyeyes.com ",
+    "logo": "./dist/companies/bemyeyes/bemyeyes.png",
+    "description": "Be My Eyes is a free mobile app that connects people who are blind or have low vision with sighted volunteers and company representatives around the world."
+  },
+  {
+    "id": 2,
+    "field": "enviroment",
+    "name": "Karma",
+    "url": "http://karma.life",
+    "logo": "./dist/companies/karma/karma.png",
+    "description": "karma is a food app for buying surplus food, at half the usual price. karma highlights surplus food in your local area to buy, collect and enjoy"
+  },
+  {
+    "id": 3,
+    "field": ["poverty", "economics"],
+    "name": "Transfer Galaxy",
+    "url": "http://transfergalaxy.com",
+    "logo": "./dist/companies/transfergalaxy/transfergalaxy.jpg",
+    "description": "Transfer Galaxy are trying to make the world a little bit fairer. One step at a time. We are democratizing international payments by making remittances cheaper, safer and smarter. "
+  },
+  {
+    "id": 4,
+    "name": "Work ahead",
+    "field": ["enviroment", "human rights"],
+    "url": "http://workahead.co",
+    "logo": "./dist/companies/workahead/workahead.png",
+    "description": "We build software that organizations use for advancing human rights, decent work, and sustainable development especially in their international supply chains."
+  },
+  {
+    "id": 5,
+    "field": ["health"],
+    "name": "NuvoAir",
+    "url": "http://nuvoair.com",
+    "logo": "./dist/companies/nuvoair/nuvoair.jpg",
+    "description": "NuvoAir combines hardware, software and data to improve lives of people suffering from respiratory conditions and to enable more precise clinical decisions"
+  }
+]

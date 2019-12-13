@@ -34,7 +34,7 @@ export default class Navbar extends Component {
           <li className="logo">
             <Link to="/" activeClassName="active" onClick={this.toggle}>
               damiir
-            </Link>{" "}
+            </Link>
           </li>
           <li>
             <Link to="/blog" onClick={this.toggle}>

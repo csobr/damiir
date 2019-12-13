@@ -1,0 +1,16 @@
+@import "../theme/color";
+@import "../abstracts/mixins";
+
+.about--wrapper {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.damiir--story {
+  @include center();
+  font-size: 2rem;
+  color: $secondary_color;
+  letter-spacing: 0.22rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
