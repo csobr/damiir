@@ -522,9 +522,9 @@ h2 {
   border: 1px solid #ff91c9;
   color: #ffffff; }
 
+h3,
 h5,
 h6 {
-  font-size: 5.5rem;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -532,7 +532,11 @@ h6 {
   font-weight: 700;
   overflow: hidden; }
 
+h3 {
+  font-size: 3rem; }
+
 h5 {
+  font-size: 5.5rem;
   color: #ff91c9;
   margin: 2rem;
   padding: 2rem;
@@ -545,9 +549,10 @@ h6 {
   text-transform: uppercase; }
 
 ._2Wn9Voy7fDcO9S9o0nFn-I {
+  padding: 1rem;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-around;
+  flex-flow: wrap;
   flex-direction: column;
   width: 60rem; }
 

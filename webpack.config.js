@@ -7,7 +7,7 @@ var BrotliPlugin = require('brotli-webpack-plugin');
 
 
 module.exports = {
- mode: "development",
+  mode: "development",
   entry: ["./src/index.js"],
   output: {
     path: __dirname + "/dist",
@@ -18,22 +18,14 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel-loader"
       },
-{
-    test: /\.scss$/,
-    use: [
-      MiniCssExtractPlugin.loader,
+
       {
-        loader: "css-loader",
-        options: {
-          modules: true,
-          sourceMap: true,
-        }
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
-      "sass-loader"
-    ],
-},
+
       {
         test: /\.(jpf|png|svg|jpg|gif)$/,
         use: ["file-loader"]
