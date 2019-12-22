@@ -29,14 +29,14 @@
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: space-around;
   margin-top: 7%;
   height: 100vh;
   width: 100%;
-  justify-content: space-around;
 }
 .card {
   @include flex();
-  width: 22rem;
+  width: 25rem;
   height: 25rem;
   background-color: $primary_color;
   color: $secondary_color;
