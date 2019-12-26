@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink as Link } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 
 export default class Navbar extends Component {
   render() {
@@ -13,38 +14,38 @@ export default class Navbar extends Component {
         </div>
 
         <ul className="nav--links">
+          <div className="arrows" onClick={this.toggle}>
+            <i className="arrow">
+              <span></span>
+              <span></span>
+            </i>
+          </div>
+
           <li>
-            <Link
-              to="/knowledge"
-              activeClassName="active"
-              onClick={this.toggle}
-            >
+            <Link to="/knowledge" activeClassName="active">
               Knowledge
             </Link>
           </li>
           <li>
-            <Link
-              to="/companies"
-              activeClassName="active"
-              onClick={this.toggle}
-            >
+            <Link to="/companies" activeClassName="active">
               Companies
             </Link>
           </li>
           <li className="logo">
-            <Link to="/" activeClassName="active" onClick={this.toggle}>
+            <Link to="/" activeClassName="active">
               damiir
             </Link>
           </li>
           <li>
-            <Link to="/blog" onClick={this.toggle}>
-              Blog
-            </Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="active" onClick={this.toggle}>
+            <Link to="/about" activeClassName="active">
               about
             </Link>
+          </li>
+          <li className="logo--mobile">
+            <img src={logo}></img>
           </li>
         </ul>
       </nav>
