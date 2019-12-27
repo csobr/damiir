@@ -11,6 +11,11 @@
   color: $secondary_color;
   border-bottom: 1px solid $secondary_color;
 }
+.logo {
+  @media (max-width: 750px) {
+    display: none;
+  }
+}
 nav {
   padding: 2.2rem 15rem 0 0;
   top: 0;
@@ -103,7 +108,7 @@ nav {
 
   li {
     @media (max-width: 750px) {
-      padding: 1.4rem 0 0 1rem;
+      padding: 1rem 0 0 1rem;
       margin: 1rem;
     }
   }
@@ -113,7 +118,6 @@ nav {
 
 .nav--links.open {
   display: flex;
-  width: 100%;
 }
 
 ul {
@@ -167,8 +171,8 @@ a:hover {
 /* close nav */
 @media (max-width: 750px) {
   .logo--mobile img {
-    width: 5rem;
-    height: 5rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
   .arrows {
     position: absolute;

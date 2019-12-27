@@ -20,6 +20,11 @@ export default class Navbar extends Component {
               <span></span>
             </i>
           </div>
+          <li className="logo--mobile">
+            <Link to="/" activeClassName="active">
+              <img src={logo}></img>
+            </Link>
+          </li>
 
           <li>
             <Link to="/knowledge" activeClassName="active">
@@ -43,9 +48,6 @@ export default class Navbar extends Component {
             <Link to="/about" activeClassName="active">
               about
             </Link>
-          </li>
-          <li className="logo--mobile">
-            <img src={logo}></img>
           </li>
         </ul>
       </nav>
