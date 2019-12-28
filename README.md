@@ -6,9 +6,7 @@ Our jobs should be an opportunity to reduce suffering in the world where we can.
 
 ## Installation
 
-bash
-
-```
+```bash
 npm install
 npm start
 ```
