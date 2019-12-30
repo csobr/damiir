@@ -16,6 +16,12 @@ body {
   padding: 0;
   font-style: normal;
   font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "nav"
+    "content"
+    "footer";
 }
 html {
   font-size: 62.5%;
@@ -37,4 +43,8 @@ html {
 }
 .site--wrapper {
   min-height: 100%;
+}
+content {
+  grid-area: content;
+  background-color: cornflowerblue !important;
 }

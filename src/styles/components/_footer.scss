@@ -1,4 +1,6 @@
+@import "base/reset";
 footer {
+  grid-area: footer;
   @include flex();
   padding: 1rem;
   bottom: 0;
