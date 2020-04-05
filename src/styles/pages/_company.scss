@@ -1,43 +1,43 @@
-@import "../theme/color";
-@import "../abstracts/mixins";
+@import '../theme/color';
+@import '../abstracts/mixins';
 
 .companies--wrapper {
   min-width: 100%;
   min-height: 100%;
 }
 #company--popup {
-  position: absolute;
-  left: 1rem;
-  margin: 0.1rem 0.1rem 0 0;
   @include flexCenter();
+  margin: 0.1rem 0.1rem 0 0;
   width: 2rem;
   height: 2rem;
-  border: 1px solid $third_color;
-  background: transparent;
+  border: 0.1rem solid $third_color;
+  background-color: transparent;
   border-radius: 50%;
-  span {
-    @include flexCenter;
+  position: relative;
+
+  div {
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
     width: 0.8rem;
     height: 0.8rem;
-    border: 1px solid $third_color;
-    background: $third_color;
-    border-radius: 50%;
+    background-color: $third_color;
+    // margin: -0.8rem 0 0 -0.8rem;
   }
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 0.5rem;
   padding-top: 15rem;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 .card {
+  justify-content: space-between;
   margin: 0 auto;
-  @include flex();
-  width: 25rem;
+  max-width: 25rem;
   height: 25rem;
   background-color: $primary_color;
   color: $secondary_color;
